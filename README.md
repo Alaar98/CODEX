@@ -180,6 +180,25 @@ hipótesis completas y la revisión dimensional de la ecuación (9) del paper
 están en las notas. Se comprueban ecuaciones radiométricas del paper con una
 extracción especificada; no se afirma reproducir íntegramente su figura 2.
 
+## Excel de resultados y vistas resumidas
+
+```bash
+.venv/bin/python scripts/export_optical_results.py
+```
+
+Produce `data/generated/optical/TRACE_Resultados_Estudio_Optico.xlsx` con 854
+casos únicos del estudio a 600 km y 854 casos emparejados nuevos a 450 km.
+Una fila representa tamaño y configuración, consolidando referencias repetidas
+entre barridos. Las dos últimas columnas de Casos son alcance mínimo y máximo
+en km. Incluye Guía, Resumen_10cm, Casos, Intervalos y Comparacion_altitud.
+Los máximos censurados y los huecos entre intervalos están identificados.
+
+En `outputs/optical/summary/` se muestran ventanas de detección mediante barras
+horizontales para 1, 10 y 100 cm, separando cada parámetro en un panel; además
+se presenta el efecto aislado de cambiar la altitud. Las poblaciones originales
+y los resultados a 600 km permanecen intactos. Los 600 km solo fijan el giro
+LVLH de esta prueba condicional: todavía no se comparan misiones completas.
+
 ## Alcance de los modelos iniciales anteriores
 
 Los modelos iniciales `radiometry.py` y `examples/first_order_budget.py` son

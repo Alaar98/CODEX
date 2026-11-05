@@ -925,3 +925,59 @@ de 1 y 10 cm, limitado por tránsito. Para un objeto de 1 m comienza a 53,734 km
 limitado por full well. Son resultados condicionales a este modelo y exposición;
 no distancias mínimas universales ni límites calculados del ADC. Las distancias
 máximas ópticas tampoco se recortan a la geometría de encuentros LEO.
+
+## Tabla Excel y comparación del observador a 450/600 km
+
+El usuario solicita una tabla de casos con una columna por variable y mínimo
+y máximo al final, además de una presentación más clara. Se crea
+`TRACE_Resultados_Estudio_Optico.xlsx` en data/generated/optical, reproducible
+con scripts/export_optical_results.py. Incluye hojas Guía, Resumen_10cm, Casos,
+Intervalos y Comparacion_altitud, tablas filtrables, unidades en encabezados y
+paneles inmovilizados. No modifica el Excel de baseline.
+
+Cada fila es un par tamaño/configuración, no un punto de SNR–magnitud. Los
+casos nominales repetidos entre familias se consolidan por todas sus variables
+y diámetro; se conserva la lista de familias originales. Los 19 registros de
+configuración de los barridos contienen 14 configuraciones únicas, cada una
+con 61 tamaños: **854 filas únicas a 600 km**. Se calculan otras 854 a 450 km
+manteniendo los demás parámetros, con **1.708 filas** en Casos. No es un
+factorial de todas las combinaciones posibles de instrumento y entorno.
+
+Las dos últimas columnas son Alcance óptico mínimo [km] y Alcance óptico máximo
+[km]. Se identifica la causa del límite inferior, número de intervalos y
+censura del límite superior. Un máximo censurado de 20.000 km es un límite
+inferior del alcance, no un máximo localizado. Si hay varios intervalos, la
+envolvente mínimo–máximo puede contener huecos: Intervalos los conserva. Los
+casos sin intervalo llevan alcances vacíos. Los porcentajes comparativos de
+máximo quedan vacíos si cualquiera de los dos máximos está censurado.
+
+Se añaden vistas de barras horizontales para objetos de 1, 10 y 100 cm, con
+paneles separados de fase, albedo, FOV, apertura, velocidad y altitud. Cada
+segmento azul es un intervalo elegible real del modelo; el mínimo se destaca
+con punto naranja y se anota numéricamente, y el máximo también está rotulado.
+Los ejes de distancia son lineales y compartidos dentro de cada figura. La
+escala se adapta al tamaño del objeto. No se unen intervalos separados. Los
+mapas analíticos anteriores se conservan para consulta técnica.
+
+**Función de la altitud en el estudio actual:** 600 km fue una hipótesis de
+ensayo para fijar el giro de una plataforma circular apuntada al zenit. No
+es una altitud seleccionada u optimizada para TRACE. A rango, fase, tamaño y
+velocidad transversal fijos, la altitud del observador no cambia directamente
+la irradiancia recibida; cambia n en la tasa aparente abs(v_perp/r-n), y con
+ello traza, extracción por píxeles, saturación y tránsito.
+
+La tasa circular es 0,00108474152 rad/s a 600 km y 0,00112071920 rad/s a 450 km:
+aumenta el 3,3167 %. En los 14 casos de 10 cm calculados, el máximo coincide
+entre ambas altitudes porque el número entero de píxeles de extracción en el
+borde de SNR permanece igual. Esto es parcialmente consecuencia de la
+discretización del modelo, no prueba de invariancia física. El mínimo de
+referencia pasa de 1,56725362 a 1,56723595 km (cambio de unos 1,8 cm); para
+velocidades bajas el borde por full well sí cambia apreciablemente más.
+
+Un cambio real de órbita altera además las distancias disponibles, velocidades
+relativas, accesos, eclipses y tiempos de observación. Por ejemplo, un objeto
+directamente al zenit a 800 km está a 200 km de un observador a 600 km, pero a
+350 km de uno a 450 km: con iluminación idéntica, su irradiancia sería
+(200/350)², aproximadamente 0,327 veces. Esta geometría no está incluida en
+la comparación que mantiene r y v_perp como parámetros controlados. No se
+deduce igualdad de rendimiento de misión ni se optimiza altitud con este ensayo.
