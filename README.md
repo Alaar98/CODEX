@@ -199,6 +199,25 @@ se presenta el efecto aislado de cambiar la altitud. Las poblaciones originales
 y los resultados a 600 km permanecen intactos. Los 600 km solo fijan el giro
 LVLH de esta prueba condicional: todavía no se comparan misiones completas.
 
+## Comparación simultánea por tamaño e histograma nominal
+
+```bash
+.venv/bin/python scripts/plot_size_comparisons.py
+```
+
+Después de exportar el Excel, añade a ese archivo las hojas TamanosComparados
+e IntervalosTamanos. Calcula exactamente 1, 5, 10 y 100 cm en los mismos casos
+y crea dos versiones de la figura con cuatro barras por condición: azul,
+verde, amarillo y morado. La escala lineal conserva la presentación original;
+la logarítmica permite distinguir todos los tamaños sin aplastar los alcances
+pequeños. Ambas incorporan malla fina y quedan en outputs/optical/summary.
+Los casos se guardan en data/generated/optical/size_comparison_cases.csv.
+
+El histograma `outputs/trace_nominal_object_size_histogram.png` cuenta todos
+los objetos nominales: vista completa con bins logarítmicos y un detalle lineal
+1–10 cm. Los conteos de cada bin están en data/generated/nominal_size_histogram.csv.
+También se incluye un esquema de las distancias al zenit a 450 y 600 km.
+
 ## Alcance de los modelos iniciales anteriores
 
 Los modelos iniciales `radiometry.py` y `examples/first_order_budget.py` son

@@ -981,3 +981,50 @@ directamente al zenit a 800 km está a 200 km de un observador a 600 km, pero a
 (200/350)², aproximadamente 0,327 veces. Esta geometría no está incluida en
 la comparación que mantiene r y v_perp como parámetros controlados. No se
 deduce igualdad de rendimiento de misión ni se optimiza altitud con este ensayo.
+
+## Comparación en una figura de 1, 5, 10 y 100 cm
+
+Por petición del usuario se añade una figura con cuatro barras desplazadas por
+condición: azul=1 cm, verde=5 cm, amarillo=10 cm y morado=100 cm. Se calculan
+los cuatro diámetros exactos con el mismo modelo y baseline. En particular,
+5 cm no se interpola ni se reemplaza por el punto próximo de la malla anterior.
+Hay 60 combinaciones físicas únicas entre los casos de los cinco barridos a
+600 km y la referencia adicional a 450 km, contando los cuatro tamaños.
+
+Cada segmento es un intervalo elegible independiente. Círculo=extremo mínimo;
+marca vertical=extremo máximo; flecha=alcance censurado por final del barrido.
+Se conservan huecos. Se genera versión lineal y logarítmica con malla fina;
+la segunda evita que la escala de los alcances de 100 cm oculte los de 1 cm.
+No se comparan longitudes visuales de barras como si una escala logarítmica
+fuera lineal: se lee la distancia indicada en el eje.
+
+Los valores se exportan como size_comparison_cases.csv y se añaden al Excel
+de resultados las hojas TamanosComparados e IntervalosTamanos. La hoja Casos
+original de 1.708 filas se conserva. Para reproducir el Excel completo, ejecutar
+primero export_optical_results.py y después plot_size_comparisons.py; el
+exportador inicial reconstruye sus hojas y el segundo añade las nuevas.
+
+El nuevo histograma usa el tamaño real de los 50.000 registros nominales,
+conversión de metros a cm, sin pesos estadísticos. La vista completa incluye
+todos los objetos mediante 60 bins logarítmicos (tamaño máximo observado
+1.236,21 cm); el panel lineal de detalle usa bins de 0,25 cm para los 47.400
+objetos de 1<=d<10 cm. Las alturas cuentan objetos por bin, no densidad: los
+anchos de bin difieren entre paneles. Los CSV de bins permiten auditar ambos
+conteos. Se verifica que el hash de la población nominal no cambia.
+
+### Explicación física del giro LVLH
+
+LVLH es el marco orbital local. Mantener el instrumento apuntado al zenit
+requiere que el satélite cambie su orientación respecto a las estrellas a
+medida que da la vuelta a la Tierra, aunque el instrumento no se mueva
+respecto al bus. En la aproximación circular, el giro es 360 grados por órbita.
+A 600 km la órbita dura 96,5389 min y el giro es 3,72907 grados/min;
+a 450 km dura 93,4398 min y el giro es 3,85275 grados/min. El aumento del
+3,3167 % es de esa tasa de orientación local, no de detectabilidad, alcance,
+precisión ni un movimiento de seguimiento del debris.
+
+Se añade un esquema radial con un objeto a 800 km y observadores alternativos
+a 450 y 600 km: las distancias son 350 y 200 km. El ejemplo supone alineación
+al zenit, no observadores reales coincidentes. Ilustra por qué una comparación
+de misiones debe recalcular distancias/velocidades/encuentros, además del
+pequeño cambio de giro usado en la prueba paramétrica actual.

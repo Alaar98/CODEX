@@ -1,0 +1,25 @@
+{
+  "cases": 60,
+  "sizes_cm": [
+    1,
+    5,
+    10,
+    100
+  ],
+  "nominal_sha256_unchanged": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+  "histogram_count": 50000,
+  "histogram_zoom_count": 47400,
+  "histogram_max_cm": 1236.2096643656582,
+  "orbit_examples": [
+    {
+      "altitude_km": 450,
+      "period_minutes": 93.43977939025507,
+      "rotation_deg_per_minute": 3.852748822280982
+    },
+    {
+      "altitude_km": 600,
+      "period_minutes": 96.5389018265515,
+      "rotation_deg_per_minute": 3.729066657986239
+    }
+  ]
+}
