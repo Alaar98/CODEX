@@ -1,0 +1,23 @@
+{
+  "source": "ESA_Space_Environment_Report_2026.pdf",
+  "sha256": "de4e108156a9daab1aa4d59c37aacc409d413ff6848920604d084d94e7840a45",
+  "page": 31,
+  "size_figure": "2.8",
+  "density_figure": "2.9",
+  "vector_paths": {
+    "size": 200,
+    "non_manoeuvrable_gt_1cm": 392,
+    "non_manoeuvrable_gt_10cm": 397
+  },
+  "method": "PDF vector line vertices; linear axes in PDF coordinates, log10 for diameter, cumulative count and density; calibration from grid lines",
+  "calibration_pdf_points": {
+    "size_x_at_1e_minus_6_m": 232.82894897460938,
+    "size_x_at_1e_minus_5_m": 256.50018310546875,
+    "size_y_at_1e2": 457.5966,
+    "size_y_at_1e5": 436.511,
+    "altitude_x_at_250_km": 229.5408,
+    "altitude_x_at_500_km": 255.7918,
+    "density_y_at_1e_minus_8": 657.3879,
+    "density_y_at_1e_minus_7": 618.2485
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "count": 50000,
+  "seed": 20260201,
+  "epoch": "2026-02-01T00:00:00Z",
+  "epoch_note": "Hora de referencia convencional; ESA especifica la fecha, no la hora.",
+  "counts_by_size": {
+    "1_to_10_cm": 47400,
+    "gt_10_cm": 2600
+  },
+  "probability_gt_10_cm": 0.05215446442733171,
+  "represented_number_from_density_integral": 354821.2987207431,
+  "statistical_weight_per_sample": 7.096425974414862,
+  "max_size_cutoff_m": 38.29006681561955,
+  "orbit_model": "circular; inclination, RAAN, argument of perigee and phase unspecified",
+  "warning": "Synthetic approximation, not a MASTER catalogue or a detection prediction",
+  "reference_sha256": {
+    "esa2026_density_non_manoeuvrable.csv": "7cdfe7757356174d30b2c91c1642da0e375e65a16923932b3522852b1df72d1c",
+    "esa2026_size_cumulative.csv": "3d58139b3b6190dbbbd26da6fb3cec901c0c98f5c3ec41f7c6c1259e989d8106"
+  }
+}
