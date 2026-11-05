@@ -484,3 +484,207 @@ verifica hashes, elementos finitos, estado/energía, ápsides, época y marco co
 y conversiones inversas de 100 objetos. Esto acredita consistencia computacional
 y trazabilidad; **no valida representatividad global, precisión de observación,
 covarianzas ni viabilidad de detección de TRACE**.
+
+## Sensibilidad orbital: nueve alternativas y nominal preservada
+
+**Nota de vigencia:** los modelos angulares iniciales de esta sección fueron
+sustituidos por petición del usuario. La especificación vigente de RAAN/omega
+es la corrección de 12/8/4 grupos equiespaciados al final del documento.
+
+El usuario solicita tres poblaciones distintas por cada una de las variables
+e, RAAN y omega, conservando la población actual como nominal. Se interpreta
+como **nueve alternativas de 50.000 objetos más una nominal**, no una rejilla
+de 27 combinaciones. No se ha renombrado, reescrito o reemplazado el CSV nominal,
+sus metadatos ni su auditoría. Los hashes de esos tres archivos se verifican al
+final y quedan registrados en `data/generated/sensitivity/manifest.json`.
+
+### Variables controladas y fases emparejadas
+
+En cada alternativa se modifica solo una de las tres variables independientes.
+Se mantienen exactamente ID y orden de objetos, diámetros, altitud convencional
+a-R, semieje mayor, inclinación, anomalía media nominal, epoch, marco y peso
+estadístico. Los demás campos de e/RAAN/omega también se mantienen cuando no
+son la variable del escenario. Se recalculan hp, ha y los seis componentes
+cartesianos. Cambiar e modifica inevitablemente la altitud instantánea y los
+ápsides; mantener a-R no equivale a mantener esos valores derivados.
+
+**No se remuestrea la inclinación de ESA con el nuevo perigeo**: mantener i fija
+rompe deliberadamente su condicionamiento original para aislar el efecto de e.
+No se reinterpretan las alternativas como nuevas poblaciones derivadas de ESA.
+Los campos heredados `donor_*` se conservan como trazabilidad del nominal, no
+como evidencia empírica de los parámetros modificados; `donor_role` lo señala
+en cada registro. Todos los escenarios son hipótesis de sensibilidad.
+
+Se conserva la anomalía **media** M nominal, que fue uniforme en [0°,360°).
+La anomalía verdadera no era uniforme en las órbitas excéntricas: no se cambia
+esa convención. Emparejar M e IDs reduce variación de fase entre escenarios;
+no impone igual posición instantánea si cambia e u omega. En el futuro deberá
+mantenerse también la misma configuración de misión, duración y semillas del
+detector para interpretar las diferencias como sensibilidad a la población.
+
+### Tres alternativas de excentricidad
+
+Para cada semieje a fijo se calcula
+`e_max = min((a-R)-200, 2000-(a-R))/a`, con R=6.371 km. Este límite garantiza
+hp>=200 km y ha<=2.000 km. Los valores nominales ya satisfacen ese límite.
+No se desplaza ningún semieje ni se vuelven a aplicar los ajustes de borde de
+la construcción nominal; esos ajustes previos permanecen como controles.
+
+| Escenario | Definición |
+|---|---|
+| eccentricity_circular | e=0 para todos los objetos |
+| eccentricity_low | e=0,5·e_nominal |
+| eccentricity_high | q=e_nominal/e_max; e=e_max·2q/(1+q) |
+
+La transformación alta aumenta e para 0<q<1, se aproxima a un factor dos lejos
+del límite y se satura suavemente al acercarse al soporte permitido. No es un
+recorte duro `min(2e,e_max)`: evita acumular artificialmente objetos en el borde.
+Tampoco es una ley física medida o un ajuste estadístico validado. Las versiones
+baja/alta conservan la asociación por objeto con su e nominal; el límite depende
+de a, por lo que no producen una distribución de e independiente de la altura.
+
+**Circular:** el perigeo no existe físicamente. Se mantiene el valor numérico de
+omega nominal como calibre para no introducir un segundo cambio independiente,
+pero se marca `argument_of_perigee_defined=False`. Se guarda explícitamente
+`argument_of_latitude_deg`, calculado desde el estado cartesiano. Para e=0:
+`u=(omega_nominal+M_nominal) mod 360`. Como M nominal es uniforme e independiente
+de omega, u es uniforme condicionado a omega. No se necesita otra realización
+aleatoria de fase. El mismo estado puede representarse con omega=0 y M=u;
+las pruebas comprueban esa invariancia de calibre. Los valores numéricos de
+omega del archivo circular **no son una orientación física del perigeo**.
+
+### Tres alternativas de RAAN
+
+Se usan U uniforme en [0,1) y Z normal estándar independiente. Se comparten U y Z
+entre las alternativas de RAAN para reducir ruido de comparación.
+
+| Escenario | Definición en grados |
+|---|---|
+| raan_uniform | Omega=360·U |
+| raan_four_planes | Omega=(90·floor(4U)+5·Z) mod 360 |
+| raan_single_plane | Omega=(15·Z) mod 360 |
+
+El segundo modelo tiene cuatro planos equiprobables centrados en 0°, 90°, 180°
+y 270°, con anchura normal de 5° antes de envolver. El tercero está concentrado
+en 0°, con anchura de 15°. Centros, número de planos y anchuras son elecciones
+de contraste, no parámetros inferidos del entorno. El 0° se refiere al marco
+TEME a la época nominal. Su alineación relativa con una futura constelación
+puede importar; habrá que barrer la orientación global si resulta influyente.
+
+### Tres alternativas de argumento del perigeo
+
+Se emplean otros U y Z, independientes de los de RAAN y compartidos dentro de
+las tres alternativas de omega. Los resultados se envuelven módulo 360°.
+
+| Escenario | Definición en grados |
+|---|---|
+| argp_uniform | omega=360·U |
+| argp_bimodal | omega=(90+180·floor(2U)+10·Z) mod 360 |
+| argp_aligned | omega=(15·Z) mod 360 |
+
+El caso bimodal concentra periapsis en 90° y 270° con pesos iguales y anchura de
+10°; el alineado se centra en 0° con anchura de 15°. Son escenarios exploratorios
+de orientación, sin afirmar que alguno represente a todo el debris real. Aquí
+se mantiene e nominal, por lo que las órbitas siguen siendo excéntricas. Para
+e muy pequeña, omega tiene interpretación débil aunque el estado sea definido.
+
+### Semillas, archivos y validación
+
+Semilla maestra de alternativas: **20261105**. Los streams angulares se obtienen
+con NumPy SeedSequence([semilla,1]) para RAAN y ([semilla,2]) para omega. Las
+transformaciones de e son deterministas. Los registros son emparejados, no
+independientes estadísticamente entre escenarios: es deliberado para comparar.
+Esta primera entrega contiene una realización por escenario; las repeticiones
+Monte Carlo futuras pueden cambiar `--seed` y deben guardarse por separado.
+
+Las nueve poblaciones se almacenan como CSV.gz completos y autocontenidos en
+`data/generated/sensitivity/`, junto a JSON por escenario y manifiesto global.
+El CSV nominal se referencia por ruta y hash; no se copia como una décima
+realización nueva. Los gzip usan mtime fijo para permitir reproducción de bytes.
+Los originales CelesTrak, la población nominal y las figuras nominales permanecen
+sin cambios. Se regeneran con:
+
+```bash
+.venv/bin/python scripts/generate_sensitivity_populations.py
+```
+
+Las figuras están en `outputs/sensitivity/`: una comparación de histogramas por
+variable (nominal y tres alternativas) y nueve mapas variable–altitud–conteo.
+Todos usan el estilo de publicación común, PDF vectorial y PNG a 300 dpi. Los
+mapas usan a-R en X para comparar exactamente las mismas bandas de semieje;
+en las figuras orbitales nominales anteriores X era hp, por lo que deben leerse
+las etiquetas antes de comparar. La comparación de e usa conteos logarítmicos
+en Y para mostrar la población circular concentrada en e=0 junto al resto.
+
+Se auditan los 50.000 objetos de cada variante: controles idénticos a nominal,
+cambio de una sola variable independiente, finitud, límites de ápsides, radio
+del estado dentro de los ápsides, energía y convención circular. Las pruebas
+verifican además uniformidad/circularidad angular, concentración y semillas.
+Esto prepara el experimento; **no calcula todavía detecciones, SNR, calidad de
+medidas ni readquisición**, que requieren implementar y fijar la misión.
+
+## Corrección solicitada: RAAN y omega en 12, 8 y 4 grupos exactos
+
+Se sustituyen las seis alternativas angulares anteriores. No se modifican ni
+la nominal ni los tres archivos de poblaciones de excentricidad. Ya no se usan
+distribuciones angulares uniformes continuas ni normales envueltas en estos
+escenarios. Son distribuciones **uniformes discretas sobre ángulos exactos**,
+sin dispersión alrededor de cada plano/posición.
+
+| Variable | Escenarios | Separación |
+|---|---|---|
+| RAAN | raan_12_planes, raan_8_planes, raan_4_planes | 30°, 45°, 90° |
+| Argumento del perigeo | argp_12_positions, argp_8_positions, argp_4_positions | 30°, 45°, 90° |
+
+Para K=12,8,4 se asignan ángulos `360*j/K`, j=0,...,K-1. El primer valor es 0°;
+360° no se incluye como posición adicional, pues equivale a 0°. Para 12 son
+0°,30°,...,330°; para 8, 0°,45°,...,315°; para 4, 0°,90°,180°,270°.
+
+Se genera una permutación aleatoria de rangos 0,...,49.999 por variable y se
+asigna a cada objeto la categoría `floor(K*rango/50000)`. Así se obtiene un
+reparto equilibrado sin relacionar sistemáticamente el ángulo con tamaño,
+altitud o inclinación. En 12 grupos no es posible dividir 50.000 exactamente:
+ocho tienen 4.167 y cuatro 4.166 objetos; los 8 grupos tienen 6.250 cada uno;
+los 4, 12.500 cada uno. No se eliminan ni duplican objetos.
+
+La semilla maestra sigue siendo 20261105 y los streams siguen separados para
+RAAN y omega. Se comparte la misma permutación entre K de la misma variable:
+los grupos de 4 se subdividen coherentemente al pasar a 8 o 12, reduciendo
+ruido de asignación en la comparación. La permutación de RAAN es distinta de
+la de omega. Se conserva el resto de elementos, fase M, tamaños, IDs, a, i,
+epoch y marco como en el experimento anterior de una variable por vez.
+
+Se recalculan estados y argumento de latitud para cada variante angular. La
+excentricidad se conserva nominal en las seis variantes; estas posiciones
+discretas de omega no se aplican a la variante circular, que sigue manteniendo
+su argumento de latitud uniforme y el perigeo físicamente indefinido.
+
+El generador verifica que los archivos retirados coincidan con sus hashes y
+metadatos previos antes de eliminarlos. Se retiran los seis CSV/JSON angulares
+antiguos y sus mapas, y se actualizan los manifiestos y comparaciones. Cualquier
+archivo antiguo con ediciones ajenas al generador bloquea su retirada para
+preservarlo. Los controles revisan soporte angular exacto, separación, conteos
+equilibrados, semillas y conservación de una sola variable modificada. La
+nominal y los archivos de excentricidad se comprueban además mediante hashes.
+
+## Organización de outputs: solo PNG y población en el nombre
+
+Por petición del usuario, `outputs/` contiene únicamente PNG, también dentro
+de subcarpetas. Se retiran de esa carpeta los PDF generados; los PDF originales
+de referencia en `docs/references/` se conservan. Esta preferencia sustituye
+la exportación PDF/PNG descrita en secciones históricas anteriores.
+
+- Nominal: `trace_nominal_<variable>_<tipo_de_grafica>.png`.
+- Alternativas: `trace_<scenario_id>_vs_altitude.png`, por ejemplo
+  `trace_raan_12_planes_vs_altitude.png` o
+  `trace_eccentricity_circular_vs_altitude.png`.
+- Comparaciones: `trace_comparison_nominal_raan_12_8_4_planes.png`,
+  `trace_comparison_nominal_argp_12_8_4_positions.png` y
+  `trace_comparison_nominal_eccentricity_circular_low_high.png`.
+
+El manifiesto de figuras nominales se traslada de outputs a
+`data/generated/figure_manifest.json`; se actualizan el generador y la auditoría
+para esa ubicación. Los metadatos de variantes permanecen junto a sus CSV.
+El renderizador conserva tipografía, estilo científico y 300 dpi, y genera
+solo PNG con esta convención de nombres. La reorganización no cambia los datos
+de población ni sus parámetros orbitales.

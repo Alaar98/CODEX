@@ -1,5 +1,5 @@
 {
-  "style": "STIX serif text; Computer Modern mathtext; inferno_r; log count colourbar; vector PDF and 300 dpi PNG",
+  "style": "STIX serif text; Computer Modern mathtext; inferno_r; log count colourbar; 300 dpi PNG",
   "population_count": 50000,
   "maps": {
     "inclination": {
@@ -46,5 +46,8 @@
     }
   },
   "unavailable": [],
-  "altitude_histogram_objects_counted": 50000
+  "altitude_histogram_objects_counted": 50000,
+  "population": "nominal",
+  "format": "PNG",
+  "dpi": 300
 }

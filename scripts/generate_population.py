@@ -69,7 +69,7 @@ def main():
                              metadata["esa_population_reference_date"], metadata["statistical_weight_per_sample"]])
     (generated / "trace_population_metadata.json").write_text(json.dumps(metadata, indent=2) + "\n")
     manifest = population_figures(data, outputs)
-    (outputs / "figure_manifest.json").write_text(json.dumps(manifest, indent=2)+"\n")
+    (generated / "figure_manifest.json").write_text(json.dumps(manifest, indent=2)+"\n")
     print(json.dumps(metadata, indent=2))
 
 

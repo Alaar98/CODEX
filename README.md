@@ -36,16 +36,16 @@ con semilla fija. Los resultados son:
   indicadores de extrapolación y pesos estadísticos.
 - `data/generated/trace_population_metadata.json`: parámetros y trazabilidad.
 - `data/generated/validation.json`: auditoría de consistencia del resultado.
-- `outputs/trace_size_vs_altitude.png` y `.pdf`: mapa tamaño–altitud con conteos.
-- `outputs/trace_inclination_vs_altitude.*`: inclinación–altitud con conteos.
-- `outputs/trace_inclination_histogram.*`: histograma de inclinación.
-- `outputs/trace_altitude_histogram.*`: histograma de altitud por clase de tamaño.
-- `outputs/trace_semi_major_axis_*.{png,pdf}`: semieje mayor.
-- `outputs/trace_eccentricity_*.{png,pdf}`: excentricidad.
-- `outputs/trace_raan_*.{png,pdf}`: RAAN.
-- `outputs/trace_argument_of_perigee_*.{png,pdf}`: argumento del perigeo.
-- `outputs/trace_mean_anomaly_*.{png,pdf}`: anomalía media.
-- `outputs/figure_manifest.json`: variables disponibles y conteos de los mapas.
+- `outputs/trace_nominal_size_vs_altitude.png`: mapa tamaño–altitud con conteos.
+- `outputs/trace_nominal_inclination_vs_altitude.png`: inclinación–altitud con conteos.
+- `outputs/trace_nominal_inclination_histogram.png`: histograma de inclinación.
+- `outputs/trace_nominal_altitude_histogram.png`: histograma de altitud por tamaño.
+- `outputs/trace_nominal_semi_major_axis_*.png`: semieje mayor.
+- `outputs/trace_nominal_eccentricity_*.png`: excentricidad.
+- `outputs/trace_nominal_raan_*.png`: RAAN.
+- `outputs/trace_nominal_argument_of_perigee_*.png`: argumento del perigeo.
+- `outputs/trace_nominal_mean_anomaly_*.png`: anomalía media.
+- `data/generated/figure_manifest.json`: variables disponibles y conteos de los mapas.
 
 Fuentes originales: `docs/references/`. Curvas extraídas: `data/reference/`.
 Consultar **[Notas del Proyecto](Notas%20del%20Proyecto.md)** para las hipótesis.
@@ -83,11 +83,50 @@ El generador usa por defecto el catálogo de referencia incluido. La opción
 `--inclination-only` solicita explícitamente una salida parcial. No se asigna
 masa: faltan hipótesis de forma, densidad y relación área/masa.
 
+## Poblaciones para sensibilidad orbital
+
+La población existente `data/generated/trace_population_50000.csv` sigue siendo
+**la nominal**, sin modificar. En `data/generated/sensitivity/` hay nueve
+alternativas independientes de 50.000 objetos (CSV comprimidos con gzip):
+
+| Variable modificada | Tres alternativas |
+|---|---|
+| Excentricidad | Circular, menor e, mayor e |
+| RAAN | 12, 8 y 4 planos equiespaciados, sin dispersión |
+| Argumento del perigeo | 12, 8 y 4 posiciones equiespaciadas, sin dispersión |
+
+Son nueve alternativas **más** la nominal, no combinaciones de variables. Se
+mantienen IDs, tamaños, a, i, M, epoch y marco. Se recalculan los ápsides y
+estados; no se vuelve a muestrear i al cambiar e. En el caso circular, el
+argumento de latitud u es uniforme y omega se conserva solo como convención
+numérica, marcado como físicamente indefinido.
+
+Las separaciones son 30°, 45° y 90°, desde 0° y sin duplicar 360°. Se reparten
+los objetos por igual entre ángulos, salvo el redondeo inevitable: en 12 grupos
+hay ocho de 4.167 y cuatro de 4.166 objetos; en 8 hay 6.250 por grupo y en 4,
+12.500. La asignación a IDs es aleatoria reproducible y no añade jitter.
+
+```bash
+.venv/bin/python scripts/generate_sensitivity_populations.py
+```
+
+El manifiesto registra modelos, semillas, hashes y controles. Cada alternativa
+tiene un JSON de auditoría; las gráficas comparativas y mapas de conteo están
+en `outputs/sensitivity/`, sin sustituir los gráficos nominales. Las funciones
+`load_population(Path(...))` de `space_debris_detection.sensitivity` leen tanto
+CSV normales como CSV.gz. Véanse todos los parámetros y supuestos en las notas.
+Las cifras de detección y calidad aún requieren el simulador de misión/óptica.
+
+En `outputs/` solo se guardan PNG. Los nombres indican la población:
+`trace_nominal_...`, `trace_raan_12_planes_...`, `trace_argp_8_positions_...`,
+`trace_eccentricity_circular_...`, etc. Las comparaciones usan nombres como
+`trace_comparison_nominal_raan_12_8_4_planes.png`.
+
 ## Estilo científico de las figuras
 
 Todas las figuras nuevas usan el módulo compartido `plotting.py`: texto serif,
-matemáticas Computer Modern, ejes con unidades y bins explícitos, PDF vectorial
-y PNG a 300 dpi. Los mapas usan la paleta `inferno_r`, escala logarítmica de
+matemáticas Computer Modern, ejes con unidades y bins explícitos y PNG a
+300 dpi. Los mapas usan la paleta `inferno_r`, escala logarítmica de
 conteos y celdas vacías blancas. El estilo matemático se renderiza con MathText:
 no requiere una instalación LaTeX externa.
 

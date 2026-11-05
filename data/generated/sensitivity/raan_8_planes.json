@@ -1,0 +1,47 @@
+{
+  "parameter": "raan_deg",
+  "label": "8 equally spaced planes",
+  "support_points": 8,
+  "spacing_deg": 45.0,
+  "model": "8 exact angles 360*k/8, k=0..7; balanced randomized assignment; no angular jitter",
+  "scenario_id": "raan_8_planes",
+  "seed": 20261105,
+  "file": "raan_8_planes.csv.gz",
+  "sha256": "9f661377bd69d64cb89edf943671412d33bc823a8046c9f0e02fdd8551d509a7",
+  "nominal_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+  "donor_fields": "inherited nominal lineage, not empirical donors for changed elements",
+  "audit": {
+    "status": "passed",
+    "objects": 50000,
+    "varied_parameter": "raan_deg",
+    "perigee_min_km": 200.13709934023973,
+    "apogee_max_km": 1999.9999998999883,
+    "circular_latitude_max_error_deg": null,
+    "controls_equal_nominal": true,
+    "other_orbital_elements_equal_nominal": true,
+    "angular_support": {
+      "angles_deg": [
+        0.0,
+        45.0,
+        90.0,
+        135.0,
+        180.0,
+        225.0,
+        270.0,
+        315.0
+      ],
+      "counts": [
+        6250,
+        6250,
+        6250,
+        6250,
+        6250,
+        6250,
+        6250,
+        6250
+      ],
+      "spacing_deg": 45.0,
+      "no_jitter": true
+    }
+  }
+}

@@ -64,7 +64,7 @@ def main():
     for name, info in provenance["files"].items():
         if hashlib.sha256((root/"data/raw/celestrak"/name).read_bytes()).hexdigest() != info["sha256"]:
             raise ValueError("Original source bytes changed")
-    figures = json.loads((root/"outputs/figure_manifest.json").read_text())
+    figures = json.loads((generated/"figure_manifest.json").read_text())
     if figures["unavailable"] or any(m["objects_counted"] != len(rows) for m in figures["maps"].values()):
         raise ValueError("Missing parameters or figures discard objects")
     audit = {"status": "passed", "objects": len(rows), "epoch_utc": epoch, "frame": "TEME",

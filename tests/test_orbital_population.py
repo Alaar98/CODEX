@@ -69,6 +69,6 @@ class OrbitalPopulationTests(unittest.TestCase):
             self.assertEqual(set(manifest["unavailable"]), {"raan_deg", "argument_of_perigee_deg", "eccentricity", "mean_anomaly_deg"})
             for mapping in manifest["maps"].values():
                 self.assertEqual(mapping["objects_counted"], 300)
-            for name in ("trace_size_vs_altitude", "trace_inclination_vs_altitude", "trace_altitude_histogram"):
-                for extension in ("pdf", "png"):
-                    self.assertGreater((Path(directory) / f"{name}.{extension}").stat().st_size, 1000)
+            for name in ("trace_nominal_size_vs_altitude", "trace_nominal_inclination_vs_altitude", "trace_nominal_altitude_histogram"):
+                self.assertGreater((Path(directory) / f"{name}.png").stat().st_size, 1000)
+            self.assertTrue(all(p.suffix == ".png" for p in Path(directory).iterdir()))

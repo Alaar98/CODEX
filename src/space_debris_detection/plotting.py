@@ -1,4 +1,4 @@
-"""Shared scientific publication style for all TRACE population plots."""
+"""Shared scientific publication style; PNG-only output at 300 dpi."""
 
 import os
 from pathlib import Path
@@ -33,8 +33,7 @@ def publication_style():
 
 def save_figure(fig, outputs, name):
     outputs.mkdir(parents=True, exist_ok=True)
-    for extension in ("png", "pdf"):
-        fig.savefig(outputs / f"{name}.{extension}", bbox_inches="tight")
+    fig.savefig(outputs / f"{name}.png", bbox_inches="tight")
     plt.close(fig)
 
 
@@ -74,13 +73,14 @@ def population_figures(data, outputs: Path):
         "eccentricity": ("eccentricity", r"Eccentricity $e$", None),
         "semi_major_axis_km": ("semi_major_axis", r"Semi-major axis $a$ [km]", np.arange(6571, 8372, 40)),
     }
-    manifest = {"style": "STIX serif text; Computer Modern mathtext; inferno_r; log count colourbar; vector PDF and 300 dpi PNG",
+    manifest = {"style": "STIX serif text; Computer Modern mathtext; inferno_r; log count colourbar; 300 dpi PNG",
+                "population": "nominal", "format": "PNG", "dpi": 300,
                 "population_count": len(h), "maps": {}, "unavailable": []}
     for key, (name, label, edges) in parameters.items():
         if key not in data:
             manifest["unavailable"].append(key)
             # Remove obsolete charts rather than showing a previous, unrelated run.
-            for stem in (f"trace_{name}_vs_altitude", f"trace_{name}_histogram"):
+            for stem in (f"trace_nominal_{name}_vs_altitude", f"trace_nominal_{name}_histogram"):
                 for ext in ("pdf", "png"):
                     (outputs / f"{stem}.{ext}").unlink(missing_ok=True)
             continue
@@ -91,7 +91,7 @@ def population_figures(data, outputs: Path):
         if key == "inclination_deg":
             title = "TRACE — inclination distribution\n" + suffix
         manifest["maps"][name] = count_map(coordinate, values, h_edges, edges, xlabel, label,
-                                                     title, outputs, f"trace_{name}_vs_altitude")
+                                                     title, outputs, f"trace_nominal_{name}_vs_altitude")
         counts, _ = np.histogram(values, edges)
         fig, ax = plt.subplots(figsize=(6.6, 4.2))
         ax.stairs(counts, edges, fill=True, color="#007c9e", edgecolor="black", linewidth=.65)
@@ -99,14 +99,14 @@ def population_figures(data, outputs: Path):
                xlim=(edges[0], edges[-1]), ylim=(0, None))
         ax.grid(axis="y", linestyle="--", linewidth=.45, alpha=.45)
         ax.set_axisbelow(True)
-        save_figure(fig, outputs, f"trace_{name}_histogram")
+        save_figure(fig, outputs, f"trace_nominal_{name}_histogram")
     size_cm = np.asarray(data["diameter_m"])*100
     size_edges = np.geomspace(1, max(float(size_cm.max())*1.001, 10), 61)
     manifest["maps"]["diameter"] = count_map(
         h, size_cm, h_edges, size_edges,
         r"Mean altitude $a-R_\oplus$ [km] (40 km bins)",
         r"Equivalent diameter $d$ [cm] (logarithmic bins)",
-        "TRACE — synthetic LEO size distribution", outputs, "trace_size_vs_altitude", log_y=True)
+        "TRACE — synthetic LEO size distribution", outputs, "trace_nominal_size_vs_altitude", log_y=True)
     small, _ = np.histogram(h[size_cm < 10], h_edges)
     large, _ = np.histogram(h[size_cm >= 10], h_edges)
     if small.sum()+large.sum() != len(h):
@@ -121,6 +121,6 @@ def population_figures(data, outputs: Path):
     ax.grid(axis="both", linestyle="--", linewidth=.45, alpha=.45)
     ax.set_axisbelow(True)
     ax.legend(loc="upper right")
-    save_figure(fig, outputs, "trace_altitude_histogram")
+    save_figure(fig, outputs, "trace_nominal_altitude_histogram")
     manifest["altitude_histogram_objects_counted"] = int(small.sum()+large.sum())
     return manifest

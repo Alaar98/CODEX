@@ -1,0 +1,367 @@
+{
+  "seed": 20261105,
+  "nominal": {
+    "file": "../trace_population_50000.csv",
+    "sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+    "role": "unchanged nominal"
+  },
+  "population_count": 10,
+  "alternative_populations": 9,
+  "objects_per_population": 50000,
+  "epoch_utc": "2026-11-05T00:00:00Z",
+  "frame": "TEME",
+  "sampling": "one variable at a time; fixed object IDs, sizes, a, i, M, epoch and frame",
+  "origin": "sensitivity hypotheses; alternatives are not claimed empirical distributions",
+  "scenarios": {
+    "eccentricity_circular": {
+      "parameter": "eccentricity",
+      "label": "Circular",
+      "model": "e=0; omega retained only as gauge; u=(omega_nominal+M_nominal) mod 360, uniform conditional on omega",
+      "scenario_id": "eccentricity_circular",
+      "seed": 20261105,
+      "file": "eccentricity_circular.csv.gz",
+      "sha256": "0601b62653017407d90c8d68e88e86c63ca6264ea79f2b291be1d10664d6ad66",
+      "nominal_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+      "donor_fields": "inherited nominal lineage, not empirical donors for changed elements",
+      "audit": {
+        "status": "passed",
+        "objects": 50000,
+        "varied_parameter": "eccentricity",
+        "perigee_min_km": 200.9534542233896,
+        "apogee_max_km": 1998.9603002109325,
+        "circular_latitude_max_error_deg": 1.4210854715202004e-13,
+        "controls_equal_nominal": true,
+        "other_orbital_elements_equal_nominal": true
+      }
+    },
+    "eccentricity_low": {
+      "parameter": "eccentricity",
+      "label": "Lower eccentricity",
+      "model": "e=0.5*e_nominal",
+      "scenario_id": "eccentricity_low",
+      "seed": 20261105,
+      "file": "eccentricity_low.csv.gz",
+      "sha256": "d73a6eece1e45de6ad97cb708a1dfd30acd33662ab885a0193dd2129c65eea78",
+      "nominal_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+      "donor_fields": "inherited nominal lineage, not empirical donors for changed elements",
+      "audit": {
+        "status": "passed",
+        "objects": 50000,
+        "varied_parameter": "eccentricity",
+        "perigee_min_km": 200.5452767818142,
+        "apogee_max_km": 1999.4801500554604,
+        "circular_latitude_max_error_deg": null,
+        "controls_equal_nominal": true,
+        "other_orbital_elements_equal_nominal": true
+      }
+    },
+    "eccentricity_high": {
+      "parameter": "eccentricity",
+      "label": "Higher eccentricity",
+      "model": "q=e_nominal/e_max; e=e_max*2*q/(1+q); smooth bounded transform, no clipping",
+      "scenario_id": "eccentricity_high",
+      "seed": 20261105,
+      "file": "eccentricity_high.csv.gz",
+      "sha256": "41c21d2bf516b06a08e0bb95b898489346f9138a59f499f7b13b631006c22be7",
+      "nominal_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+      "donor_fields": "inherited nominal lineage, not empirical donors for changed elements",
+      "audit": {
+        "status": "passed",
+        "objects": 50000,
+        "varied_parameter": "eccentricity",
+        "perigee_min_km": 200.0738599120623,
+        "apogee_max_km": 1999.9999999499942,
+        "circular_latitude_max_error_deg": null,
+        "controls_equal_nominal": true,
+        "other_orbital_elements_equal_nominal": true
+      }
+    },
+    "raan_12_planes": {
+      "parameter": "raan_deg",
+      "label": "12 equally spaced planes",
+      "support_points": 12,
+      "spacing_deg": 30.0,
+      "model": "12 exact angles 360*k/12, k=0..11; balanced randomized assignment; no angular jitter",
+      "scenario_id": "raan_12_planes",
+      "seed": 20261105,
+      "file": "raan_12_planes.csv.gz",
+      "sha256": "6e4e6ec12fc6e67c8db218a8c40089d64628c0509a8a663eab9fd3ed65b416ea",
+      "nominal_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+      "donor_fields": "inherited nominal lineage, not empirical donors for changed elements",
+      "audit": {
+        "status": "passed",
+        "objects": 50000,
+        "varied_parameter": "raan_deg",
+        "perigee_min_km": 200.13709934023973,
+        "apogee_max_km": 1999.9999998999883,
+        "circular_latitude_max_error_deg": null,
+        "controls_equal_nominal": true,
+        "other_orbital_elements_equal_nominal": true,
+        "angular_support": {
+          "angles_deg": [
+            0.0,
+            30.0,
+            60.0,
+            90.0,
+            120.0,
+            150.0,
+            180.0,
+            210.0,
+            240.0,
+            270.0,
+            300.0,
+            330.0
+          ],
+          "counts": [
+            4167,
+            4167,
+            4166,
+            4167,
+            4167,
+            4166,
+            4167,
+            4167,
+            4166,
+            4167,
+            4167,
+            4166
+          ],
+          "spacing_deg": 30.0,
+          "no_jitter": true
+        }
+      }
+    },
+    "raan_8_planes": {
+      "parameter": "raan_deg",
+      "label": "8 equally spaced planes",
+      "support_points": 8,
+      "spacing_deg": 45.0,
+      "model": "8 exact angles 360*k/8, k=0..7; balanced randomized assignment; no angular jitter",
+      "scenario_id": "raan_8_planes",
+      "seed": 20261105,
+      "file": "raan_8_planes.csv.gz",
+      "sha256": "9f661377bd69d64cb89edf943671412d33bc823a8046c9f0e02fdd8551d509a7",
+      "nominal_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+      "donor_fields": "inherited nominal lineage, not empirical donors for changed elements",
+      "audit": {
+        "status": "passed",
+        "objects": 50000,
+        "varied_parameter": "raan_deg",
+        "perigee_min_km": 200.13709934023973,
+        "apogee_max_km": 1999.9999998999883,
+        "circular_latitude_max_error_deg": null,
+        "controls_equal_nominal": true,
+        "other_orbital_elements_equal_nominal": true,
+        "angular_support": {
+          "angles_deg": [
+            0.0,
+            45.0,
+            90.0,
+            135.0,
+            180.0,
+            225.0,
+            270.0,
+            315.0
+          ],
+          "counts": [
+            6250,
+            6250,
+            6250,
+            6250,
+            6250,
+            6250,
+            6250,
+            6250
+          ],
+          "spacing_deg": 45.0,
+          "no_jitter": true
+        }
+      }
+    },
+    "raan_4_planes": {
+      "parameter": "raan_deg",
+      "label": "4 equally spaced planes",
+      "support_points": 4,
+      "spacing_deg": 90.0,
+      "model": "4 exact angles 360*k/4, k=0..3; balanced randomized assignment; no angular jitter",
+      "scenario_id": "raan_4_planes",
+      "seed": 20261105,
+      "file": "raan_4_planes.csv.gz",
+      "sha256": "5c07cf18abe6c7dff0cefc05c1e1208d4c9b5e31603683dc848a1053cd383341",
+      "nominal_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+      "donor_fields": "inherited nominal lineage, not empirical donors for changed elements",
+      "audit": {
+        "status": "passed",
+        "objects": 50000,
+        "varied_parameter": "raan_deg",
+        "perigee_min_km": 200.13709934023973,
+        "apogee_max_km": 1999.9999998999883,
+        "circular_latitude_max_error_deg": null,
+        "controls_equal_nominal": true,
+        "other_orbital_elements_equal_nominal": true,
+        "angular_support": {
+          "angles_deg": [
+            0.0,
+            90.0,
+            180.0,
+            270.0
+          ],
+          "counts": [
+            12500,
+            12500,
+            12500,
+            12500
+          ],
+          "spacing_deg": 90.0,
+          "no_jitter": true
+        }
+      }
+    },
+    "argp_12_positions": {
+      "parameter": "argument_of_perigee_deg",
+      "label": "12 equally spaced positions",
+      "support_points": 12,
+      "spacing_deg": 30.0,
+      "model": "12 exact angles 360*k/12, k=0..11; balanced randomized assignment; no angular jitter",
+      "scenario_id": "argp_12_positions",
+      "seed": 20261105,
+      "file": "argp_12_positions.csv.gz",
+      "sha256": "c094a3e564f62ab33a12723c447b415d0311f4bf6ec771f6453994a00cdfdb9e",
+      "nominal_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+      "donor_fields": "inherited nominal lineage, not empirical donors for changed elements",
+      "audit": {
+        "status": "passed",
+        "objects": 50000,
+        "varied_parameter": "argument_of_perigee_deg",
+        "perigee_min_km": 200.13709934023973,
+        "apogee_max_km": 1999.9999998999883,
+        "circular_latitude_max_error_deg": null,
+        "controls_equal_nominal": true,
+        "other_orbital_elements_equal_nominal": true,
+        "angular_support": {
+          "angles_deg": [
+            0.0,
+            30.0,
+            60.0,
+            90.0,
+            120.0,
+            150.0,
+            180.0,
+            210.0,
+            240.0,
+            270.0,
+            300.0,
+            330.0
+          ],
+          "counts": [
+            4167,
+            4167,
+            4166,
+            4167,
+            4167,
+            4166,
+            4167,
+            4167,
+            4166,
+            4167,
+            4167,
+            4166
+          ],
+          "spacing_deg": 30.0,
+          "no_jitter": true
+        }
+      }
+    },
+    "argp_8_positions": {
+      "parameter": "argument_of_perigee_deg",
+      "label": "8 equally spaced positions",
+      "support_points": 8,
+      "spacing_deg": 45.0,
+      "model": "8 exact angles 360*k/8, k=0..7; balanced randomized assignment; no angular jitter",
+      "scenario_id": "argp_8_positions",
+      "seed": 20261105,
+      "file": "argp_8_positions.csv.gz",
+      "sha256": "885c824b43bfa8f044956260235f90d07676ba4d001fb385c1c4d2c7b160431a",
+      "nominal_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+      "donor_fields": "inherited nominal lineage, not empirical donors for changed elements",
+      "audit": {
+        "status": "passed",
+        "objects": 50000,
+        "varied_parameter": "argument_of_perigee_deg",
+        "perigee_min_km": 200.13709934023973,
+        "apogee_max_km": 1999.9999998999883,
+        "circular_latitude_max_error_deg": null,
+        "controls_equal_nominal": true,
+        "other_orbital_elements_equal_nominal": true,
+        "angular_support": {
+          "angles_deg": [
+            0.0,
+            45.0,
+            90.0,
+            135.0,
+            180.0,
+            225.0,
+            270.0,
+            315.0
+          ],
+          "counts": [
+            6250,
+            6250,
+            6250,
+            6250,
+            6250,
+            6250,
+            6250,
+            6250
+          ],
+          "spacing_deg": 45.0,
+          "no_jitter": true
+        }
+      }
+    },
+    "argp_4_positions": {
+      "parameter": "argument_of_perigee_deg",
+      "label": "4 equally spaced positions",
+      "support_points": 4,
+      "spacing_deg": 90.0,
+      "model": "4 exact angles 360*k/4, k=0..3; balanced randomized assignment; no angular jitter",
+      "scenario_id": "argp_4_positions",
+      "seed": 20261105,
+      "file": "argp_4_positions.csv.gz",
+      "sha256": "7847e3b8424ca02b713559543c1f8687e599068231b7c057eeceadb4758bbc5b",
+      "nominal_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+      "donor_fields": "inherited nominal lineage, not empirical donors for changed elements",
+      "audit": {
+        "status": "passed",
+        "objects": 50000,
+        "varied_parameter": "argument_of_perigee_deg",
+        "perigee_min_km": 200.13709934023973,
+        "apogee_max_km": 1999.9999998999883,
+        "circular_latitude_max_error_deg": null,
+        "controls_equal_nominal": true,
+        "other_orbital_elements_equal_nominal": true,
+        "angular_support": {
+          "angles_deg": [
+            0.0,
+            90.0,
+            180.0,
+            270.0
+          ],
+          "counts": [
+            12500,
+            12500,
+            12500,
+            12500
+          ],
+          "spacing_deg": 90.0,
+          "no_jitter": true
+        }
+      }
+    }
+  },
+  "nominal_files_unchanged": {
+    "trace_population_50000.csv": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+    "trace_population_metadata.json": "dadfd36d7cf50b997828548a4e33e9911f05209368468ab5c0b98d10b7300d0a",
+    "validation.json": "dab32b1413c2b4a074bcc10a1309093a7c137d80029e236215ebeab44cc97a7a"
+  }
+}
