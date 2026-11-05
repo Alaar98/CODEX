@@ -11,3 +11,5 @@ pyparsing==3.3.3
 python-dateutil==4.0.0
 tzdata==2026.6
 sgp4==2.27
+openpyxl==3.1.5
+et-xmlfile==2.0.0

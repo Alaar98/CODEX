@@ -1,0 +1,6784 @@
+[
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.01,
+    "intervals": [
+      {
+        "lower_m": 266.3050577910782,
+        "upper_m": 85021.09464055367,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.011220184543019636,
+    "intervals": [
+      {
+        "lower_m": 335.5108033498601,
+        "upper_m": 95395.23719156394,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.012589254117941675,
+    "intervals": [
+      {
+        "lower_m": 422.7847874165688,
+        "upper_m": 107035.21658145347,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.01412537544622754,
+    "intervals": [
+      {
+        "lower_m": 532.8939333738939,
+        "upper_m": 120095.48826469584,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.015848931924611134,
+    "intervals": [
+      {
+        "lower_m": 671.892668913049,
+        "upper_m": 134749.35411130576,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.01778279410038923,
+    "intervals": [
+      {
+        "lower_m": 847.4888736257662,
+        "upper_m": 151191.26201810595,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0199526231496888,
+    "intervals": [
+      {
+        "lower_m": 1069.525152427098,
+        "upper_m": 169639.38611378008,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0223872113856834,
+    "intervals": [
+      {
+        "lower_m": 1350.6189596820964,
+        "upper_m": 190338.52179598622,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.025118864315095794,
+    "intervals": [
+      {
+        "lower_m": 1707.0261845519585,
+        "upper_m": 213563.3340194958,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.028183829312644536,
+    "intervals": [
+      {
+        "lower_m": 2159.827252726721,
+        "upper_m": 237871.79475841584,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.03162277660168379,
+    "intervals": [
+      {
+        "lower_m": 2736.593448101419,
+        "upper_m": 259468.92656008742,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.03548133892335755,
+    "intervals": [
+      {
+        "lower_m": 3473.795929054382,
+        "upper_m": 291128.92391855945,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.039810717055349734,
+    "intervals": [
+      {
+        "lower_m": 4420.417971468491,
+        "upper_m": 326652.0252177489,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0446683592150963,
+    "intervals": [
+      {
+        "lower_m": 5643.631741326029,
+        "upper_m": 366509.60042893706,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.05011872336272725,
+    "intervals": [
+      {
+        "lower_m": 7238.282948999798,
+        "upper_m": 411230.53536006087,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.056234132519034905,
+    "intervals": [
+      {
+        "lower_m": 9344.087811151068,
+        "upper_m": 461408.24964712444,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.06309573444801933,
+    "intervals": [
+      {
+        "lower_m": 12180.556232283188,
+        "upper_m": 517708.57107043377,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0707945784384138,
+    "intervals": [
+      {
+        "lower_m": 16128.913024820293,
+        "upper_m": 580878.570692292,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.07943282347242814,
+    "intervals": [
+      {
+        "lower_m": 21765.02947430176,
+        "upper_m": 651756.4760249599,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.08912509381337459,
+    "intervals": [
+      {
+        "lower_m": 28519.884477609525,
+        "upper_m": 731282.7938103791,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.1,
+    "intervals": [
+      {
+        "lower_m": 35111.19136136251,
+        "upper_m": 820512.7899696594,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.11220184543019636,
+    "intervals": [
+      {
+        "lower_m": 41580.68417835856,
+        "upper_m": 920630.492335246,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.12589254117941676,
+    "intervals": [
+      {
+        "lower_m": 48208.16062963431,
+        "upper_m": 1032964.4019947727,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.14125375446227548,
+    "intervals": [
+      {
+        "lower_m": 55197.780055204035,
+        "upper_m": 1159005.1216735053,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.1584893192461114,
+    "intervals": [
+      {
+        "lower_m": 62705.249641607865,
+        "upper_m": 1300425.1351488545,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.1778279410038923,
+    "intervals": [
+      {
+        "lower_m": 70865.47290639635,
+        "upper_m": 1459101.0000753184,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.19952623149688797,
+    "intervals": [
+      {
+        "lower_m": 79807.3378986654,
+        "upper_m": 1637138.2487751232,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.223872113856834,
+    "intervals": [
+      {
+        "lower_m": 89661.93638168955,
+        "upper_m": 1836899.327367934,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.25118864315095807,
+    "intervals": [
+      {
+        "lower_m": 100567.72458146374,
+        "upper_m": 2061034.9440020015,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.2818382931264455,
+    "intervals": [
+      {
+        "lower_m": 112674.25309840712,
+        "upper_m": 2312519.242130882,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.31622776601683794,
+    "intervals": [
+      {
+        "lower_m": 126145.2449670331,
+        "upper_m": 2594689.2656009686,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.35481338923357547,
+    "intervals": [
+      {
+        "lower_m": 141161.4223674587,
+        "upper_m": 2911289.2391828,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.3981071705534973,
+    "intervals": [
+      {
+        "lower_m": 157923.3066703911,
+        "upper_m": 3266520.2521750866,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.44668359215096326,
+    "intervals": [
+      {
+        "lower_m": 176654.13124402522,
+        "upper_m": 3665096.004293523,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.5011872336272725,
+    "intervals": [
+      {
+        "lower_m": 197602.96396505012,
+        "upper_m": 4112305.35360187,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.5623413251903491,
+    "intervals": [
+      {
+        "lower_m": 221048.11527282879,
+        "upper_m": 4614082.496468313,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.6309573444801932,
+    "intervals": [
+      {
+        "lower_m": 247300.89790016203,
+        "upper_m": 5177085.710711432,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.707945784384138,
+    "intervals": [
+      {
+        "lower_m": 276709.80116521526,
+        "upper_m": 5808785.706918646,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.7943282347242817,
+    "intervals": [
+      {
+        "lower_m": 309665.14344228257,
+        "upper_m": 6517564.760241887,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.8912509381337459,
+    "intervals": [
+      {
+        "lower_m": 346604.2698195111,
+        "upper_m": 7312827.938109763,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.0,
+    "intervals": [
+      {
+        "lower_m": 388017.3673351775,
+        "upper_m": 8205127.899682071,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.1220184543019642,
+    "intervals": [
+      {
+        "lower_m": 434453.9771752155,
+        "upper_m": 9206304.923355293,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.2589254117941675,
+    "intervals": [
+      {
+        "lower_m": 486530.29171707464,
+        "upper_m": 10329644.019944213,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.412537544622754,
+    "intervals": [
+      {
+        "lower_m": 544937.3341949878,
+        "upper_m": 11590051.21675159,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.584893192461114,
+    "intervals": [
+      {
+        "lower_m": 610450.1301484684,
+        "upper_m": 13004251.351481449,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.7782794100389228,
+    "intervals": [
+      {
+        "lower_m": 683937.9927864221,
+        "upper_m": 14591010.00075988,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.9952623149688808,
+    "intervals": [
+      {
+        "lower_m": 766376.0589930404,
+        "upper_m": 16371382.48774303,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 2.23872113856834,
+    "intervals": [
+      {
+        "lower_m": 858858.2292528669,
+        "upper_m": 18368993.27369928,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 2.5118864315095824,
+    "intervals": [
+      {
+        "lower_m": 962611.6832850347,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 2.818382931264455,
+    "intervals": [
+      {
+        "lower_m": 1079013.1641058358,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 3.1622776601683795,
+    "intervals": [
+      {
+        "lower_m": 1209607.246623354,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 3.548133892335757,
+    "intervals": [
+      {
+        "lower_m": 1356126.833225314,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 3.981071705534973,
+    "intervals": [
+      {
+        "lower_m": 1520516.148326323,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 4.4668359215096345,
+    "intervals": [
+      {
+        "lower_m": 1704956.5370138653,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 5.011872336272725,
+    "intervals": [
+      {
+        "lower_m": 1911895.410159259,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 5.62341325190349,
+    "intervals": [
+      {
+        "lower_m": 2144078.720025223,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 6.309573444801936,
+    "intervals": [
+      {
+        "lower_m": 2404587.397371645,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 7.07945784384138,
+    "intervals": [
+      {
+        "lower_m": 2696878.2335030455,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 7.943282347242821,
+    "intervals": [
+      {
+        "lower_m": 3024829.7497644695,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 8.91250938133746,
+    "intervals": [
+      {
+        "lower_m": 3392793.663156722,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 100,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 10.0,
+    "intervals": [
+      {
+        "lower_m": 3805652.6309485044,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.01,
+    "intervals": [
+      {
+        "lower_m": 313.4507239013669,
+        "upper_m": 59630.023770918895,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.011220184543019636,
+    "intervals": [
+      {
+        "lower_m": 313.4507239013669,
+        "upper_m": 68826.01841564843,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.012589254117941675,
+    "intervals": [
+      {
+        "lower_m": 313.4507239013669,
+        "upper_m": 79734.54062014527,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.01412537544622754,
+    "intervals": [
+      {
+        "lower_m": 313.4507239013669,
+        "upper_m": 91629.0046925139,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.015848931924611134,
+    "intervals": [
+      {
+        "lower_m": 313.4507239013669,
+        "upper_m": 105571.5428893707,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.01778279410038923,
+    "intervals": [
+      {
+        "lower_m": 313.4507239013669,
+        "upper_m": 122029.57698206224,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0199526231496888,
+    "intervals": [
+      {
+        "lower_m": 313.4507239013669,
+        "upper_m": 139177.0520424682,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0223872113856834,
+    "intervals": [
+      {
+        "lower_m": 313.4507239013669,
+        "upper_m": 158921.10942130163,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.025118864315095794,
+    "intervals": [
+      {
+        "lower_m": 313.4507239013669,
+        "upper_m": 181713.41730961035,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      },
+      {
+        "lower_m": 184389.82092094712,
+        "upper_m": 185474.56417619847,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.028183829312644536,
+    "intervals": [
+      {
+        "lower_m": 313.4507239013669,
+        "upper_m": 208105.88380942465,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.03162277660168379,
+    "intervals": [
+      {
+        "lower_m": 313.4507239013669,
+        "upper_m": 238782.40720157156,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.03548133892335755,
+    "intervals": [
+      {
+        "lower_m": 334.4110444025938,
+        "upper_m": 274605.5604663704,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.039810717055349734,
+    "intervals": [
+      {
+        "lower_m": 421.038140255544,
+        "upper_m": 308112.50649750384,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      },
+      {
+        "lower_m": 310677.6565940045,
+        "upper_m": 316688.24951623974,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0446683592150963,
+    "intervals": [
+      {
+        "lower_m": 530.1183684106738,
+        "upper_m": 355330.06021787,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.05011872336272725,
+    "intervals": [
+      {
+        "lower_m": 667.4789973638125,
+        "upper_m": 398686.88493274164,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      },
+      {
+        "lower_m": 402587.93418288947,
+        "upper_m": 411230.53536006087,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.056234132519034905,
+    "intervals": [
+      {
+        "lower_m": 840.4640940335837,
+        "upper_m": 461408.24964712444,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.06309573444801933,
+    "intervals": [
+      {
+        "lower_m": 1058.3319498302785,
+        "upper_m": 517708.57107043377,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0707945784384138,
+    "intervals": [
+      {
+        "lower_m": 1332.7581792273065,
+        "upper_m": 601903.2553453807,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.07943282347242814,
+    "intervals": [
+      {
+        "lower_m": 1678.4734982160912,
+        "upper_m": 675346.5602015853,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.08912509381337459,
+    "intervals": [
+      {
+        "lower_m": 2114.0736906079596,
+        "upper_m": 757751.3035958698,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.1,
+    "intervals": [
+      {
+        "lower_m": 2663.050577914232,
+        "upper_m": 850210.9464048346,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.11220184543019636,
+    "intervals": [
+      {
+        "lower_m": 3355.1080335010793,
+        "upper_m": 953952.3719166294,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.12589254117941676,
+    "intervals": [
+      {
+        "lower_m": 4227.847874163675,
+        "upper_m": 1070352.165814749,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.14125375446227548,
+    "intervals": [
+      {
+        "lower_m": 5328.939333735424,
+        "upper_m": 1200954.8826462873,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.1584893192461114,
+    "intervals": [
+      {
+        "lower_m": 6718.926689137017,
+        "upper_m": 1347493.5411145757,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.1778279410038923,
+    "intervals": [
+      {
+        "lower_m": 8474.888736270615,
+        "upper_m": 1511912.620182795,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.19952623149688797,
+    "intervals": [
+      {
+        "lower_m": 10695.251524266365,
+        "upper_m": 1696393.8611379515,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.223872113856834,
+    "intervals": [
+      {
+        "lower_m": 13506.189596799632,
+        "upper_m": 1903385.2179609719,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.25118864315095807,
+    "intervals": [
+      {
+        "lower_m": 17070.26184551129,
+        "upper_m": 2135633.340196588,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.2818382931264455,
+    "intervals": [
+      {
+        "lower_m": 21598.27252726086,
+        "upper_m": 2378717.9475859283,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.31622776601683794,
+    "intervals": [
+      {
+        "lower_m": 27365.934481040495,
+        "upper_m": 2594689.2656009686,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.35481338923357547,
+    "intervals": [
+      {
+        "lower_m": 34737.95929055052,
+        "upper_m": 2911289.2391828,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.3981071705534973,
+    "intervals": [
+      {
+        "lower_m": 44204.17971468438,
+        "upper_m": 3266520.2521750866,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.44668359215096326,
+    "intervals": [
+      {
+        "lower_m": 56436.3174131828,
+        "upper_m": 3665096.004293523,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.5011872336272725,
+    "intervals": [
+      {
+        "lower_m": 72382.82948998443,
+        "upper_m": 4112305.35360187,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.5623413251903491,
+    "intervals": [
+      {
+        "lower_m": 93440.87811152381,
+        "upper_m": 4614082.496468313,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.6309573444801932,
+    "intervals": [
+      {
+        "lower_m": 121805.56232284171,
+        "upper_m": 5177085.710711432,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.707945784384138,
+    "intervals": [
+      {
+        "lower_m": 161289.1302482845,
+        "upper_m": 5808785.706918646,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.7943282347242817,
+    "intervals": [
+      {
+        "lower_m": 217650.29474322684,
+        "upper_m": 6517564.760241887,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.8912509381337459,
+    "intervals": [
+      {
+        "lower_m": 285198.84477590397,
+        "upper_m": 7312827.938109763,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.0,
+    "intervals": [
+      {
+        "lower_m": 351111.9136134111,
+        "upper_m": 8205127.899682071,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.1220184543019642,
+    "intervals": [
+      {
+        "lower_m": 415806.84178307303,
+        "upper_m": 9206304.923355293,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.2589254117941675,
+    "intervals": [
+      {
+        "lower_m": 482081.606296376,
+        "upper_m": 10329644.019944213,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.412537544622754,
+    "intervals": [
+      {
+        "lower_m": 551977.80055179,
+        "upper_m": 11590051.21675159,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.584893192461114,
+    "intervals": [
+      {
+        "lower_m": 627052.4964161551,
+        "upper_m": 13004251.351481449,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.7782794100389228,
+    "intervals": [
+      {
+        "lower_m": 708654.7290635919,
+        "upper_m": 14591010.00075988,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.9952623149688808,
+    "intervals": [
+      {
+        "lower_m": 798073.3789876872,
+        "upper_m": 16371382.48774303,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 2.23872113856834,
+    "intervals": [
+      {
+        "lower_m": 896619.3638177963,
+        "upper_m": 18368993.27369928,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 2.5118864315095824,
+    "intervals": [
+      {
+        "lower_m": 1005677.2458141976,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 2.818382931264455,
+    "intervals": [
+      {
+        "lower_m": 1126742.530983726,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 3.1622776601683795,
+    "intervals": [
+      {
+        "lower_m": 1261452.449668745,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 3.548133892335757,
+    "intervals": [
+      {
+        "lower_m": 1411614.2236756664,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 3.981071705534973,
+    "intervals": [
+      {
+        "lower_m": 1579233.066704499,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 4.4668359215096345,
+    "intervals": [
+      {
+        "lower_m": 1766541.3124417625,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 5.011872336272725,
+    "intervals": [
+      {
+        "lower_m": 1976029.639653198,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 5.62341325190349,
+    "intervals": [
+      {
+        "lower_m": 2210481.152730562,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 6.309573444801936,
+    "intervals": [
+      {
+        "lower_m": 2473008.9789996445,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 7.07945784384138,
+    "intervals": [
+      {
+        "lower_m": 2767098.011651072,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 7.943282347242821,
+    "intervals": [
+      {
+        "lower_m": 3096651.4344197754,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 8.91250938133746,
+    "intervals": [
+      {
+        "lower_m": 3466042.69819649,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 1000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 10.0,
+    "intervals": [
+      {
+        "lower_m": 3880173.6733475607,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.01,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 37193.147990767786,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.011220184543019636,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 43298.51950391219,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.012589254117941675,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 50369.552824806844,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.01412537544622754,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 58593.44341207984,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.015848931924611134,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 68091.91595506393,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.01778279410038923,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 79154.92439012253,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0199526231496888,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 91977.06758622293,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0223872113856834,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 106716.3911959423,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.025118864315095794,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 123954.62413692966,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.028183829312644536,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 144099.08273595013,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.03162277660168379,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 166672.06303175172,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.03548133892335755,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 193609.04092139957,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.039810717055349734,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 224561.0826118521,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0446683592150963,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 259686.29134813475,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.05011872336272725,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 298858.0665490724,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.056234132519034905,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 344947.2177130844,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.06309573444801933,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 399619.3383791712,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0707945784384138,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 459232.87381886085,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.07943282347242814,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 529111.0953049839,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.08912509381337459,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 611596.6610843588,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.1,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 697537.6169760663,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.11220184543019636,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 796492.3119584615,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.12589254117941676,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 910724.4493423714,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      },
+      {
+        "lower_m": 921949.1046058421,
+        "upper_m": 929574.8372775523,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.14125375446227548,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 1043000.1220809119,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.1584893192461114,
+    "intervals": [
+      {
+        "lower_m": 1567.2536195068785,
+        "upper_m": 1196746.941040988,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.1778279410038923,
+    "intervals": [
+      {
+        "lower_m": 1680.0080296157853,
+        "upper_m": 1376288.011888651,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.19952623149688797,
+    "intervals": [
+      {
+        "lower_m": 2115.2045806783703,
+        "upper_m": 1544220.5477720099,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      },
+      {
+        "lower_m": 1553388.282972148,
+        "upper_m": 1587201.0769733586,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.223872113856834,
+    "intervals": [
+      {
+        "lower_m": 2663.2015632089556,
+        "upper_m": 1780868.899051683,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.25118864315095807,
+    "intervals": [
+      {
+        "lower_m": 3353.274434057663,
+        "upper_m": 1998167.7694285733,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      },
+      {
+        "lower_m": 2012939.6709134467,
+        "upper_m": 2061034.9440020015,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.2818382931264455,
+    "intervals": [
+      {
+        "lower_m": 4222.319043853509,
+        "upper_m": 2312519.242130882,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.31622776601683794,
+    "intervals": [
+      {
+        "lower_m": 5316.848417681454,
+        "upper_m": 2594689.2656009686,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.35481338923357547,
+    "intervals": [
+      {
+        "lower_m": 6695.520530397373,
+        "upper_m": 3016662.2745770807,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.3981071705534973,
+    "intervals": [
+      {
+        "lower_m": 8432.342875298324,
+        "upper_m": 3384750.7424682854,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.44668359215096326,
+    "intervals": [
+      {
+        "lower_m": 10620.742373241732,
+        "upper_m": 3797752.7962649195,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.5011872336272725,
+    "intervals": [
+      {
+        "lower_m": 13378.746048718189,
+        "upper_m": 4261148.72228264,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.5623413251903491,
+    "intervals": [
+      {
+        "lower_m": 16855.594502618063,
+        "upper_m": 4781087.502928492,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.6309573444801932,
+    "intervals": [
+      {
+        "lower_m": 21240.214860899097,
+        "upper_m": 5364468.409920484,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.707945784384138,
+    "intervals": [
+      {
+        "lower_m": 26772.12524317018,
+        "upper_m": 6019032.553445298,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.7943282347242817,
+    "intervals": [
+      {
+        "lower_m": 33755.54863675064,
+        "upper_m": 6753465.602014688,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.8912509381337459,
+    "intervals": [
+      {
+        "lower_m": 42577.81203110056,
+        "upper_m": 7577513.035958088,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.0,
+    "intervals": [
+      {
+        "lower_m": 53733.548924641684,
+        "upper_m": 8502109.464059085,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.1220184543019642,
+    "intervals": [
+      {
+        "lower_m": 67856.89858745302,
+        "upper_m": 9539523.719162492,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.2589254117941675,
+    "intervals": [
+      {
+        "lower_m": 85764.96004971559,
+        "upper_m": 10703521.658154098,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.412537544622754,
+    "intervals": [
+      {
+        "lower_m": 108517.49924402763,
+        "upper_m": 11893589.737913698,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.584893192461114,
+    "intervals": [
+      {
+        "lower_m": 137500.87389311177,
+        "upper_m": 13004251.351481449,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.7782794100389228,
+    "intervals": [
+      {
+        "lower_m": 174549.44525759795,
+        "upper_m": 14591010.00075988,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.9952623149688808,
+    "intervals": [
+      {
+        "lower_m": 222127.78620580665,
+        "upper_m": 16371382.48774303,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 2.23872113856834,
+    "intervals": [
+      {
+        "lower_m": 283617.3433245849,
+        "upper_m": 18368993.27369928,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 2.5118864315095824,
+    "intervals": [
+      {
+        "lower_m": 363796.0820220372,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 2.818382931264455,
+    "intervals": [
+      {
+        "lower_m": 469709.8592316399,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 3.1622776601683795,
+    "intervals": [
+      {
+        "lower_m": 612446.9317244862,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 3.548133892335757,
+    "intervals": [
+      {
+        "lower_m": 811307.4874562991,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 3.981071705534973,
+    "intervals": [
+      {
+        "lower_m": 1094956.302801918,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 4.4668359215096345,
+    "intervals": [
+      {
+        "lower_m": 1432935.425300592,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 5.011872336272725,
+    "intervals": [
+      {
+        "lower_m": 1762231.1896890695,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 5.62341325190349,
+    "intervals": [
+      {
+        "lower_m": 2085739.6727968557,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 6.309573444801936,
+    "intervals": [
+      {
+        "lower_m": 2417395.0549431173,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 7.07945784384138,
+    "intervals": [
+      {
+        "lower_m": 2767336.2220982704,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 7.943282347242821,
+    "intervals": [
+      {
+        "lower_m": 3143315.966072305,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 8.91250938133746,
+    "intervals": [
+      {
+        "lower_m": 3552067.381405295,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 10.0,
+    "intervals": [
+      {
+        "lower_m": 4000033.7278230675,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.01,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 29744.324600174095,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.011220184543019636,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 34650.52148317009,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.012589254117941675,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 40369.06852099289,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.01412537544622754,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 46986.34640148989,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.015848931924611134,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 54712.08408857662,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.01778279410038923,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 63685.53678001756,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0199526231496888,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 74112.6311373046,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0223872113856834,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 86260.34941505207,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.025118864315095794,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 100323.52983882894,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.028183829312644536,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 116671.34513880147,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.03162277660168379,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 135861.23385904304,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.03548133892335755,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 157934.83767989525,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.039810717055349734,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 183518.37679632567,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0446683592150963,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 212927.19374285484,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.05011872336272725,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 247321.99030620878,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.056234132519034905,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 286161.33177105547,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.06309573444801933,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 332554.4863252251,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0707945784384138,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 386300.8231877249,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.07943282347242814,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 444931.36769888364,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.08912509381337459,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 518142.2708411566,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.1,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 596300.2377097129,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.11220184543019636,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 688260.184155645,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.12589254117941676,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 797345.4062012434,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.14125375446227548,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 916290.0469256364,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.1584893192461114,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 1055715.4288946483,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.1778279410038923,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 1220295.7698207411,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.19952623149688797,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 1391770.5204243085,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.223872113856834,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 1589211.0942149954,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.25118864315095807,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 1817134.1730953343,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.2818382931264455,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 2081058.8380959593,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.31622776601683794,
+    "intervals": [
+      {
+        "lower_m": 3134.507239013189,
+        "upper_m": 2387824.072016432,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.35481338923357547,
+    "intervals": [
+      {
+        "lower_m": 3344.1104440255704,
+        "upper_m": 2746055.604665372,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.3981071705534973,
+    "intervals": [
+      {
+        "lower_m": 4210.381402550079,
+        "upper_m": 3081125.0649710097,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      },
+      {
+        "lower_m": 3106776.565940789,
+        "upper_m": 3166882.495161945,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.44668359215096326,
+    "intervals": [
+      {
+        "lower_m": 5301.183684109106,
+        "upper_m": 3553300.6021795394,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.5011872336272725,
+    "intervals": [
+      {
+        "lower_m": 6674.789973635936,
+        "upper_m": 3986868.8493248792,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      },
+      {
+        "lower_m": 4025879.341826574,
+        "upper_m": 4112305.35360187,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.5623413251903491,
+    "intervals": [
+      {
+        "lower_m": 8404.640940329304,
+        "upper_m": 4614082.496468313,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.6309573444801932,
+    "intervals": [
+      {
+        "lower_m": 10583.319498311605,
+        "upper_m": 5177085.710711432,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.707945784384138,
+    "intervals": [
+      {
+        "lower_m": 13327.581792289086,
+        "upper_m": 6019032.553445298,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.7943282347242817,
+    "intervals": [
+      {
+        "lower_m": 16784.73498218263,
+        "upper_m": 6753465.602014688,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.8912509381337459,
+    "intervals": [
+      {
+        "lower_m": 21140.736906069273,
+        "upper_m": 7577513.035958088,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.0,
+    "intervals": [
+      {
+        "lower_m": 26630.50577913619,
+        "upper_m": 8502109.464059085,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.1220184543019642,
+    "intervals": [
+      {
+        "lower_m": 33551.08033501971,
+        "upper_m": 9539523.719162492,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.2589254117941675,
+    "intervals": [
+      {
+        "lower_m": 42278.4787415886,
+        "upper_m": 10703521.658154098,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.412537544622754,
+    "intervals": [
+      {
+        "lower_m": 53289.39333740315,
+        "upper_m": 12009548.826479204,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.584893192461114,
+    "intervals": [
+      {
+        "lower_m": 67189.26689132281,
+        "upper_m": 13474935.411142062,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.7782794100389228,
+    "intervals": [
+      {
+        "lower_m": 84748.88736257754,
+        "upper_m": 15119126.201823425,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.9952623149688808,
+    "intervals": [
+      {
+        "lower_m": 106952.51524262245,
+        "upper_m": 16963938.611355245,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 2.23872113856834,
+    "intervals": [
+      {
+        "lower_m": 135061.89596809846,
+        "upper_m": 19033852.179613683,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 2.5118864315095824,
+    "intervals": [
+      {
+        "lower_m": 170702.61845521058,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 2.818382931264455,
+    "intervals": [
+      {
+        "lower_m": 215982.7252727094,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 3.1622776601683795,
+    "intervals": [
+      {
+        "lower_m": 273659.3448105423,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 3.548133892335757,
+    "intervals": [
+      {
+        "lower_m": 347379.59290526854,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 3.981071705534973,
+    "intervals": [
+      {
+        "lower_m": 442041.79714612936,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 4.4668359215096345,
+    "intervals": [
+      {
+        "lower_m": 564363.174132745,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 5.011872336272725,
+    "intervals": [
+      {
+        "lower_m": 723828.2948997674,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 5.62341325190349,
+    "intervals": [
+      {
+        "lower_m": 934408.7811157876,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 6.309573444801936,
+    "intervals": [
+      {
+        "lower_m": 1218055.6232277104,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 7.07945784384138,
+    "intervals": [
+      {
+        "lower_m": 1612891.3024807938,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 7.943282347242821,
+    "intervals": [
+      {
+        "lower_m": 2176502.9474298917,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 8.91250938133746,
+    "intervals": [
+      {
+        "lower_m": 2851988.4477585265,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 10000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 10.0,
+    "intervals": [
+      {
+        "lower_m": 3511119.1361323968,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.01,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 26063.792382915814,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.011220184543019636,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 30357.39890871643,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.012589254117941675,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 35378.276824314744,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.01412537544622754,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 41200.21184378444,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.015848931924611134,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 48014.77942437345,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.01778279410038923,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 55920.44430553529,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0199526231496888,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 65095.05456369778,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0223872113856834,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 75844.3790114232,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.025118864315095794,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 88306.98082080441,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.028183829312644536,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 102724.84512451704,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.03162277660168379,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 119552.3329641553,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.03548133892335755,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 139099.35832979917,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.039810717055349734,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 161924.33363494015,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0446683592150963,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 188452.71054384444,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.05011872336272725,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 219034.14946110127,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.056234132519034905,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 253835.72998432652,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.06309573444801933,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 295603.06273994676,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.0707945784384138,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 342494.2548086052,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.07943282347242814,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 398736.1284071071,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.08912509381337459,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 462443.44876926264,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.1,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 535956.1308462389,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.11220184543019636,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 620094.982586165,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.12589254117941676,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 715261.9996001357,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.14125375446227548,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 827934.5770286811,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.1584893192461114,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 962713.9203455057,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.1778279410038923,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 1102009.3995749177,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.19952623149688797,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 1278535.6477605812,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.223872113856834,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 1471071.6201950852,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.25118864315095807,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 1697497.8718918127,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.2818382931264455,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 1934038.458380442,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.31622776601683794,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 2244820.336908523,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.35481338923357547,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 2566770.24311395,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.3981071705534973,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 2939573.7413756205,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.44668359215096326,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 3372891.151675068,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.5011872336272725,
+    "intervals": [
+      {
+        "lower_m": 4701.760858521961,
+        "upper_m": 3878906.641212661,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "transit"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.5623413251903491,
+    "intervals": [
+      {
+        "lower_m": 5600.253734681712,
+        "upper_m": 4352204.8339555655,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.6309573444801932,
+    "intervals": [
+      {
+        "lower_m": 7051.0418012260925,
+        "upper_m": 5019170.507904397,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.707945784384138,
+    "intervals": [
+      {
+        "lower_m": 8877.909179230817,
+        "upper_m": 5631601.935154529,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.7943282347242817,
+    "intervals": [
+      {
+        "lower_m": 11178.486415196883,
+        "upper_m": 6517564.760241887,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 0.8912509381337459,
+    "intervals": [
+      {
+        "lower_m": 14075.832234806194,
+        "upper_m": 7312827.938109763,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.0,
+    "intervals": [
+      {
+        "lower_m": 17725.105335502813,
+        "upper_m": 8205127.899682071,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.1220184543019642,
+    "intervals": [
+      {
+        "lower_m": 22322.01557911026,
+        "upper_m": 9539523.719162492,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.2589254117941675,
+    "intervals": [
+      {
+        "lower_m": 28113.54623392733,
+        "upper_m": 10703521.658154098,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.412537544622754,
+    "intervals": [
+      {
+        "lower_m": 35411.58486281155,
+        "upper_m": 12009548.826479204,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.584893192461114,
+    "intervals": [
+      {
+        "lower_m": 44610.29567802997,
+        "upper_m": 13474935.411142062,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.7782794100389228,
+    "intervals": [
+      {
+        "lower_m": 56208.33074952368,
+        "upper_m": 15119126.201823425,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 1.9952623149688808,
+    "intervals": [
+      {
+        "lower_m": 70837.34153727151,
+        "upper_m": 16963938.611355245,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 2.23872113856834,
+    "intervals": [
+      {
+        "lower_m": 89298.76225528862,
+        "upper_m": 19033852.179613683,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 2.5118864315095824,
+    "intervals": [
+      {
+        "lower_m": 112611.56585354701,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 2.818382931264455,
+    "intervals": [
+      {
+        "lower_m": 142074.76083405537,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 3.1622776601683795,
+    "intervals": [
+      {
+        "lower_m": 179350.00139670778,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 3.548133892335757,
+    "intervals": [
+      {
+        "lower_m": 226572.16788060317,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 3.981071705534973,
+    "intervals": [
+      {
+        "lower_m": 286499.75463995757,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 4.4668359215096345,
+    "intervals": [
+      {
+        "lower_m": 362723.52971638564,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 5.011872336272725,
+    "intervals": [
+      {
+        "lower_m": 459963.46612138837,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 5.62341325190349,
+    "intervals": [
+      {
+        "lower_m": 584505.0909414933,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 6.309573444801936,
+    "intervals": [
+      {
+        "lower_m": 744867.6268620552,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 7.07945784384138,
+    "intervals": [
+      {
+        "lower_m": 952882.9426840027,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 7.943282347242821,
+    "intervals": [
+      {
+        "lower_m": 1225564.3511558932,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 8.91250938133746,
+    "intervals": [
+      {
+        "lower_m": 1588666.1585741257,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  },
+  {
+    "case": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 15000,
+      "observer_altitude_km": 600.0
+    },
+    "diameter_m": 10.0,
+    "intervals": [
+      {
+        "lower_m": 2084438.2363240612,
+        "upper_m": 20000000.0,
+        "lower_censored": false,
+        "upper_censored": true,
+        "lower_constraints": [
+          "full_well"
+        ]
+      }
+    ]
+  }
+]

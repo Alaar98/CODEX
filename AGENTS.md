@@ -35,3 +35,9 @@
   nominal images, trace_<scenario_id>_ for alternatives, and trace_comparison_
   with the compared populations in the filename for comparisons. Store figure
   manifests under data/generated/, never inside outputs/.
+- Optical studies run with scripts/generate_optical_validation.py and read the
+  Excel directly. High Gain uses 15000 electrons/pixel full well. The >140000
+  low-gain bound is not an exact capacity and must not be combined with High
+  Gain read noise to claim Low Gain performance. Use peak pixel charge, not
+  integrated streak signal, to test saturation. Optical curves are conditional
+  instrument results, not population detection counts; keep the populations intact.

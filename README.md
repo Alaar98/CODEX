@@ -144,9 +144,46 @@ incluidos no necesita esa dependencia.
 - `tests/`: comprobaciones de los modelos iniciales.
 - `docs/mission_concept.md`: preguntas e hipótesis por concretar.
 
-## Alcance actual
+## Validación óptica y radiométrica inicial
 
-Los modelos implementados son aproximaciones de primer orden en unidades SI.
+```bash
+.venv/bin/python scripts/generate_optical_validation.py
+```
+
+Lee directamente `docs/references/TRACE_Detector_Optical_Baseline (1).xlsx`,
+valida unidades y genera 14 PNG en `outputs/optical/`, con tablas CSV, intervalos
+JSON y manifiesto en `data/generated/optical/`. Los nombres incluyen
+`instrument_reference`: estas gráficas son del instrumento, no resultados
+de detecciones de una población concreta. No se alteran las diez poblaciones.
+
+Incluye SNR–magnitud AB, SNR–distancia y distancia–tamaño, variando apertura,
+FOV, velocidad transversal, albedo y fase. La referencia de estudio es el
+punto medio de apertura/FOV del Excel, fase 60°, albedo nominal, velocidad
+transversal de 5 km/s y observador circular a 600 km (hipótesis de prueba, no
+arquitectura de misión adoptada). Se incluye el giro LVLH en el movimiento
+aparente para una LOS al zenit y movimiento relativo en sentido along-track.
+
+Los intervalos exigen SNR >= umbral, tránsito completo y dominio de fuente
+no resuelta y ausencia de saturación de carga. El Excel incluye ahora **15 ke⁻
+por píxel en la ganancia más alta** y **>140 ke⁻ en la más baja**. El modo High
+Gain utiliza el primer valor. La carga pico se integra por píxel para una PSF
+gaussiana con traza; los CSV identifican saturación y el motivo del límite inferior.
+**No incluyen saturación del ADC, sombra de la plataforma, eclipses,
+accesibilidad orbital ni detecciones de misión**. Los alcances ópticos pueden
+exceder las distancias físicamente disponibles entre objetos LEO: deben cruzarse
+después con la geometría real. Los triángulos señalan alcance superior al
+barrido de 20.000 km; no son máximos de detección calculados.
+
+El modelo usa esfera lambertiana con albedo geométrico, fondo AB, espectro solar
+de cuerpo negro normalizado y extracción de PSF gaussiana más traza. Las
+hipótesis completas y la revisión dimensional de la ecuación (9) del paper
+están en las notas. Se comprueban ecuaciones radiométricas del paper con una
+extracción especificada; no se afirma reproducir íntegramente su figura 2.
+
+## Alcance de los modelos iniciales anteriores
+
+Los modelos iniciales `radiometry.py` y `examples/first_order_budget.py` son
+aproximaciones ilustrativas de primer orden en unidades SI.
 El ejemplo toma una irradiancia arbitraria: todavía no modela la reflexión del
 objeto, su distancia, las órbitas, la iluminación, la cobertura ni la probabilidad
 de detección. Su SNR no demuestra viabilidad de una misión real.

@@ -688,3 +688,240 @@ para esa ubicación. Los metadatos de variantes permanecen junto a sus CSV.
 El renderizador conserva tipografía, estilo científico y 300 dpi, y genera
 solo PNG con esta convención de nombres. La reorganización no cambia los datos
 de población ni sus parámetros orbitales.
+
+## Aclaraciones previas a la implementación óptica
+
+El usuario confirma instrumento fijo a la plataforma, sin mecanismo de
+apuntamiento ni seguimiento del debris durante la exposición. Esto no fija
+todavía la ley de actitud del satélite: un instrumento solidario a una
+plataforma nadir-pointing no es inercialmente fijo. La velocidad sobre el
+detector debe calcularse en el marco de cámara, incluyendo la actitud y su
+evolución, antes de asumir una velocidad angular aparente.
+
+La velocidad transversal relativa es la componente perpendicular a la línea
+instrumento–objeto; su cociente con la distancia da la velocidad angular de la
+línea de visión en un marco inercial. La componente radial cambia el rango y
+no produce esa traslación angular de primer orden.
+
+La fase alpha se mide en el objeto, entre las direcciones al Sol y al
+observador. Para la esfera lambertiana hay flujo para 90<alpha<180 grados:
+Phi(alpha)=[sin(alpha)+(pi-alpha)cos(alpha)]/pi, alpha en radianes. A 135 grados
+es aproximadamente el 4,8 % del flujo a fase cero, manteniendo lo demás fijo.
+Esto no equivale a la reflexión de una cara plana opaca.
+
+El baseline Excel impone exclusión solar de 90 grados entre línea de visión
+al debris y dirección aparente al Sol. En geometría cercana a la Tierra y
+rango mucho menor que 1 UA, esa separación es aproximadamente 180-alpha.
+Por tanto, alpha=135 grados puede servir como prueba del modelo radiométrico,
+pero no como caso operativo aceptado con ese baseline. La propuesta anterior
+de usarlo operativamente debe corregirse. La simulación debe comprobar los
+ángulos exactos, no aplicar únicamente esta relación aproximada.
+
+En fase cero, la plataforma queda aproximadamente entre Sol y objeto; puede
+proyectar sombra. La fase sola no determina el sombreado: hacen falta tamaño,
+forma, distancias y tamaño angular finito del Sol. Fase cero se interpreta
+como referencia fotométrica ideal sin ocultación; para eventos reales deben
+comprobarse por separado sombra de la plataforma y eclipse terrestre.
+
+La saturación es un límite cercano posible, independiente del tránsito:
+depende del pico de electrones por píxel, full well y ADC/modo de ganancia.
+No se puede calcular numéricamente con el baseline actual. El límite por
+tránsito/velocidad angular depende de la trayectoria en el FOV y del criterio
+de aceptación de una traza. Cruzar en menos de 77 ms no implica señal nula:
+puede haber detección parcial, con señal integrada solo mientras el objeto
+esté dentro del campo. Ninguno de estos criterios se adoptará como distancia
+mínima absoluta sin declarar sus hipótesis.
+
+## Actitud de referencia confirmada: zenit local
+
+El usuario establece apuntamiento al zenit o a un ángulo respecto al zenit,
+que será una variable de estudio posterior, sin seguimiento del debris y con
+instrumento fijo a la plataforma. Para el caso inicial se adopta offset cero:
+boresight radial hacia fuera de la Tierra, z=r_sat/|r_sat|.
+
+Se interpreta «actitud fija» como orientación constante respecto al marco
+orbital local, no respecto a las estrellas: mantener el zenit durante la
+órbita requiere una rotación de la plataforma en el marco inercial. No se
+introducen maniobras de exploración, seguimiento del objeto ni movimiento
+interno del instrumento. El cálculo de la velocidad angular en cámara deberá
+incluir la evolución geométrica del marco local.
+
+Como convención de roll inicial, el eje horizontal del detector sigue la
+componente tangencial de la velocidad orbital (normalizada y perpendicular
+a z), y el eje vertical es y=z cruz x, completando una terna dextrógira.
+Es una convención de modelado explícita, no un requisito confirmado de
+hardware. Para órbitas no circulares se usa la velocidad proyectada sobre
+el plano perpendicular al radio. El futuro offset de zenit requerirá además
+definir su azimut en ese marco; no es necesario fijarlo para offset cero.
+
+## Primera iteración óptica: curvas de SNR, alcance y full well
+
+Se implementa `optical_validation.py` y el generador
+`scripts/generate_optical_validation.py`. Esta iteración es un estudio
+condicional del instrumento, no una simulación de detecciones de las diez
+poblaciones. Los CSV de población no se modifican; se comprueban sus hashes.
+Las figuras llevan `instrument_reference` en el nombre para evitar atribuirlas
+a la población nominal. Se guardan únicamente PNG, junto a tablas fuera de
+outputs, en `data/generated/optical/`.
+
+### Baseline, lectura y nuevo dato del detector
+
+Los valores de detector/óptica se leen directamente del workbook, con detección
+de duplicados, vacíos, unidades incorrectas, rangos inválidos e incoherencia de
+dimensiones. Se convierten a SI. Focal, f/# y escala de placa se derivan; no se
+tratan como variables independientes del FOV y tamaño del sensor.
+
+El usuario aporta una imagen de la especificación de full well:
+
+- Highest pixel gain: **15 ke− = 15.000 e−/píxel**.
+- Lowest pixel gain: **>140 ke−**, conservado como límite inferior estricto
+  de 140.000 e−/píxel, no como capacidad exacta de 140.000.
+
+Se añaden los campos FWC_high_gain, FWC_low_gain_lower_bound,
+FWC_low_gain_relation y FWC_selection en Detector_Baseline. La versión previa
+se archiva sin modificar en
+`docs/references/archive/TRACE_Detector_Optical_Baseline_before_full_well.xlsx`.
+La fuente de estos cuatro campos es la imagen aportada en la conversación;
+no se ha proporcionado una ficha completa ni se inventa su referencia.
+
+Se asocia explícitamente el modo conceptual High Gain del baseline con
+highest pixel gain, usando 15.000 e− y su ruido de lectura existente. Esta
+asociación debe confirmarse con la cadena electrónica real. **No se combina
+el límite >140 ke− con el ruido de lectura High Gain para afirmar prestaciones
+del modo Low Gain**: falta caracterizar su modo de lectura. No se conoce la
+ganancia de conversión ni el límite ADC; full well es el límite de carga,
+no necesariamente el primer límite de saturación electrónica.
+
+### Fotometría y ruido
+
+1. Esfera equivalente lambertiana. Los albedos del workbook se interpretan
+   como **geométricos**. La irradiancia del objeto en la apertura es
+   `E_solar(lambda)*p*(d/(2r))²*Phi(alpha)`, con
+   `Phi=[sin(alpha)+(pi-alpha)cos(alpha)]/pi`. No se identifican estos albedos
+   con reflectancia de una placa ni con albedo de Bond.
+2. El Sol se aproxima por un cuerpo negro de 5.772 K normalizado a irradiancia
+   bolométrica de 1.361 W/m² a 1 UA. Se integran fotones solamente en la banda
+   del workbook, con 2.049 puntos espectrales; transmisión y QE constantes en
+   esa banda. Es un modelo de estudio, no una tabla AM0 medida.
+3. El fondo 22 mag/arcsec² se interpreta como AB y Fnu plano en la banda;
+   cero AB=3.631 Jy. Se convierte a electrones/píxel/s usando el área angular
+   de cada píxel. La magnitud del objeto se expresa como magnitud AB equivalente
+   al mismo flujo de fotones en banda; no se afirma reproducir una banda V.
+4. SNR de extracción de una sola imagen: señal / raíz de la suma de Poisson
+   de señal, fondo, corriente oscura y varianza de lectura. Se usa una apertura
+   rectangular con margen 3 sigma de PSF alrededor de la traza horizontal.
+   El número de píxeles se redondea hacia arriba en ambas dimensiones. Se
+   adopta fracción de señal erf(3/sqrt(2))², conservadora para traza larga;
+   no es una extracción óptima ni un matched filter.
+5. La PSF gaussiana tiene el FWHM en píxeles del Excel, sin añadir otro término
+   de difracción a esa PSF efectiva. Se ignoran vignetting, distorsión, variación
+   espectral de PSF y variaciones espaciales de respuesta del sensor.
+
+### Movimiento y límites del dominio
+
+El caso de referencia usa un observador **circular a 600 km**, elegido como
+hipótesis de ensayo y no como arquitectura de TRACE ya decidida. LOS al zenit;
+velocidad relativa transversal positiva en along-track. La cámara gira con
+LVLH a n=sqrt(mu/(R+h)³); la tasa aparente es `abs(v_perp/r-n)`. Esta resta
+incluye rotación geométrica de la plataforma sin seguimiento del debris; no
+es una fórmula general para cualquier dirección de encuentro. Hay posible
+cancelación de tasas. Los encuentros reales necesitarán geometría vectorial,
+actitud y propagación de observador/objetivo.
+
+La longitud de traza es tasa aparente por exposición dividido por escala de
+placa. El tránsito de referencia exige recorrer como máximo el diámetro del
+FOV circular nominal durante toda la exposición: cruce central, velocidad
+constante y margen de PSF de borde no modelado. El FOV circular corresponde a
+la dimensión corta del detector; no se explota la diagonal rectangular.
+No se simulan trazas parcialmente fuera del sensor. Por ello, el límite por
+tránsito es de aceptación operativa, no ausencia física de señal más cerca.
+
+Se limita el dominio de fotometría a fuentes no resueltas, usando d/r <= FWHM
+por escala de placa. Las fuentes extendidas pueden ser detectables, pero no
+con este modelo de PSF puntual. Ese límite de dominio puede determinar el
+borde inferior de una región elegible y no debe llamarse saturación.
+
+Se aplica la aproximación de exclusión solar alpha<=180−sun_exclusion_min.
+Fase cero es referencia ideal sin sombra del satélite; faltan dimensiones del
+bus para modelarla. No se calculan eclipses, obstáculos, accesibilidad de
+órbitas ni otros criterios geométricos de misión en estas curvas. Una distancia
+ópticamente alcanzable puede exceder las disponibles entre objetos LEO.
+
+### Saturación y distancia mínima
+
+La carga de saturación se evalúa **por píxel**, no sobre la señal total de
+la traza ni sobre la señal extraída para SNR. Se integra exactamente sobre
+el píxel central la convolución de PSF gaussiana y segmento horizontal uniforme
+de movimiento. Se adopta alineación centrada en píxel que maximiza la carga
+pico. En velocidad cero converge a la integral de PSF puntual, no diverge.
+
+A la carga pico del objeto se suma fondo y corriente oscura durante toda la
+exposición. Se rechaza si la carga media esperada es >=15.000 e−/píxel. No se
+añade ruido de lectura a la carga almacenada. Tampoco se añade margen contra
+fluctuaciones de Poisson o incertidumbre de full well: se trata de un límite
+determinista de primer orden, no una probabilidad de saturación.
+
+La elegibilidad combina SNR>=5 (del workbook), ausencia de saturación,
+tránsito completo, dominio no resuelto y fase permitida. Se buscan **todos
+los intervalos detectados por la malla**, sin presuponer un único intervalo
+continuo o monotonicidad de SNR/saturación. La cancelación de movimiento puede
+concentrar señal en pocos píxeles y alterar el comportamiento de saturación.
+Se registran los motivos del borde inferior: full_well, transit,
+point_source_domain o SNR. Por tanto, la distancia mínima depende del objeto
+y del escenario; no se impone una sola distancia mínima para todo el debris.
+
+El barrido de rango abarca 100 m a 20.000 km en 1.537 puntos logarítmicos;
+se refinan las transiciones con 32 bisecciones. Intervalos extremadamente
+estrechos entre puntos pueden no detectarse: la resolución se declara y se
+comprueba convergencia en casos de referencia. Si el intervalo llega al borde
+del barrido se marca censurado, y un triángulo en la gráfica indica que no se
+ha encontrado un máximo físico. No se interpreta una meseta de 20.000 km como
+distancia máxima real. Los JSON guardan todos los intervalos; la línea superior
+comparativa es su envolvente, no implica que todo rango intermedio sea válido.
+
+### Barridos y presentación
+
+Se generan 14 PNG: rango–tamaño de referencia y cinco familias paramétricas;
+SNR–distancia para un objeto de 10 cm en esas cinco familias; y SNR–magnitud
+para apertura, FOV y velocidad. Los valores de apertura, FOV y albedo proceden
+de límites/escenarios del Excel; la referencia usa los puntos medios de FOV y
+apertura. Se exploran fases 0°,30°,60°,85° y velocidades transversales
+0,1;1;5;10;15 km/s. Referencia: p nominal, fase 60°, v=5 km/s. Los tamaños
+abarcan 1 cm a 10 m (61 puntos). La magnitud usa movimiento a rango de 100 km.
+
+No se separan curvas de SNR–magnitud por fase/albedo: a igual magnitud ya se ha
+fijado el flujo recibido. Los efectos de fase y albedo aparecen en rango–tamaño
+y SNR–rango. Se usa 10log10(SNR) para comparación con la figura del paper;
+SNR=5 se dibuja a 6,99 dB, no a 5 dB. Las porciones saturadas o fuera del
+dominio se distinguen con trazos punteados; los CSV contienen las banderas.
+
+### Relación con el paper y validación
+
+Se evalúan las ecuaciones (1)–(7) con los parámetros de su tabla 1 y una
+extracción especificada de 10 píxeles: para placa de 10 cm, rango 100 km,
+la potencia es 4,16632653e−13 W, señal 15.981,44 e− y SNR 125,693.
+Es una comprobación de ecuaciones/unidades, **no una reproducción completa
+de la figura 2 ni de su límite de magnitud**.
+
+La ecuación (9), tal como está impresa, da dimensiones de 1/longitud para
+el supuesto número de píxeles. Una construcción con ancho de Airy y longitud
+de traza necesita un factor de longitud de onda: se registra el valor literal
+y el diagnóstico multiplicado por c/nu, sin aplicar una corrección silenciosa.
+El modelo TRACE usa su propia PSF medida/conceptual y extracción, no esa
+expresión dimensionalmente incompleta. También se conserva la diferencia
+entre el criterio de tránsito central empleado aquí y el factor de la
+ecuación (11) del paper; no se atribuye nuestro límite a una reproducción
+literal de ese resultado publicado.
+
+Las pruebas verifican fase lambertiana, escalados de flujo, equivalencia AB,
+velocidad/ruido, convergencia de rango, ecuaciones del paper, límite puntual
+de PSF, integración numérica independiente del píxel con traza y rechazo por
+full well. No se calculan aún probabilidades de detección, falsas alarmas,
+números de objetos detectados, readquisición o calidad orbital de TRACE.
+
+En la referencia D=80 mm, FOV=14°, fase=60°, p=0,2, v_perp=5 km/s, h_obs=600 km,
+el primer intervalo elegible comienza aproximadamente a 1,567 km para objetos
+de 1 y 10 cm, limitado por tránsito. Para un objeto de 1 m comienza a 53,734 km,
+limitado por full well. Son resultados condicionales a este modelo y exposición;
+no distancias mínimas universales ni límites calculados del ADC. Las distancias
+máximas ópticas tampoco se recortan a la geometría de encuentros LEO.
