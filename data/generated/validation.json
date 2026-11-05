@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "objects": 50000,
+  "epoch_utc": "2026-11-05T00:00:00Z",
+  "frame": "TEME",
+  "checks": [
+    "unique IDs",
+    "finite full elements and Cartesian states",
+    "empirical donor tuples unchanged",
+    "common epoch/frame",
+    "apsides in LEO",
+    "state radius within apsides",
+    "energy invariant",
+    "100 element/state round trips",
+    "source/reference hashes",
+    "all seven maps count 50000"
+  ],
+  "maximum_relative_energy_error": 1.7030094608944272e-15,
+  "perigee_min_km": 200.13709934023973,
+  "apogee_max_km": 1999.9999998999883,
+  "population_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+  "limitation": "Computational consistency audit, not validation of global debris representativeness"
+}

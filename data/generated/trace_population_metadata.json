@@ -1,8 +1,6 @@
 {
   "count": 50000,
   "seed": 20260201,
-  "epoch": "2026-02-01T00:00:00Z",
-  "epoch_note": "Hora de referencia convencional; ESA especifica la fecha, no la hora.",
   "counts_by_size": {
     "1_to_10_cm": 47400,
     "gt_10_cm": 2600
@@ -11,10 +9,75 @@
   "represented_number_from_density_integral": 354821.2987207431,
   "statistical_weight_per_sample": 7.096425974414862,
   "max_size_cutoff_m": 38.29006681561955,
-  "orbit_model": "circular; inclination, RAAN, argument of perigee and phase unspecified",
   "warning": "Synthetic approximation, not a MASTER catalogue or a detection prediction",
+  "esa_population_reference_date": "2026-02-01",
+  "orbital_model": {
+    "orbital_seed": 20260202,
+    "inclination_source": "ESA 2026 Fig. 3.3a",
+    "missing_parameters": [],
+    "status": "hybrid synthetic population; common-epoch empirical donor elements",
+    "inclination_altitude_condition": "derived perigee",
+    "common_epoch_validated": true,
+    "epoch_utc": "2026-11-05T00:00:00Z",
+    "frame": "TEME",
+    "donor_states_synchronized": true,
+    "synthetic_state_epoch_defined": true,
+    "altitude_neighbourhood_km": 100,
+    "nearest_donor_fallback_objects": 10498,
+    "maximum_fallback_altitude_offset_km": 1576.5839231401317,
+    "maximum_selected_donor_altitude_offset_km": 1576.510065097404,
+    "donors_used": 2567,
+    "sampled_family_counts": {
+      "COSMOS 2251 Debris": 7965,
+      "Chinese ASAT Test Debris_FENGYUN 1C": 40989,
+      "IRIDIUM 33 Debris": 1046
+    },
+    "boundary_altitude_adjusted_objects": 7,
+    "maximum_boundary_altitude_adjustment_km": 0.9861279447650304,
+    "warning": "Three-family proxy; e/Omega/omega joint only conditional on altitude, inclination independently ESA; no claimed global fidelity",
+    "inclination_nearest_column_fallback_objects": 0,
+    "phase_model": "independent uniform mean anomaly [0,360), seed orbital_seed+1"
+  },
+  "empirical_catalogue": {
+    "file": "empirical_leo_debris.csv",
+    "sha256": "df859311a84bd267fec32a17800e99ad77960b683eedf5ead9fa44876ce70a58",
+    "preparation": {
+      "source": "User-supplied CelesTrak files; raw originals and SHA256 in data/raw/celestrak",
+      "source_files_sha256": {
+        "Chinese ASAT Test Debris_FENGYUN 1C.csv": "a500723dc9b79dfb5f598350ab3bfd4ed7bef62351bd70661a3a4d88ad3371c9",
+        "IRIDIUM 33 Debris.csv": "dffe72a2dd2f3fa4b84bcec821de3ecd39866ba2a34c68e080fb049d4d4a849c",
+        "COSMOS 2251 Debris.csv": "71ecca323f361468e90f11faa2a3771bb767a9ac79a5faa2a02a865d2690f8ce",
+        "satcat.csv": "0de30143aba560b34fce724f0a58cd4d7482df878d2a38b5a70e9fc8daa19a6b"
+      },
+      "input_gp_objects": 2669,
+      "duplicate_rows_removed": 0,
+      "retained_donors": 2567,
+      "counts_by_family": {
+        "Chinese ASAT Test Debris_FENGYUN 1C": 1890,
+        "COSMOS 2251 Debris": 570,
+        "IRIDIUM 33 Debris": 107
+      },
+      "rejected": {
+        "not_classified_debris_or_rocket_body": 3,
+        "outside_resident_200_2000_km": 9,
+        "epoch_outside_age_window": 90
+      },
+      "epoch_utc": "2026-11-05T00:00:00Z",
+      "frame": "TEME",
+      "source_epoch_min": "2026-10-29T02:47:29.102784",
+      "source_epoch_max": "2026-11-04T23:08:20.823360",
+      "max_allowed_epoch_offset_days": 7.0,
+      "earth_radius_km": 6371.0,
+      "conversion_mu_km3_s2": 398600.4418,
+      "filter": "DEB/RB, nonoperational/nondecayed/geocentric; source epoch within window; osculating hp>=200, ha<=2000 km",
+      "propagation": "sgp4 2.27, WGS72 default; two-body instantaneous TEME elements converted with stated mu",
+      "warning": "Three breakup families are not representative of all LEO debris; propagated catalogue predictions are not ground truth"
+    }
+  },
   "reference_sha256": {
+    "empirical_leo_debris.csv": "df859311a84bd267fec32a17800e99ad77960b683eedf5ead9fa44876ce70a58",
     "esa2026_density_non_manoeuvrable.csv": "7cdfe7757356174d30b2c91c1642da0e375e65a16923932b3522852b1df72d1c",
+    "esa2026_inclination_perigee.csv": "ec6c4a9a5f58799487af520dbaa0c367cdb368c6af6ee93d6b63fafaa2542c73",
     "esa2026_size_cumulative.csv": "3d58139b3b6190dbbbd26da6fb3cec901c0c98f5c3ec41f7c6c1259e989d8106"
   }
 }

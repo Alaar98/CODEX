@@ -1,0 +1,19 @@
+{
+  "source": "ESA_Space_Environment_Report_2026.pdf",
+  "sha256": "de4e108156a9daab1aa4d59c37aacc409d413ff6848920604d084d94e7840a45",
+  "page": 68,
+  "figure": "3.3a",
+  "population": "Objects residing in LEO, end of 2025",
+  "method": "vector cell bounds; inverse 256-entry inferno_r LUT; log count scale",
+  "frame_pdf_points": [
+    83.55752563476562,
+    181.76585388183594,
+    253.99008178710938,
+    352.19842529296875
+  ],
+  "log10_count_max": 3.3432114913766786,
+  "cells_nonempty": 574,
+  "max_color_residual": 3.789426174478582e-08,
+  "count_quantization": "color LUT inversion yields approximate weights, not exact integer counts",
+  "zero_cells": "Unpainted cells have zero weight, never one"
+}

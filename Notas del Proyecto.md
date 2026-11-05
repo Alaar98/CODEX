@@ -153,3 +153,334 @@ normalizar; las celdas sin objetos no se tratarán como un objeto.
 
 Esta propuesta sigue pendiente de implementación y validación. No se han
 cambiado inclinaciones, RAAN, excentricidad ni argumento del perigeo.
+
+## Actualización: inclinación ESA y flujo empírico orbital
+
+Esta sección **sustituye el estado de implementación anterior**. Se mantiene el
+historial para distinguir hipótesis originales de decisiones posteriores.
+
+### Estado y procedencia
+
+La extracción y asignación de inclinación de figura 3.3a ya están implementadas.
+El acceso HTTPS a CelesTrak y a DISCOS devolvió `Tunnel connection failed: 403
+Forbidden` desde el proxy del entorno. No se ha obtenido un catálogo real:
+**RAAN, e y argumento del perigeo siguen sin asignarse** en el CSV actual.
+Se guardó en el borrador de red la incorporación de `celestrak.org`; guardar un
+borrador no aplica ese cambio a la máquina. El usuario debe revisar y guardar
+los ajustes; el producto puede requerir después publicar el entorno.
+
+Se intentaron operaciones de lectura en:
+
+- `https://celestrak.org/NORAD/elements/gp.php?GROUP=all&FORMAT=json`
+- `https://celestrak.org/NORAD/elements/gp.php?GROUP=cosmos-2251-debris&FORMAT=json`
+- `https://celestrak.org/pub/satcat.csv`
+- `https://discosweb.esoc.esa.int`
+
+El bloqueo del proxy se produjo antes de obtener respuesta del servicio. Por
+tanto, ni la validez de la consulta `GROUP=all` ni su cobertura están verificadas.
+No se han solicitado credenciales: el primer bloqueo es de acceso de red.
+Las familias individuales de fragmentación no se aceptan como sustituto de un
+catálogo representativo de todos los objetos DEB/R/B.
+
+### Extracción de inclinación
+
+1. Se usa el panel de residentes en LEO, página 68, figura 3.3a, estado a finales
+   de 2025. Se extraen 574 celdas vectoriales no vacías del PDF original, cuyo
+   SHA-256 se comprueba antes de extraer.
+2. Sus límites reconstruyen intervalos de 40 km de perigeo y 3° de inclinación.
+   Cada celda tiene un color de la paleta `inferno_r` de 256 entradas. El color
+   se invierte a una coordenada normalizada de la paleta y luego a un conteo
+   aproximado usando la escala logarítmica de la barra. La calibración se apoya
+   en las marcas de décadas, no en suponer que el máximo corresponde a 10³.
+3. La cuantización de la paleta impide recuperar conteos enteros exactos; se
+   conservan pesos fraccionales aproximados. El residuo RGB máximo es menor
+   de 4e-8. Esto verifica la identificación del color, no la precisión física
+   de los conteos ni la representatividad estadística de la figura.
+4. Las celdas no dibujadas tienen peso cero. No se confunde blanco con conteo 1.
+   En cada banda de altura se normalizan los pesos para construir
+   `P(intervalo de inclinación | intervalo de perigeo)`.
+5. Se conserva la muestra de tamaños y altitudes de la entrega original. Para
+   cada objeto, se elige un intervalo de inclinación con esas probabilidades y
+   una inclinación uniforme **dentro del intervalo de 3°**, no uniforme en
+   [0°,180°]. Semilla orbital independiente: 20260202.
+6. Si una banda de perigeo está vacía se permite usar la banda no vacía más
+   cercana; se registra el número de objetos afectados. En esta ejecución no
+   se necesitó este fallback.
+7. La figura usa perigeo y la población de partida usa `a-R`, definido como
+   promedio de las altitudes de los ápsides, no altitud instantánea ni promedio
+   temporal. Mientras falte e se usa h como proxy circular del perigeo. El CSV
+   actual **no conserva los ceros de e como si fueran estimaciones empíricas**:
+   omite esos parámetros. Se conserva a como descriptor de altitud.
+8. La marginal de inclinación resultante no tiene por qué reproducir la marginal
+   original del informe: se conserva su distribución condicional pero se
+   repondera cada banda con la población de tamaños/altitudes de figura 2.9.
+9. Figura 3.3 incluye objetos de diferentes tipos, incluidos payloads. Aplicar
+   su inclinación al debris >=1 cm es una hipótesis de transferencia; no se
+   puede sustraer la contribución de satélites activos a partir de este panel.
+   Tampoco se conoce su dependencia con el tamaño dentro de cada banda.
+
+### Procedimiento empírico preparado, aún no ejecutado con datos reales
+
+1. Adquirir un snapshot de elementos GP y un SATCAT de clasificación de fuente
+   pública identificada, conservando originales, URL, fecha de descarga y
+   hashes. Se acepta CSV; `prepare_empirical_catalogue.py` no descarga datos ni
+   infiere el tipo de objeto a partir de fragmentos del nombre.
+2. Cruzar por NORAD_CAT_ID, rechazar IDs duplicados en GP y seleccionar tipos
+   SATCAT `DEB` y `R/B`, no reentrados y geocéntricos. Se excluyen los payloads,
+   también los inactivos: esta decisión reduce contaminación de satélites
+   operativos pero elimina parte de los objetos no maniobrables reales.
+3. Rechazar elementos no finitos, e fuera de [0,1), ángulos fuera de sus dominios
+   y movimientos medios no positivos. Estimar a mediante la relación
+   kepleriana con mu=398600,4418 km³/s², n en rad/s y radio terrestre 6.371 km.
+   Es una aproximación con elementos medios GP; no sustituye la conversión
+   SGP4 a estados osculadores, importante especialmente en los bordes de LEO.
+4. Filtrar perigeo >=200 km y apogeo <=2.000 km. Así se definen residentes en
+   el intervalo pedido, excluyendo órbitas que solo lo atraviesan. Se registran
+   filtros, conteos, límites temporales y hashes en un JSON adjunto.
+5. Para cada objeto sintético conservar a (y, por tanto, su distribución de
+   altitud media). Seleccionar donantes con altitud media a +/-100 km y
+   excentricidad compatible con **ambos ápsides** dentro de 200–2.000 km.
+   La condición es `e <= min(h-200, 2000-h)/(R+h)`. No se recorta e después de
+   muestrearla: se filtran donantes para evitar crear una distribución truncada
+   con acumulaciones artificiales en los límites.
+6. Si no hay donantes locales se usan hasta 50 donantes físicamente compatibles
+   más cercanos en altitud. Se registra su uso y la mayor separación. Si no
+   existe ninguno compatible, el proceso falla en vez de inventar una órbita.
+7. Remuestrear con reemplazo la **tupla conjunta** `(e, Omega, omega)` de un
+   mismo donante. No ajustar normales a ángulos ni promediar 359° y 1° como
+   si fueran 180°. No se añade jitter a los elementos empíricos; se preservan
+   ID y epoch del donante para trazabilidad.
+8. Recalcular perigeo y apogeo del objeto sintético usando su a y la e muestreada.
+   Entonces muestrear inclinación de ESA condicionada en el perigeo derivado.
+   El tamaño no interviene en el remuestreo orbital: extender el catálogo de
+   objetos grandes al régimen 1–10 cm sigue siendo una hipótesis.
+9. Este factoriza el modelo como población base de (h,d), tuplas empíricas
+   `(e,Omega,omega)|h` sujetas a los límites de LEO, e inclinación ESA `i|hp`.
+   No conserva toda la dependencia de i con e/Omega/omega ni reproduce
+   necesariamente las marginales del catálogo tras los filtros. Es una
+   aproximación híbrida explícita, no una reconstrucción de la distribución
+   orbital conjunta real. Se deben evaluar las bandas sin soporte y el efecto
+   de selección, no afirmar de antemano que cualquier catálogo mejora todo.
+10. Los ángulos GP se refieren a la convención orbital del producto GP/TLE
+    (asociada a TEME), no se reinterpretan como elementos ICRF. Se conservan
+    las epochs originales; **no se han propagado a una época común**. El RAAN
+    y omega evolucionan por precesión, por lo que mezclar snapshots históricos
+    amplios o etiquetarlos con febrero de 2026 produciría una distribución
+    temporalmente inconsistente. Antes de una validación de misión se debe
+    definir epoch, restringir antigüedad y propagar con SGP4 si procede.
+11. Para e muy pequeña, omega está mal condicionado y su histograma puede
+    reflejar convenciones del elemento orbital. Para simulación se deberá
+    analizar también argumento de latitud o elementos no singulares. No se
+    inventa una interpretación física de omega para órbitas exactamente
+    circulares. Tampoco se asigna anomalía media o fase orbital todavía.
+12. No hay datos reales adquiridos con los que validar este procedimiento.
+    Las pruebas del preparador y del remuestreador usan **fixtures artificiales
+    exclusivamente**, que no se incluyen como catálogo de producción.
+
+### Gráficas y preferencia persistente del usuario
+
+Desde esta entrega se usa un módulo común de estilo científico: texto serif
+STIX, matemáticas Computer Modern, unidades SI o unidades indicadas en el eje,
+ejes limpios con marcas internas y salidas PDF vectorial y PNG a 300 dpi.
+Se usa MathText para el aspecto LaTeX. Se comprobó el motor LaTeX disponible,
+pero falla por falta de `cm-super`; el renderizado MathText funciona sin ese
+paquete y no requiere modificar la máquina para producir figuras vectoriales.
+
+Los mapas tamaño–altitud e inclinación–altitud son histogramas 2D, no puntos
+individuales: color = número de objetos sintéticos por celda, paleta inferno_r,
+normalización logarítmica y celdas vacías blancas. Altitud: bins de 40 km;
+inclinación: 3°; tamaño: 60 bins logarítmicos desde 1 cm hasta cubrir la muestra.
+Los pesos estadísticos no se aplican a los colores: representan los 50.000
+registros, no el número estimado de objetos reales. El histograma de altitud
+apila las clases 1–10 cm y >=10 cm, sin normalizar a densidad.
+
+También se generan mapa e histograma de semieje mayor. Su correlación diagonal
+con altitud es una identidad a=R+h, no un hallazgo físico. Cuando haya catálogo,
+se generarán mapas/histogramas de e, RAAN y omega (ángulos en bins de 6°;
+e en 60 bins lineales). Mientras falten, no se dibujan falsos histogramas de
+datos empíricos. `figure_manifest.json` lista las variables pendientes y
+verifica que cada mapa y el histograma de altitud cuentan todos los objetos.
+
+La extracción de inclinación se guarda en CSV/JSON y es reproducible desde el
+PDF mediante `scripts/extract_esa_inclination.py`. Las comprobaciones incluyen
+soporte de celdas vacías, distribución condicional de i, semillas, límites de
+ápsides, conservación de tuplas de donantes y contabilización en figuras.
+
+## Revisión de los archivos CelesTrak aportados el 2026-11-05
+
+Se conservan los originales en `data/raw/celestrak/` con hashes SHA-256 y
+procedencia declarada en `provenance.json`. El usuario los obtuvo de CelesTrak;
+no se dispone de URL exacta ni hora de descarga. Se ha comprobado el contenido,
+sin actualizar todavía los elementos de la población sintética.
+
+- GP: 16.875 filas e IDs únicos, delimitador coma; epochs entre
+  `2026-10-09T07:05:09.269952` y `2026-11-05T12:48:42.753024`.
+- SATCAT: 71.262 filas, delimitador **punto y coma**. Tipos: 28.274 PAY,
+  35.947 DEB, 6.923 R/B y 118 UNK. El lector de catálogo preparado previamente
+  supone coma: deberá adaptarse o normalizar una copia, conservando el original.
+- Los 16.875 GP cruzan con SATCAT: **16.871 PAY, cuatro R/B, cero DEB**.
+  Los cuatro R/B figuran con estado operativo `+`; solo tres tienen perigeo
+  >=200 km y apogeo <=2.000 km. No constituyen donantes representativos de
+  basura espacial; no se deben usar esos tres para ajustar RAAN/omega del debris.
+- SATCAT contiene 14.977 DEB/R/B no reentrados. Con ápsides numéricos finitos,
+  apogeo >= perigeo, perigeo >=200 km y apogeo <=2.000 km, quedan **10.844**
+  (9.846 DEB y 998 R/B). Otros 3.766 están fuera del intervalo de residentes
+  y 367 carecen de ápsides válidos. Estas cifras no equivalen a una validación
+  de vigencia de todos los objetos ni a cobertura de la población de 1 cm.
+
+SATCAT incluye PERIGEE/APOGEE, INCLINATION y PERIOD: permite estimar una
+distribución empírica de e a partir de los ápsides, usando
+`e=(ha-hp)/(2*6371+ha+hp)`. Las altitudes están redondeadas; pequeñas e pueden
+quedar cuantizadas o aparecer como cero. SATCAT no aporta EPOCH orbital,
+RAAN ni argumento del perigeo: no permite reconstruir esas dos distribuciones
+ni sincronizar los elementos a una época común. La ausencia de fecha de
+reentrada no garantiza por sí sola una órbita vigente.
+
+El GP sí proporciona e, RAAN, omega y anomalía media, pero para una población
+dominada por satélites activos. Transferir sus planos y orientaciones a basura
+introduciría los patrones de operación de constelaciones, no una distribución
+empírica de debris. **No se adopta esa transferencia como hipótesis**.
+
+Para completar el procedimiento conjunto preparado se requiere un GP/OMM o TLE
+que cubra objetos DEB y R/B de distintas familias, con NORAD_CAT_ID y epoch,
+cruzado con este SATCAT. Las fechas GP recibidas son de octubre/noviembre de
+2026, no de febrero de 2026: se deberá definir una referencia temporal coherente
+o documentar y estudiar explícitamente ese desfase con el baseline ESA.
+
+## Entrega de población orbital completa con los cinco CSV del usuario
+
+Esta sección sustituye los estados anteriores de parámetros pendientes y de
+epochs mezcladas. La población entregada tiene **50.000 registros con seis
+elementos orbitales y estado cartesiano**, a una época orbital común. No se
+afirma que las tres familias reconstruyan todo el entorno de basura real.
+
+### Originales y selección
+
+Se conservan, sin alterar sus bytes, los cinco CSV en `data/raw/celestrak/`:
+
+| Archivo | Registros originales | Uso |
+|---|---:|---|
+| Chinese ASAT Test Debris_FENGYUN 1C.csv | 1.976 | Candidatos a donantes |
+| IRIDIUM 33 Debris.csv | 109 | Candidatos a donantes |
+| COSMOS 2251 Debris.csv | 584 | Candidatos a donantes |
+| active_satellites_GP.csv | 16.875 | Archivo de referencia, excluido del muestreo |
+| satcat.csv | 71.262 | Clasificación por NORAD_CAT_ID |
+
+`provenance.json` contiene tamaño, delimitador, número de filas, rango de epochs
+cuando existe y SHA-256 de cada original. No se inventan URL ni hora de descarga
+que el usuario no haya proporcionado. `.gitattributes` evita normalizar los
+saltos de línea de estos originales al guardarlos o recuperarlos con Git.
+
+Los tres grupos reúnen 2.669 objetos únicos: 2.666 DEB y tres PAY. Se cruzan con
+SATCAT, se excluyen PAY y UNK, objetos operativos (+, P, B, S, X), reentrados y
+no geocéntricos. SATCAT se lee con su delimitador real, punto y coma; los GP
+usan coma. El GP de satélites activos se archiva pero no se utiliza para
+rellenar huecos ni para aumentar artificialmente la muestra de basura.
+
+### Época, propagación y definición de elementos
+
+1. Época orbital de la entrega: **2026-11-05T00:00:00Z**. Se elige un instante
+   UTC fijo cercano a los snapshots recibidos, no la hora de ejecución.
+2. Para limitar extrapolación temporal de TLE/GP se exige un desfase absoluto
+   máximo de **7 días** respecto a esa época. Es un filtro de antigüedad de
+   ingeniería, no garantía de precisión orbital; no se dispone de covarianzas.
+3. Los GP se inicializan con `sgp4.omm` y se propagan con **sgp4 2.27**, modelo
+   gravitacional WGS72 por defecto, hasta la época común. Se comprueban los
+   códigos de error. Las epochs originales sin sufijo se interpretan como UTC,
+   según el formato de GP; se conservan en el catálogo de referencia.
+4. La salida SGP4 es posición/velocidad **TEME**, en km y km/s. Se convierten a
+   elementos keplerianos instantáneos con mu=398600,4418 km³/s². Ese mu de
+   conversión no es el mu interno WGS72 del propagador; está explícito en los
+   metadatos. Los elementos resultantes describen el estado instantáneo bajo
+   esa convención, no son los elementos medios originales GP.
+5. Se rechazan estados inválidos/no elípticos y órbitas cuyos ápsides
+   instantáneos quedan fuera de 200–2.000 km sobre la esfera R=6.371 km. Este
+   criterio no equivale a asegurar residencia perpetua bajo perturbaciones ni
+   a imponer altitud sobre un elipsoide o terreno real.
+6. Resultado: **2.567 donantes** (1.890 FENGYUN, 570 COSMOS, 107 IRIDIUM).
+   Rechazos: tres no DEB/RB, 90 por antigüedad y nueve por límites orbitales.
+   La prioridad de filtros determina estas categorías excluyentes. En esta
+   ejecución no hubo IDs duplicados ni errores SGP4 para candidatos admitidos.
+7. Los GP aceptados tienen epochs originales entre 29 de octubre y 4 de
+   noviembre de 2026. Se guardan los originales, el catálogo sincronizado,
+   parámetros de propagación, hashes y conteos por familia en
+   `data/reference/empirical_leo_debris.csv` y su JSON.
+
+### Asignación a la población sintética
+
+1. Se mantienen semilla 20260201, tamaños y muestreo ESA de altitud. Se siguen
+   utilizando las distribuciones poblacionales de febrero de 2026 y la
+   inclinación a finales de 2025. No se propaga el entorno estadístico ESA hasta
+   noviembre: mezclar esas referencias con las orientaciones orbitales de
+   noviembre es una hipótesis híbrida explícita, no una instantánea histórica
+   real del entorno ni una evolución poblacional calculada.
+2. Se remuestrea con reemplazo la tupla **(e, RAAN, omega)** de un mismo donante
+   sincronizado. Se prioriza altitud media a +/-100 km, filtrando e para que,
+   aplicada al a sintético, deje ambos ápsides dentro de los límites.
+   Esta selección conserva correlaciones de la tupla entre sí, pero no toda
+   su correlación con a ni la dependencia con inclinación o tamaño.
+3. Sin donantes locales se toman hasta los 50 compatibles más cercanos. En la
+   muestra entregada ocurre en **10.498 objetos, 20,996 %**. La máxima separación
+   entre donantes candidatos de fallback y objeto ronda **1.577 km**. La falta
+   de cobertura de estas familias a altas altitudes y sus e condicionan la
+   selección: esa región **es extrapolación**, no una medición empírica local.
+   Cada objeto guarda ID, familia, epoch original, altitud del donante,
+   separación y bandera `donor_local_support`. Los metadatos también incluyen
+   el máximo de la separación del donante efectivamente seleccionado.
+4. Para **siete objetos** no había ninguna e de donante compatible con la
+   altitud muestreada, por estar demasiado cerca de un borde. En vez de
+   recortar e o inventar e=0, se desplaza h la mínima distancia al intervalo
+   compatible con el donante menos excéntrico, con margen numérico de 1e-7 km.
+   La mayor corrección es **0,98613 km**. Se guardan `esa_sampled_altitude_km`
+   y `altitude_adjustment_km`; tamaños y número de objetos no cambian.
+   Esta corrección reemplaza explícitamente la política inicial de abortar
+   ante cualquier objeto sin soporte. No implica que esa e sea real en el borde.
+5. Se calculan hp y ha usando la a sintética y la e remuestreada. Se muestrea
+   inclinación de la figura ESA condicionada al **perigeo resultante**, no a
+   la altitud media. No se requirió préstamo de bandas ESA vacías.
+6. La asignación independiente de inclinación ESA puede romper la correlación
+   de planos orbitales que tienen las familias originales con RAAN y omega.
+   Se acepta como aproximación inicial solicitada; no se debe presentar como
+   un conjunto de fragmentos reales coherentes de esas familias.
+7. Distribución final de procedencia: 40.989 registros usan FENGYUN, 7.965
+   COSMOS y 1.046 IRIDIUM. Las frecuencias resultan del soporte del catálogo y
+   los filtros, **no son abundancias reales de esas familias en todo LEO**.
+8. La fase se completa con **anomalía media uniforme en [0°,360°)**, semilla
+   20260203, independiente del resto. Es una hipótesis sintética de mezcla en
+   fase, no la anomalía empírica del donante. Se usa M uniforme, no anomalía
+   verdadera uniforme, para representar tiempo uniforme a lo largo de la elipse.
+9. Se resuelve Kepler y se calculan posiciones (x,y,z) en km y velocidades en
+   km/s mediante conversión de los seis elementos en TEME a la época común.
+   Es una conversión inicial kepleriana, **no se ha propagado aún cada objeto
+   sintético con SGP4** ni se han definido BSTAR/área-masa para él. La etiqueta
+   TEME no significa ICRF/J2000; las futuras transformaciones deben ser explícitas.
+10. Se mantienen 47.400 tamaños de 1–10 cm y 2.600 >=10 cm. Transferir las
+    propiedades orbitales catalogadas a 1–10 cm es una aproximación no validada.
+    Tampoco se asigna masa sin una hipótesis de densidad, forma y área/masa.
+11. Las curvas ESA de densidad son de ocupación espacial. Usarlas como una
+    distribución de a-R y añadir e no reproduce exactamente esa ocupación
+    radial: la fase desplaza cada objeto respecto a a-R. Se distinguen altitud
+    media convencional a-R, perigeo, apogeo y altitud de la posición instantánea.
+    Una reconstrucción de densidad radial más fiel requeriría otro ajuste inverso.
+
+### Figuras, reproducibilidad y alcance de la validación
+
+Se regeneran mapas e histogramas de a, e, i, RAAN, omega y M, además de
+tamaño–altitud–conteo e histograma de altitud, con el estilo de publicación
+acordado. Los mapas orbitales usan hp en X; el de tamaño y el histograma de
+altitud usan a-R. Los bordes o envolventes en los mapas de e se deben en parte
+a las restricciones de ápsides, no prueban una estructura física del debris.
+Las celdas coloreadas cuentan registros sintéticos, sin aplicar su peso de
+representación. Todos los mapas contabilizan los 50.000 registros.
+
+`bash scripts/reproduce_population.sh` rehace la selección y sincronización de
+donantes, población, figuras y auditoría desde los CSV originales, sin red.
+El generador usa automáticamente el catálogo incluido cuando existe; el modo
+parcial solo se solicita explícitamente con `--inclination-only`.
+
+Las pruebas comprueban filtros, delimitadores, epochs, conversiones elementales,
+conservación de tuplas, límites y conteos. La auditoría sobre los 50.000 registros
+verifica hashes, elementos finitos, estado/energía, ápsides, época y marco comunes
+y conversiones inversas de 100 objetos. Esto acredita consistencia computacional
+y trazabilidad; **no valida representatividad global, precisión de observación,
+covarianzas ni viabilidad de detección de TRACE**.

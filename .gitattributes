@@ -1,0 +1,4 @@
+# Preserve original source bytes so provenance hashes remain valid on checkout.
+data/raw/celestrak/*.csv -text whitespace=cr-at-eol
+data/generated/*.csv text eol=lf
+data/reference/*.csv text eol=lf

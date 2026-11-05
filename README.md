@@ -19,7 +19,7 @@ python -m venv .venv
 .venv/bin/python examples/first_order_budget.py
 ```
 
-La población y sus gráficos utilizan NumPy y Matplotlib. La instalación utiliza
+La población y sus gráficos utilizan NumPy, Matplotlib y SGP4. La instalación utiliza
 setuptools como herramienta de empaquetado. No requiere servicios ni claves.
 
 ## Población sintética ESA 2026
@@ -32,14 +32,68 @@ Genera exactamente 50.000 objetos, de diámetro >=1 cm y altitud 200–2.000 km,
 con semilla fija. Los resultados son:
 
 - `data/generated/trace_population_50000.csv`: identificadores, tamaños, altitudes,
-  semiejes, excentricidades, epoch convencional y pesos estadísticos.
+  seis elementos orbitales, posición/velocidad, epoch y marco, donantes,
+  indicadores de extrapolación y pesos estadísticos.
 - `data/generated/trace_population_metadata.json`: parámetros y trazabilidad.
-- `outputs/trace_size_vs_altitude.png` y `.pdf`: todos los objetos de la muestra.
+- `data/generated/validation.json`: auditoría de consistencia del resultado.
+- `outputs/trace_size_vs_altitude.png` y `.pdf`: mapa tamaño–altitud con conteos.
+- `outputs/trace_inclination_vs_altitude.*`: inclinación–altitud con conteos.
+- `outputs/trace_inclination_histogram.*`: histograma de inclinación.
+- `outputs/trace_altitude_histogram.*`: histograma de altitud por clase de tamaño.
+- `outputs/trace_semi_major_axis_*.{png,pdf}`: semieje mayor.
+- `outputs/trace_eccentricity_*.{png,pdf}`: excentricidad.
+- `outputs/trace_raan_*.{png,pdf}`: RAAN.
+- `outputs/trace_argument_of_perigee_*.{png,pdf}`: argumento del perigeo.
+- `outputs/trace_mean_anomaly_*.{png,pdf}`: anomalía media.
+- `outputs/figure_manifest.json`: variables disponibles y conteos de los mapas.
 
 Fuentes originales: `docs/references/`. Curvas extraídas: `data/reference/`.
 Consultar **[Notas del Proyecto](Notas%20del%20Proyecto.md)** para las hipótesis.
-Las órbitas circulares equivalentes aún no incluyen orientación ni fase: esta
-entrega no permite calcular encuentros o cobertura y no es un catálogo MASTER.
+La inclinación procede de la figura 3.3a del informe, condicionada en bandas de
+40 km de perigeo. Los donantes de e/RAAN/omega se propagan con SGP4 a
+**2026-11-05 00:00:00 UTC, marco TEME**. La anomalía media es sintética, uniforme.
+Se guardan los seis elementos y estados cartesianos coherentes a esa época.
+Es una población híbrida de estudio, no un catálogo MASTER.
+
+## Referencias CelesTrak y reproducción completa
+
+Los cinco CSV originales del usuario están en `data/raw/celestrak/`, con hashes
+en `provenance.json`. Se utilizan los grupos FENGYUN 1C, IRIDIUM 33 y COSMOS
+2251, cruzados con SATCAT; el GP de activos se archiva, pero no se usa como
+donante. La reproducción funciona sin acceso a CelesTrak.
+
+Para volver a filtrar, sincronizar, muestrear, dibujar y auditar:
+
+```bash
+bash scripts/reproduce_population.sh
+```
+
+Se filtran DEB/RB no operativos ni reentrados, geocéntricos, con GP dentro de
+7 días de la época común y órbitas residentes en 200–2.000 km. Quedan **2.567
+donantes**. Se propagan sus GP y se convierten los estados TEME a elementos
+instantáneos antes de remuestrear conjuntamente `(e, RAAN, omega)`.
+
+**Limitación importante:** son tres familias de fragmentación, no una muestra
+representativa de toda la basura LEO. El 20,996 % de la población requiere
+donantes fuera de +/-100 km de altitud; siete altitudes se ajustan menos de
+1 km para respetar los ápsides. Estas decisiones y la transferencia desde
+objetos catalogados a tamaños de 1–10 cm están detalladas en las notas.
+
+El generador usa por defecto el catálogo de referencia incluido. La opción
+`--inclination-only` solicita explícitamente una salida parcial. No se asigna
+masa: faltan hipótesis de forma, densidad y relación área/masa.
+
+## Estilo científico de las figuras
+
+Todas las figuras nuevas usan el módulo compartido `plotting.py`: texto serif,
+matemáticas Computer Modern, ejes con unidades y bins explícitos, PDF vectorial
+y PNG a 300 dpi. Los mapas usan la paleta `inferno_r`, escala logarítmica de
+conteos y celdas vacías blancas. El estilo matemático se renderiza con MathText:
+no requiere una instalación LaTeX externa.
+
+La reextracción opcional de figuras ESA necesita PyMuPDF (probado con 1.26.6):
+`python scripts/extract_esa_inclination.py`. Generar la población desde los CSV
+incluidos no necesita esa dependencia.
 
 ## Organización
 

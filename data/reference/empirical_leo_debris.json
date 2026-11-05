@@ -1,0 +1,32 @@
+{
+  "source": "User-supplied CelesTrak files; raw originals and SHA256 in data/raw/celestrak",
+  "source_files_sha256": {
+    "Chinese ASAT Test Debris_FENGYUN 1C.csv": "a500723dc9b79dfb5f598350ab3bfd4ed7bef62351bd70661a3a4d88ad3371c9",
+    "IRIDIUM 33 Debris.csv": "dffe72a2dd2f3fa4b84bcec821de3ecd39866ba2a34c68e080fb049d4d4a849c",
+    "COSMOS 2251 Debris.csv": "71ecca323f361468e90f11faa2a3771bb767a9ac79a5faa2a02a865d2690f8ce",
+    "satcat.csv": "0de30143aba560b34fce724f0a58cd4d7482df878d2a38b5a70e9fc8daa19a6b"
+  },
+  "input_gp_objects": 2669,
+  "duplicate_rows_removed": 0,
+  "retained_donors": 2567,
+  "counts_by_family": {
+    "Chinese ASAT Test Debris_FENGYUN 1C": 1890,
+    "COSMOS 2251 Debris": 570,
+    "IRIDIUM 33 Debris": 107
+  },
+  "rejected": {
+    "not_classified_debris_or_rocket_body": 3,
+    "outside_resident_200_2000_km": 9,
+    "epoch_outside_age_window": 90
+  },
+  "epoch_utc": "2026-11-05T00:00:00Z",
+  "frame": "TEME",
+  "source_epoch_min": "2026-10-29T02:47:29.102784",
+  "source_epoch_max": "2026-11-04T23:08:20.823360",
+  "max_allowed_epoch_offset_days": 7.0,
+  "earth_radius_km": 6371.0,
+  "conversion_mu_km3_s2": 398600.4418,
+  "filter": "DEB/RB, nonoperational/nondecayed/geocentric; source epoch within window; osculating hp>=200, ha<=2000 km",
+  "propagation": "sgp4 2.27, WGS72 default; two-body instantaneous TEME elements converted with stated mu",
+  "warning": "Three breakup families are not representative of all LEO debris; propagated catalogue predictions are not ground truth"
+}

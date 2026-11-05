@@ -1,0 +1,43 @@
+{
+  "provenance": "Original CelesTrak CSV files supplied by user on 2026-11-05; exact download time and URLs not supplied",
+  "files": {
+    "Chinese ASAT Test Debris_FENGYUN 1C.csv": {
+      "sha256": "a500723dc9b79dfb5f598350ab3bfd4ed7bef62351bd70661a3a4d88ad3371c9",
+      "bytes": 303080,
+      "rows": 1976,
+      "delimiter": ",",
+      "epoch_min": "2026-10-06T17:10:20.024256",
+      "epoch_max": "2026-11-04T23:08:20.823360"
+    },
+    "IRIDIUM 33 Debris.csv": {
+      "sha256": "dffe72a2dd2f3fa4b84bcec821de3ecd39866ba2a34c68e080fb049d4d4a849c",
+      "bytes": 16991,
+      "rows": 109,
+      "delimiter": ",",
+      "epoch_min": "2026-10-28T23:17:58.514496",
+      "epoch_max": "2026-11-04T22:51:00.156096"
+    },
+    "COSMOS 2251 Debris.csv": {
+      "sha256": "71ecca323f361468e90f11faa2a3771bb767a9ac79a5faa2a02a865d2690f8ce",
+      "bytes": 90637,
+      "rows": 584,
+      "delimiter": ",",
+      "epoch_min": "2026-10-11T17:31:09.794208",
+      "epoch_max": "2026-11-04T23:01:37.255872"
+    },
+    "active_satellites_GP.csv": {
+      "sha256": "2cc5f46afcaefb6036c7d0f0f0feee94e936671b572597b6faf433a36442b6a5",
+      "bytes": 2552988,
+      "rows": 16875,
+      "delimiter": ",",
+      "epoch_min": "2026-10-09T07:05:09.269952",
+      "epoch_max": "2026-11-05T12:48:42.753024"
+    },
+    "satcat.csv": {
+      "sha256": "0de30143aba560b34fce724f0a58cd4d7482df878d2a38b5a70e9fc8daa19a6b",
+      "bytes": 6746148,
+      "rows": 71262,
+      "delimiter": ";"
+    }
+  }
+}
