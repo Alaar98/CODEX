@@ -1162,3 +1162,59 @@ clasifica este instante y esta posición ilustrativa. El CSV de distancias
 incluye ahora todos los flags, fase, tasa aparente, tiempo visible y SNR;
 el JSON registra la geometría, el Sol aproximado y los conteos. Se verifica
 que el hash de la población nominal permanece intacto.
+
+
+## Época seleccionada con más visibles y tres categorías de color
+
+Por petición del usuario se sustituye la instantánea anterior por otra con
+más objetos visibles. Se mantiene la misma órbita circular ecuatorial
+prógrada a 450 km, su estado inicial y la cámara al zenit. No se cambian
+inclinación, óptica, albedo, población ni condiciones para fabricar detecciones.
+Se propagan **ambos**: observador y los 50000 debris; cambiar solamente el
+Sol o la etiqueta de fecha manteniendo sus posiciones no sería consistente.
+
+Propagación breve de dos cuerpos: para cada debris M(t)=M0+sqrt(mu/a^3)*dt,
+resolviendo Kepler y conservando a,e,i,Omega,omega. Se comprueba primero que
+los elementos en dt=0 reproducen los seis componentes cartesianos guardados
+(tolerancia relativa 1e-10 y absoluta 1e-8 en sus unidades). El observador
+gira un ángulo n_obs*dt en su órbita circular. La cámara gira con él:
+eje radial=zenit, eje tangencial=along-track, normal orbital=+Z. La línea
+de visión, el campo rectangular, la fase solar y la velocidad aparente se
+recalculan en cada época. Se conserva la integración de tránsitos parciales
+centrada sobre la época seleccionada.
+
+Se usan los ejes TEME fijos de 2026-11-05T00:00:00Z como referencia inercial
+aproximada durante el barrido. No se propagan con SGP4 los GP originales ni
+se pretende obtener estados TEME de fecha precisos; la población ya contiene
+sus propios estados sintéticos. Se omiten J2, arrastre y cambio de los ejes
+TEME. Se conserva la aproximación solar y de sombra cilíndrica anterior,
+actualizando la dirección solar para cada instante. Es una visualización
+breve de primer orden, no propagación de misión de alta fidelidad.
+
+**Selección reproducible:** dt=0,15,30,... segundos, mientras dt<T_obs,
+donde T_obs=5606.386763 s (93.439779 min). Son 374 instantáneas. Se elige
+el mayor número de visibles (dentro del campo, sin ocultación, iluminados,
+con exclusión solar del boresight satisfecha). Si hay empate se elige la
+primera. No se usa el número de detecciones ni el SNR para seleccionar.
+La tabla completa se guarda como snapshot_epoch_scan_450km.csv. Este es el
+máximo **de la malla**, no un máximo continuo garantizado ni una tasa media.
+
+Época elegida: 2026-11-05T01:23:15Z, dt=4995 s. Estado del observador en los
+ejes nominales: r=(5281.479828,-4316.481418,0) km,
+v=(4.837563616,5.919055865,0) km/s. Se conserva a=6821 km, e=0, i=0.
+Hay 13 objetos dentro del campo y los 13 cumplen visibilidad. Ninguno cumple
+SNR>=5: el SNR varía entre 0.00637 y 0.83546. Sus tamaños son
+1.0159–9.7791 cm y sus distancias 628.94–1521.55 km.
+
+Colores mutuamente excluyentes: verde=visible y detectable; lila=visible y
+no detectable; gris=no visible. Resultado: **0 verdes, 13 lilas, 49987 grises**.
+Los tres grupos conservan todos los objetos, incluso si sus puntos se
+superponen. Los objetos destacados se dibujan encima del gris. El dominio
+no resuelto sigue sombreado en rojo transparente por debajo de la línea;
+los 50000 objetos lo cumplen también en esta época. Se actualizan la figura,
+la tabla por objeto y el manifiesto, manteniendo el hash del nominal.
+
+Esta instantánea se selecciona deliberadamente para mostrar más visibles;
+no se usa como estimación imparcial del rendimiento de TRACE. Los ceros
+verdes no se han reemplazado por detecciones hipotéticas para completar
+la leyenda. El estudio óptico paramétrico y su Excel permanecen iguales.

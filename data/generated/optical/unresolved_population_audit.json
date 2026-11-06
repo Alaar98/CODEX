@@ -4,11 +4,21 @@
   "unresolved_objects": 50000,
   "resolved_objects": 0,
   "observer_teme_km": [
-    6821.0,
-    0.0,
+    5281.479827756374,
+    -4316.4814176598165,
     0.0
   ],
-  "epoch_utc": "2026-11-05T00:00:00Z",
+  "epoch_utc": "2026-11-05T01:23:15Z",
+  "nominal_epoch_utc": "2026-11-05T00:00:00Z",
+  "elapsed_s": 4995.0,
+  "epoch_selection": {
+    "rule": "maximum visible count; earliest in a tie; no SNR selection",
+    "scan_step_s": 15.0,
+    "scan_duration_s": 5606.386763415304,
+    "sampled_epochs": 374
+  },
+  "propagation": "two body, fixed TEME axes of nominal epoch; no J2/drag/precession",
+  "visible_not_detectable_objects": 13,
   "fov_deg": 14.0,
   "fwhm_px": 2,
   "pixel_scale_rad_px": 5.6582746959863864e-05,
@@ -17,31 +27,31 @@
   "boundary_cm_per_km": 11.316549391972773,
   "visibility_classification_applied": true,
   "population_filtered": false,
-  "in_fov_objects": 3,
-  "visible_objects": 0,
+  "in_fov_objects": 13,
+  "visible_objects": 13,
   "visible_detectable_objects": 0,
-  "grey_objects": 50000,
+  "grey_objects": 49987,
   "sun_direction_approximate_teme": [
-    -0.7363544898393511,
-    -0.6207844252747315,
-    -0.26908876347731464
+    -0.7356698958453973,
+    -0.6214673319997465,
+    -0.26938477982978
   ],
-  "boresight_sun_deg": 137.4217929743378,
+  "boresight_sun_deg": 100.1571454923299,
   "observer_velocity_km_s": [
-    0.0,
-    7.644425686065925,
+    4.837563615684644,
+    5.919055865084279,
     0.0
   ],
   "geometry_assumptions": [
-    "Illustrative circular equatorial prograde observer; zenith +X, horizontal +Y, vertical +Z",
+    "Illustrative circular equatorial prograde observer; zenith radial, horizontal along-track, vertical orbit normal",
     "Rectangular field set by detector dimensions and nominal focal length",
-    "Exposure centred at nominal epoch; linear tangent-plane motion and field clipping",
+    "Exposure centred at selected epoch; linear tangent-plane motion and field clipping",
     "Phases and apparent rates calculated per object; geometric albedo remains nominal",
     "Sun at infinity, low-precision mean-of-date direction approximated as TEME; no nutation correction",
     "Opaque spherical Earth; cylindrical shadow without penumbra; no spacecraft self-shadow",
     "Visible: inside field at exposure midpoint, Earth clear, illuminated, boresight solar exclusion",
     "Detectable: visible AND SNR>=5 AND unsaturated AND unresolved AND target solar exclusion",
-    "Single snapshot only; no orbit propagation or accumulated mission counts"
+    "Selected snapshot after short two-body propagation; no accumulated mission counts"
   ],
   "png": "trace_nominal_unresolved_source_limit_observer_450km.png"
 }
