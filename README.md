@@ -294,3 +294,20 @@ La magnitud aparente ya contiene la dilución del flujo: no se aplica otra
 pérdida 1/r² al variar el rango con magnitud fija. Son mapas instrumentales,
 no conteos de población. Curvas, mallas NPZ y manifiesto quedan en
 `data/generated/optical/snr*`; figuras en `outputs/optical/summary/`.
+
+## Magnitud y velocidad con los 50000 objetos
+
+```bash
+.venv/bin/python -m scripts.plot_population_snr_scatter
+```
+
+Genera dos PNG `trace_nominal_sso450km_*_all_objects.png` con todos los
+objetos de la instantánea SSO 06:00 del 2026-11-05T00:22:00Z. Azul:
+1<=d<5 cm; verde: 5<=d<10 cm; lila: d>=10 cm. Cruz: no detectable;
+estrella con borde negro: detectable. Se recalculan magnitudes y velocidades
+individuales. En magnitud, los objetos en sombra u ocultos por la Tierra
+aparecen en una franja categórica «Sin señal», sin brillo numérico ficticio.
+El rojo es únicamente referencia nominal (5 km/s o 5 cm/fase 60°), no un
+umbral universal para todos los tamaños y geometrías. La clasificación
+individual incluye iluminación y campo de visión además del SNR. Datos y
+manifiesto: `data/generated/optical/population_snr_scatter_*`.

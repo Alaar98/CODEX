@@ -1,0 +1,74 @@
+{
+  "population_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+  "baseline_sha256": "d0974311900755a319c10a1d33c8e4cfe032b30344c86d700d3a17b486dfa293",
+  "epoch_utc": "2026-11-05T00:22:00Z",
+  "observer_scenario": {
+    "id": "sso_ltan_6",
+    "label": "SSO LTAN 06:00",
+    "inclination_deg": 97.18768657944216,
+    "raan_deg": 130.1325984930384,
+    "ltan_h": 6.0,
+    "semi_major_axis_km": 6821.0,
+    "eccentricity": 0.0,
+    "initial_u_deg": 0.0,
+    "peak_visible": 15,
+    "epoch_peak_visible": "2026-11-05T00:24:30Z",
+    "elapsed_peak_visible_s": 1470.0,
+    "detectable_at_peak_visible": 0,
+    "peak_detectable": 1,
+    "mean_visible_per_sample": 1.5106951871657754,
+    "mean_detectable_per_sample": 0.029411764705882353,
+    "unique_sampled_visible_objects": 345,
+    "unique_sampled_detectable_objects": 10,
+    "maximum_visible_snr": 1001.0648968943556
+  },
+  "observer_position_km": [
+    248.28830047257563,
+    1024.0302215871857,
+    6739.121309571786
+  ],
+  "observer_velocity_km_s": [
+    4.973472988177041,
+    -5.763862931891061,
+    0.6925998902902095
+  ],
+  "objects_in_each_figure": 50000,
+  "size_groups": [
+    {
+      "label": "$1\\leq d<5$ cm",
+      "color": "#0072B2",
+      "count": 45035
+    },
+    {
+      "label": "$5\\leq d<10$ cm",
+      "color": "#009E73",
+      "count": 2365
+    },
+    {
+      "label": "$d\\geq10$ cm",
+      "color": "#B57EDC",
+      "count": 2600
+    }
+  ],
+  "visible": 10,
+  "detectable": 1,
+  "not_detectable": 49999,
+  "sunlit": 40043,
+  "direct_flux_objects": 9661,
+  "no_direct_signal_band_objects": 40339,
+  "no_direct_signal_band_plot_y": 37.0,
+  "no_direct_signal_band_convention": "categorical display row, never a finite apparent magnitude",
+  "magnitude_model": "AB-equivalent reflected solar flux; geometric phase per object, nominal albedo; shadowed or Earth-occulted magnitude undefined",
+  "velocity_definition": "norm of relative inertial velocity projected perpendicular to observer-object LOS; excludes camera rotation",
+  "snr_motion": "camera angular rate includes full vector LVLH rotation, per existing snapshot model",
+  "markers": {
+    "x": "not detectable",
+    "star_black_outline": "detectable"
+  },
+  "reference_curves": "nominal 5 km/s for magnitude; 5 cm / 60 deg / along-track for velocity; red shading not a classification of all points",
+  "selection": "reuse previously selected SSO 06:00 sample, no new epoch optimisation",
+  "figures": [
+    "trace_nominal_sso450km_apparent_magnitude_vs_range_all_objects.png",
+    "trace_nominal_sso450km_transverse_velocity_vs_range_all_objects.png"
+  ]
+}

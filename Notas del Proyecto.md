@@ -1372,3 +1372,63 @@ contorno de velocidad, mallas numéricas comprimidas NPZ y manifiesto con
 unidades/hipótesis/hash del Excel se guardan en data/generated/optical.
 Los PNG quedan en outputs/optical/summary y usan el estilo compartido a
 300 dpi. Las poblaciones y los CSV de referencia ESA no se modifican.
+
+## Gráficas de magnitud y velocidad con todos los objetos y color por tamaño
+
+El usuario aclara que desea puntos para los 50000 objetos, no únicamente
+mapas continuos del instrumento. Se añaden dos figuras de población nominal
+sin sustituir los mapas instrumentales de referencia. Se usa la misma
+instantánea SSO anterior: LTAN 06:00, 450 km, i=97.18768658 grados,
+RAAN=130.13259849 grados, 2026-11-05T00:22:00Z. Se propagan todos los objetos
+al instante seleccionado y se recalculan fases, velocidades y detectabilidad;
+no hay una nueva búsqueda de una época favorable.
+
+El color identifica tamaño, con intervalos disjuntos: azul 1<=d<5 cm
+(45035 objetos), verde 5<=d<10 cm (2365), lila d>=10 cm (2600).
+Exactamente 5 cm pertenece al verde; exactamente 10 cm pertenece al lila.
+El marcador identifica detectabilidad: cruz para no detectable, estrella
+de su mismo color de tamaño con borde negro para detectable. Se dibujan
+los 50000 registros en cada figura, aunque muchos se superponen. Los
+colores de estas dos nuevas figuras ya no representan visibilidad: se
+siguen las nuevas instrucciones del usuario. No se cambian las anteriores
+figuras con gris/lila/verde por visibilidad.
+
+La magnitud es AB equivalente de la reflexión solar usando el tamaño,
+albedo nominal 0.2, distancia y fase de cada objeto. Un objeto en sombra
+o con la línea de visión tapada por la Tierra no tiene flujo solar directo
+al instrumento en este modelo: no se le asigna una magnitud numérica ficticia.
+Se representan sus puntos con la misma distancia y color en una franja
+categórica rotulada «Sin señal», separada del eje numérico de magnitud.
+Hay 9661 registros con magnitud solar directa finita y 40339 en esa franja.
+No se descartan los objetos fuera del campo: pueden tener magnitud finita
+si hay iluminación y línea de visión, pero no son detectables por la cámara.
+El valor de posición gráfica de la franja no es una magnitud física.
+
+El eje de velocidad muestra la norma del componente de v_debris-v_observador
+perpendicular a la línea de visión, en km/s, antes de descontar el giro de
+la cámara. El SNR individual usa la tasa angular vectorial calculada por
+classify_snapshot, que sí descuenta el giro LVLH. No se sustituye por el
+modelo escalar along-track cuando el movimiento real tiene otra dirección.
+
+Se mantienen curvas y sombreado rojo solo como **referencia nominal**:
+magnitud límite a 5 km/s en el primer panel; SNR=5 para d=5 cm, fase=60 grados
+y movimiento along-track en el segundo. No existe una frontera universal
+en esos planos para objetos con tamaños, fases, direcciones y velocidades
+diferentes. Por eso el rojo de referencia no determina la clasificación
+de los puntos; esta se calcula por objeto con SNR>=5, no saturación,
+fuente puntual, iluminación, campo de visión y exclusión solar.
+Un objeto detectable de más de 10 cm puede aparecer dentro de la zona roja
+correspondiente al objeto de referencia de 5 cm sin contradicción.
+
+Resultado: 10 visibles, de los que 1 es detectable; 49999 no detectables.
+Son los mismos conteos de la instantánea SSO anterior. Los mapas no se
+interpretan como conteos acumulados ni como rendimiento medio de misión.
+El CSV population_snr_scatter_objects.csv guarda los 50000 IDs con grupo,
+ambas coordenadas físicas, magnitud vacía cuando no está definida, posición
+gráfica de franja, SNR y flags. El manifiesto population_snr_scatter_audit.json
+registra conteos, geometría, convenciones y hashes. Se comprueba que la
+población nominal no cambia.
+
+Reproducción: `.venv/bin/python -m scripts.plot_population_snr_scatter`.
+Las dos imágenes son PNG a 300 dpi en outputs/optical/summary, con prefijo
+trace_nominal_sso450km y sufijo all_objects.
