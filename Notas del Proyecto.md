@@ -1298,3 +1298,14 @@ La imagen SSO seleccionada corresponde a 2026-11-05T00:22:00Z (LTAN 06:00):
 10 visibles, de ellos 1 verde y 9 lilas; 49990 grises. El mayor SNR visible
 en ese instante es 9.50919. Se ha verificado que los 50000 registros se
 conservan y los conteos de la imagen coinciden con su tabla de objetos.
+
+
+## Corrección visual: sombreado del dominio de fuentes resueltas
+
+Por petición del usuario se mueve el sombreado rojo transparente **por encima**
+del límite d/r=FWHM_px*delta en las figuras ecuatorial y SSO. Esta región
+corresponde a fuentes resueltas y queda fuera de la hipótesis de objeto
+puntual del modelo. La región inferior, no resuelta, queda sin sombrear.
+Se actualizan las leyendas para identificar el dominio excluido. Este cambio
+es visual: no modifica el criterio de tamaño angular, los parámetros,
+los cálculos ni la clasificación gris/lila/verde de los objetos.

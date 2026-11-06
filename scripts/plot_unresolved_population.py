@@ -64,8 +64,9 @@ def main():
     x = np.geomspace(ranges.min()*.8, ranges.max()*1.1, 500)
     boundary = x*1e5*theta
     bottom = sizes.min()*.7
-    ax.fill_between(x, bottom, np.maximum(bottom,boundary), color='red', alpha=.12,
-                    label='Dominio de fuente no resuelta', zorder=0)
+    top = max(boundary.max(),sizes.max())*1.25
+    ax.fill_between(x, boundary, top, color='red', alpha=.12,
+                    label='Fuentes resueltas: fuera del modelo puntual', zorder=0)
     ax.scatter(ranges[grey],sizes[grey],s=2,color='#737373',alpha=.4,linewidths=0,
                label=f'Resto de objetos: {int(grey.sum()):,}'.replace(',','.'),zorder=2)
     ax.scatter(ranges[visible_only],sizes[visible_only],s=24,color='#B57EDC',alpha=1,linewidths=.3,
@@ -75,7 +76,7 @@ def main():
     ax.plot(x,boundary,'--',color='red',lw=1.4,
             label=r'Límite: $d=r\,\mathrm{FWHM}_{\mathrm{px}}\,\delta$',zorder=3)
     ax.set(xscale='log',yscale='log',xlim=(x[0],x[-1]),
-           ylim=(bottom,max(boundary.max(),sizes.max())*1.25),
+           ylim=(bottom,top),
            xlabel='Distancia al instrumento [km]',ylabel='Diámetro equivalente del objeto [cm]',
            title='TRACE — límite de fuente no resuelta · población nominal')
     ax.grid(which='major',lw=.5,alpha=.4);ax.grid(which='minor',lw=.3,alpha=.25)

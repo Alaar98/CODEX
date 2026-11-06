@@ -101,14 +101,15 @@ def main():
     ranges=result['range_km'];sizes=pop['diameter_m']*100;theta=b['PSF_FWHM']*model.derived(case)[1]
     fig,ax=plt.subplots(figsize=(9,6),layout='constrained')
     x=np.geomspace(ranges.min()*.8,ranges.max()*1.1,500);bottom=sizes.min()*.7;line=x*1e5*theta
-    ax.fill_between(x,bottom,np.maximum(bottom,line),color='red',alpha=.12,label='Dominio no resuelto')
+    top=max(line.max(),sizes.max())*1.25
+    ax.fill_between(x,line,top,color='red',alpha=.12,label='Fuentes resueltas: fuera del modelo puntual',zorder=0)
     masks=[~result['visible'],result['visible']&~result['detectable'],result['detectable']]
     for mask,color,label,sz in zip(masks,('#737373','#B57EDC','#009E3C'),
                                   ('Resto','Visibles no detectables','Visibles y detectables'),(2,24,24)):
         ax.scatter(ranges[mask],sizes[mask],s=sz,color=color,alpha=.4 if sz==2 else 1,
                    linewidths=0,label=f'{label}: {int(mask.sum())}',zorder=2 if sz==2 else 4)
     ax.plot(x,line,'r--',lw=1.3,label=r'Límite $d=r\,\mathrm{FWHM}_{\mathrm{px}}\delta$')
-    ax.set(xscale='log',yscale='log',xlim=(x[0],x[-1]),ylim=(bottom,max(line.max(),sizes.max())*1.25),
+    ax.set(xscale='log',yscale='log',xlim=(x[0],x[-1]),ylim=(bottom,top),
            xlabel='Distancia al instrumento [km]',ylabel='Diámetro equivalente [cm]',
            title=f'TRACE — SSO a 450 km · {best["label"]}')
     ax.legend(fontsize=9);ax.grid(which='both',lw=.3,alpha=.3)

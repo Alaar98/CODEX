@@ -245,7 +245,9 @@ visualización, no un conteo acumulado ni una tasa media de misión.
 Las posiciones propagadas se expresan en los ejes TEME fijos de la época
 nominal; se omiten J2, arrastre y precesión durante este barrido corto.
 El umbral nominal es FWHM×δ = 0,000113165494 rad = 23,3421 arcsec.
-La línea roja es d[cm]=11,3165494 r[km]; la zona inferior sombreada es no resuelta.
+La línea roja es d[cm]=11,3165494 r[km]. La zona superior se sombrea en rojo:
+fuentes resueltas, fuera del modelo puntual. La inferior queda sin sombrear:
+fuentes no resueltas, compatibles con la hipótesis del modelo.
 
 ## Alcance de los modelos iniciales anteriores
 
