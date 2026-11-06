@@ -1432,3 +1432,138 @@ población nominal no cambia.
 Reproducción: `.venv/bin/python -m scripts.plot_population_snr_scatter`.
 Las dos imágenes son PNG a 300 dpi en outputs/optical/summary, con prefijo
 trace_nominal_sso450km y sufijo all_objects.
+
+## Propagación de 24 horas, cruces por el campo y margen respecto a SNR=5
+
+El usuario solicita acumular los cruces por el campo durante un día en la
+órbita que dio más objetos distintos detectables: SSO nominal 450 km,
+LTAN 06:00. Se conserva el estado inicial de aquella órbita: semieje
+osculante kepleriano inicial 6821 km, e=0, i=97.18768658 grados,
+RAAN=130.13259849 grados y argumento de latitud inicial 0. Se mantiene
+el instrumento fijo al zenit, ejes horizontal along-track y vertical normal
+orbital, apertura 80 mm, FOV corto 14 grados, exposición 77 ms y albedo 0.2.
+El intervalo es 2026-11-05T00:00:00Z a 2026-11-06T00:00:00Z (86400 s).
+
+**Decisión confirmada por el usuario sobre el eje Y.** Una magnitud aparente
+no fija por sí sola el SNR de todos los cruces: también cambian la traza,
+los píxeles de extracción y el tiempo de señal. El usuario elige representar
+Delta_m=m_AB-m_AB,lim(SNR=5), calculando el límite individual con esa misma
+geometría/exposición. Se muestran Delta_m frente a distancia y frente a
+velocidad relativa transversal. Ahora existe una única frontera rigurosa
+Delta_m=0: dentro del dominio válido, Delta_m<=0 equivale a SNR>=5.
+El rojo transparente indica Delta_m>0, SNR<5. No se usan las curvas
+nominales de 5 cm/5 km/s de las figuras anteriores para clasificar objetos.
+
+**Dinámica.** El modelo breve de dos cuerpos utilizado antes no reproduce
+la precesión SSO a lo largo de un día. Se añade gravedad zonal J2 a todos
+los debris y al observador, integrando sus estados cartesianos con RK4,
+paso 20 s. Se usa mu=398600.4418 km^3/s^2, J2=1.08262668e-3 y radio
+geopotencial 6378.137 km. La altitud y ocultación conservan el radio esférico
+6371 km. No hay propagación SGP4 nueva ni modificación de los GP originales:
+se integran los estados de la población sintética ya entregada, en los ejes
+TEME de su época inicial tratados como inerciales. No se añaden arrastre,
+armónicos superiores, perturbaciones solar/lunar o correcciones de ejes
+terrestres. El Sol mantiene el modelo aproximado anterior, actualizado
+para cada instante, con sombra cilíndrica sin penumbra ni sombra del bus.
+
+La órbita del observador es circular **osculante inicialmente respecto al
+modelo central**; al integrar J2 su radio no es estrictamente constante.
+En este día su altitud oscila entre 442.45635 y 450.00000 km: «450 km» es
+la referencia inicial mantenida del caso anterior, no una imposición de
+altitud constante ni un ajuste nuevo a altitud media exacta de 450 km.
+La tasa/orientación de la cámara se deriva de r,v y aceleración J2,
+incluyendo la variación de la normal del plano. La velocidad transversal
+mostrada es la norma de la velocidad relativa perpendicular a LOS; la
+traza usa la derivada de LOS en cámara, descontando su giro vectorial.
+
+**Búsqueda de cruces, no una malla de detección de 20 s.** En cada intervalo
+de propagación se construye una interpolación cúbica Hermite de las tres
+coordenadas en cámara y sus derivadas. El campo rectangular exige X>0,
+|Y|<h_x*X y |Z|<h_y*X, con h_x=W_x/(2f), h_y=W_y/(2f). Se usan las cotas
+de Bernstein de los cúbicos como filtro conservador y se calculan todas
+las raíces de las cinco caras, comprobando cada intervalo intermedio.
+Un objeto puede generar un cruce aunque esté fuera del campo en ambos
+extremos del paso: no se descarta por no aparecer en una instantánea.
+La completitud se refiere a ese modelo interpolado con su precisión finita,
+no a una certificación analítica de toda trayectoria real.
+
+Los tramos adyacentes de un mismo objeto se unen en un único cruce. Una
+salida seguida de reentrada constituye otro cruce. Se ordenan por entrada
+y por ID para asignar ordinales cronológicos por objeto durante el día.
+El primero usa punto circular; segundo, cruz; tercero y posteriores,
+triángulo. Se cuentan también cruces en sombra o con veto solar para que
+el ordinal represente cruces geométricos, no solo detecciones. Hay cuatro
+cruces que intersectan los límites temporales de la simulación, marcados
+como truncados en la tabla; no se inventa su trayectoria fuera del día.
+
+**Un representante por cruce.** Se busca la exposición con mayor SNR válido
+encontrado, con muestras de centros de exposición separadas como máximo
+0.25 s, al menos 17 por cruce y refinamiento local de 65 puntos. Se añaden
+puntos centrales, límites de exposición completa y nudos de interpolación.
+El tiempo de señal es la intersección real entre [t-38.5 ms,t+38.5 ms] y
+[entrada,salida]; se admiten cruces parciales y cruces de menos de 77 ms.
+Fondo, dark y ruido de lectura siguen usando una exposición completa.
+Se supone que podemos centrar una exposición en ese instante: es un estudio
+con sincronización ideal, no una cadencia fija de frames con tiempo muerto
+ni una simulación de electrónica de lectura. Se registra el mejor SNR
+**encontrado**, sin afirmar un máximo global analítico.
+
+El representante se busca primero dentro de las condiciones de validez:
+objeto iluminado, sin ocultación, dentro del campo, exclusiones solares
+satisfechas, fuente no resuelta y carga pico <15000 e-/píxel. Se conserva
+la PSF/traza/extracción del modelo óptico previo. Si el cruce no contiene
+un candidato válido, se conserva un representante visible o geométrico y
+se dibuja en una franja categórica «Excluidos», sin una Delta_m ficticia.
+Así el rojo indica únicamente SNR<5, y no se confunde una fuente saturada,
+resuelta o sin luz con una detección válida por tener alto SNR formal.
+
+Para cada exposición candidata se calcula el ruido no debido a la fuente
+V=n_px*((B+I_dark)*t_exp+sigma_read^2) y la señal requerida
+S_req=(25+sqrt(625+100*V))/2. Con S0, señal para m_AB=0 en esa misma traza
+y tiempo visible, m_AB,lim=-2.5 log10(S_req/S0). Se conserva m_AB real,
+m_AB,lim y Delta_m por separado en la tabla. Se verifica la equivalencia
+Delta_m<=0 y SNR>=5 para todos los representantes válidos.
+
+**Resultados de la simulación.** Se propagan los 50000 objetos sin alterar
+sus archivos nominales. Se obtienen 16578 cruces de 13304 IDs distintos:
+13304 primeros cruces (puntos), 2227 segundos (cruces) y 1047 terceros o
+posteriores (triángulos). Un mismo objeto puede tener hasta 27 cruces.
+Los colores siguen las instrucciones del usuario: azul 1<=d<5 cm,
+verde 5<=d<10 cm, lila d>=10 cm. Hay 15060, 811 y 707 cruces en esos grupos.
+
+8312 representantes cumplen el dominio del modelo; 8266 están excluidos.
+271 cruces válidos alcanzan SNR>=5, pertenecientes a 251 objetos distintos.
+Por tamaños son 2 cruces del grupo azul, 27 del verde y 242 del lila;
+objetos distintos: 2,27,222 respectivamente. Hay 378 representantes con
+señal durante menos de una exposición completa. Los resultados no son
+una tasa operacional demostrada: dependen de esta población aproximada,
+la dinámica adoptada, la iluminación y la sincronización ideal de exposición.
+
+**Verificación numérica.** Se repite el día con paso 10 s para los primeros
+5000 objetos: aparecen los mismos 1708 cruces, con los mismos IDs/ordinales.
+Las diferencias máximas de entrada/salida frente a 20 s son 5.865/4.332 ms;
+la mediana de la diferencia mayor de cada cruce es 0.429 ms. La diferencia
+máxima de posición del observador es 10.905 m. Esto verifica convergencia
+en esa subpoblación; no elimina toda incertidumbre de fronteras rasantes.
+Se repite la fotometría de todos los cruces con muestras de centros cada
+0.125 s: se mantienen las 16578 clasificaciones de validez y detección,
+271 cruces SNR>=5 y 251 IDs distintos. Las pruebas incluyen cruces rápidos
+entre extremos exteriores, múltiples entradas de un cúbico, interpolación,
+gradiente del potencial J2, conservación de energía/convergencia a un día,
+derivada del marco y normalización de una exposición parcial sintética.
+
+**Archivos y reproducción.**
+`.venv/bin/python -m scripts.propagate_day_encounters`
+`.venv/bin/python -m scripts.plot_day_encounters`
+Los datos están en data/generated/encounters: estados de interpolación NPZ,
+manifiesto de propagación, CSV con una fila por cruce, resumen fotométrico
+y validación numérica. Los PNG científicos de 300 dpi están en
+outputs/optical/summary/trace_nominal_sso450km_24h_magnitude_margin_vs_*.png.
+Las pruebas auxiliares de convergencia se reproducen con
+`--step 10 --limit 5000 --tag validation_5000_step10` en el propagador y
+`--sample .125 --suffix _refinement_check` en el segundo script. Se conserva
+el resumen validado, sin archivar productos temporales duplicados.
+
+El resumen de convergencia se regenera, tras los dos refinamientos, con
+`.venv/bin/python -m scripts.validate_day_encounters`. Las 42 pruebas de
+la suite pasan.

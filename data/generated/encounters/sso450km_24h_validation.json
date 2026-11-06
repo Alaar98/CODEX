@@ -1,0 +1,31 @@
+{
+  "subset_objects": 5000,
+  "coarse_step_s": 20,
+  "fine_step_s": 10,
+  "coarse_events": 1708,
+  "fine_events": 1708,
+  "max_entry_time_difference_s": 0.005864880222361535,
+  "max_exit_time_difference_s": 0.004332375800004229,
+  "median_max_edge_difference_s": 0.00042882398338406347,
+  "coarse_minimum_duration_s": 6.99348674970679e-05,
+  "photometry_refinement": {
+    "base_step_s": 0.25,
+    "refined_step_s": 0.125,
+    "same_event_detection_flags": true,
+    "same_event_validity_flags": true,
+    "snr5_events_both": 271,
+    "unique_snr5_objects_both": 251
+  },
+  "max_observer_position_difference_m": 10.90460584508736,
+  "observer_altitude_min_km": 442.45634972615426,
+  "observer_altitude_max_km": 450.0,
+  "numbering_and_margin_classification_verified_for_all_events": true,
+  "max_crossings_per_object": 27,
+  "partial_exposure_representatives": 378,
+  "boundary_truncated_events": 4,
+  "detections_by_size": {
+    "1_to_5cm": 2,
+    "5_to_10cm": 27,
+    "10cm_up": 242
+  }
+}

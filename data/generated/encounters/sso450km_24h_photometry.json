@@ -1,0 +1,85 @@
+{
+  "propagation": {
+    "population_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+    "baseline_sha256": "d0974311900755a319c10a1d33c8e4cfe032b30344c86d700d3a17b486dfa293",
+    "epoch0": "2026-11-05T00:00:00Z",
+    "duration_s": 86400.0,
+    "step_s": 20.0,
+    "population_count": 50000,
+    "observer": {
+      "id": "sso_ltan_6",
+      "label": "SSO LTAN 06:00",
+      "inclination_deg": 97.18768657944216,
+      "raan_deg": 130.1325984930384,
+      "ltan_h": 6.0,
+      "semi_major_axis_km": 6821.0,
+      "eccentricity": 0.0,
+      "initial_u_deg": 0.0,
+      "peak_visible": 15,
+      "epoch_peak_visible": "2026-11-05T00:24:30Z",
+      "elapsed_peak_visible_s": 1470.0,
+      "detectable_at_peak_visible": 0,
+      "peak_detectable": 1,
+      "mean_visible_per_sample": 1.5106951871657754,
+      "mean_detectable_per_sample": 0.029411764705882353,
+      "unique_sampled_visible_objects": 345,
+      "unique_sampled_detectable_objects": 10,
+      "maximum_visible_snr": 1001.0648968943556
+    },
+    "instrument": {
+      "aperture_m": 0.08,
+      "fov_deg": 14.0,
+      "phase_deg": 60.0,
+      "albedo": 0.2,
+      "transverse_speed_m_s": 5000.0,
+      "observer_altitude_km": 450.0
+    },
+    "events": 16578,
+    "pieces": 30122,
+    "distinct_objects": 13304,
+    "candidate_segments": 35300,
+    "propagation": "Cartesian RK4 with central gravity + J2 for observer and every debris",
+    "J2": 0.00108262668,
+    "J2_reference_radius_km": 6378.137,
+    "crossings": "cubic Hermite in rotating camera; Bernstein conservative candidate bounds; all polynomial face roots",
+    "frame": "fixed nominal TEME axes treated as inertial, approximate Sun in same axes",
+    "not_modelled": [
+      "drag",
+      "higher harmonics",
+      "third bodies",
+      "Earth orientation/nutation corrections",
+      "penumbra",
+      "self shadow"
+    ],
+    "truncated_passes": "passes intersecting start/end are counted and flagged by their boundary time",
+    "runtime_s": 195.1077492179993
+  },
+  "photometry_base_sampling_s": 0.25,
+  "local_refinement_points": 65,
+  "representative": "largest valid SNR found per crossing; local refinement; no fixed exposure cadence imposed",
+  "events": 16578,
+  "distinct_objects": 13304,
+  "valid_domain_events": 8312,
+  "visible_representatives": 8432,
+  "snr_ge_5_events": 271,
+  "distinct_snr_ge_5_objects": 251,
+  "markers": {
+    "o": 13304,
+    "x": 2227,
+    "^": 1047
+  },
+  "size_groups": {
+    "1_to_5cm": 15060,
+    "5_to_10cm": 811,
+    "10cm_up": 707
+  },
+  "excluded_events": 8266,
+  "normalization": "m_AB - m_AB(SNR=5), per exposure geometry, noise pixels and actual visible time",
+  "plot_exclusions": "shadow, Earth occultation, solar exclusion, saturation or resolved sources are categorical, not assigned a fake margin",
+  "exposure": "77 ms exposure centred at selected instant; actual entry/exit truncation for partial passes",
+  "revisits": "chronological FoV passages per ID, including excluded passages; not individual exposures",
+  "figures": [
+    "trace_nominal_sso450km_24h_magnitude_margin_vs_range.png",
+    "trace_nominal_sso450km_24h_magnitude_margin_vs_transverse_velocity.png"
+  ]
+}

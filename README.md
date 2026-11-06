@@ -311,3 +311,33 @@ El rojo es únicamente referencia nominal (5 km/s o 5 cm/fase 60°), no un
 umbral universal para todos los tamaños y geometrías. La clasificación
 individual incluye iluminación y campo de visión además del SNR. Datos y
 manifiesto: `data/generated/optical/population_snr_scatter_*`.
+
+## Cruces por el campo durante un día
+
+```bash
+.venv/bin/python -m scripts.propagate_day_encounters
+.venv/bin/python -m scripts.plot_day_encounters
+```
+
+Propaga observador y los 50000 debris durante 86400 s con gravedad central y
+J2. Mantiene la SSO nominal de 450 km, LTAN 06:00; el estado circular es el
+osculante inicial, no una altitud constante impuesta durante la integración.
+Busca cruces entre pasos mediante cúbicos Hermite y raíces de las caras del
+campo, incluyendo tránsitos que no aparecen en los extremos de un paso.
+
+Cada cruce aporta la exposición de mayor SNR válido encontrada. Punto:
+primer cruce de ese ID durante el día; cruz: segundo; triángulo: tercero y
+posteriores. Color por tamaño: azul 1–5 cm, verde 5–10 cm, lila >=10 cm
+(intervalos inferiores inclusivos, superiores exclusivos).
+
+Por decisión del usuario el eje Y es **magnitud aparente menos su magnitud
+límite individual**. La línea roja discontinua en cero corresponde a SNR=5;
+por encima (rojo) SNR<5. Los cruces sin iluminación o fuera de las hipótesis
+del modelo se conservan en la franja «Excluidos». Se incluyen exposiciones
+parciales; se supone sincronización ideal del frame con el instante elegido.
+No es una simulación de cadencia y lectura electrónica reales.
+
+Resultado: 16578 cruces de 13304 objetos distintos; 271 cruces válidos con
+SNR>=5, de 251 objetos distintos. Datos, hipótesis y comprobaciones en
+`data/generated/encounters/`; dos PNG en `outputs/optical/summary/` con
+prefijo `trace_nominal_sso450km_24h_magnitude_margin_vs_`.
