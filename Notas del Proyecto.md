@@ -1218,3 +1218,83 @@ Esta instantánea se selecciona deliberadamente para mostrar más visibles;
 no se usa como estimación imparcial del rendimiento de TRACE. Los ceros
 verdes no se han reemplazado por detecciones hipotéticas para completar
 la leyenda. El estudio óptico paramétrico y su Excel permanecen iguales.
+
+## Comparación inicial del observador ecuatorial con órbitas SSO a 450 km
+
+A petición del usuario se estudia si una geometría SSO mejora los objetos
+detectables respecto a la ecuatorial anterior. Se conserva la población,
+la cámara al zenit, los 450 km, apertura 80 mm, FOV corto 14 grados, exposición
+77 ms, albedo nominal 0.2, ruido, High Gain, criterio no resuelto y SNR>=5.
+No se sustituye la referencia ecuatorial ni el Excel del barrido instrumental.
+
+**Definición SSO.** Para a=6371+450=6821 km y e=0 se usa la tasa secular
+nodal de primer orden por J2:
+dot(Omega)=-(3/2)*J2*sqrt(mu/a^3)*(R_J2/a)^2*cos(i),
+igualada a +2*pi/(365.2422*86400) rad/s. Se toma mu=398600.4418 km^3/s^2,
+J2=1.08262668e-3 y R_J2=6378.137 km. Este radio de referencia del potencial
+J2 no cambia la convención esférica de altitud 6371 km usada por el proyecto.
+La inclinación resultante es **97.18768658 grados**, retrógrada.
+
+La inclinación SSO no fija el horario solar de la órbita. Se prueban cuatro
+LTAN (hora solar local aproximada del nodo ascendente): 06:00, 10:30, 13:30,
+18:00. A la época inicial 2026-11-05T00:00:00Z se aproxima
+RAAN=RA_Sol+15*(LTAN-12), módulo 360 grados, con la misma dirección solar
+aproximada que usa el modelo. RA_Sol=220.13259849 grados. Los RAAN iniciales
+son, respectivamente, 130.13259849, 197.63259849, 242.63259849 y
+310.13259849 grados. Es LTAN aproximado basado en esa RA solar, no una
+conversión de efemérides solares de alta precisión. Se fija u inicial=0
+(en el nodo ascendente). El argumento del perigeo en e=0 es una convención
+numérica 0 y no una orientación física medible del perigeo.
+
+**Comparación homogénea y límites.** Cinco escenarios: ecuatorial anterior y
+las cuatro SSO. Misma ventana inicial y duración, una órbita del observador
+T=5606.386763 s, muestreo cada 15 s (374 épocas por caso). Se propagan los
+50000 debris y observador con el modelo corto de dos cuerpos, conservando
+los planos en los ejes TEME iniciales. J2 se utiliza aquí para seleccionar
+la inclinación SSO, pero no se integra dinámicamente ni para el observador
+ni para los debris. En una órbita, la precesión solar buscada es de unos
+0.064 grados; se omite junto al arrastre y demás perturbaciones en esta
+aproximación. No es una simulación de mantenimiento SSO a largo plazo.
+La cámara usa los ejes radial, tangencial y normal del plano inclinado,
+incluyendo la dirección correcta del giro LVLH en el movimiento aparente.
+
+En cada muestra se aplican campo, ocultación terrestre, iluminación,
+exclusión solar, tiempo visible parcial, SNR y saturación como antes.
+Se registran máximos simultáneos, promedios por muestra y conjuntos de IDs
+visibles/detectables distintos en al menos una muestra. **No se suman como
+objetos diferentes las reobservaciones de un mismo ID.** La tabla de barrido
+completa y el resumen se guardan en sso_observer_scan.csv y
+sso_observer_comparison.csv; hipótesis y hashes en sso_observer_audit.json.
+
+Resultados de objetos distintos detectables **en las muestras**, durante
+esta ventana: ecuatorial 1; SSO 06:00, 10; SSO 10:30, 3; SSO 13:30, 5;
+SSO 18:00, 8. Máximos simultáneos detectables: 1 en todos los casos.
+Máximos simultáneos visibles: 13,15,12,14,17 respectivamente.
+Los objetos distintos visibles muestreados son 109,345,202,211,350.
+El cero de la figura ecuatorial previa correspondía únicamente a su época
+seleccionada por máximo de visibles, no a todo el barrido: en otra muestra
+hay 1 detectable. No se debe comparar ese cero aislado con el acumulado
+muestreado de una SSO.
+
+El resultado preliminar favorece varias geometrías SSO en esta prueba,
+pero el factor 10/1 de la SSO 06:00 **no es un factor de mejora de misión**.
+La malla de 15 s puede perder tránsitos breves; no integra detecciones entre
+muestras ni garantiza detectar todos los encuentros. Hay una única fase
+inicial y una sola órbita por caso; el horario solar también cambia. Faltan
+comparaciones más largas y resolución temporal adaptada a los encuentros
+antes de estimar rendimiento, seleccionar LTAN u optimizar la misión.
+
+Se añade una gráfica temporal comparativa y una figura tamaño-distancia
+SSO con gris/lila/verde. Para esta última se escoge explícitamente el caso
+con más IDs detectables muestreados (06:00) y dentro de él la instantánea
+con más detectables simultáneos, después más visibles, empate a la primera.
+Es una selección deliberada para mostrar las categorías, identificada en
+la figura/manifiesto; no es el instante medio ni el de máximo de visibles
+de toda la exploración. Su tabla por objeto se guarda aparte como
+sso_selected_snapshot_objects.csv. Se conserva la figura ecuatorial previa
+y se comprueba que la población nominal no cambia.
+
+La imagen SSO seleccionada corresponde a 2026-11-05T00:22:00Z (LTAN 06:00):
+10 visibles, de ellos 1 verde y 9 lilas; 49990 grises. El mayor SNR visible
+en ese instante es 9.50919. Se ha verificado que los 50000 registros se
+conservan y los conteos de la imagen coinciden con su tabla de objetos.

@@ -78,3 +78,26 @@ class SnapshotTests(unittest.TestCase):
             np.testing.assert_allclose(final[field],initial[field],atol=1e-9)
         self.assertNotIn('x_km',pop)
         self.assertEqual(pop['mean_anomaly_deg'][0],10.)
+
+    def test_inclined_observer_state_and_camera(self):
+        from space_debris_detection.orbits import elements_to_states
+        from scripts.compare_sso_observer import sso_inclination_deg
+        b=load_baseline(next((Path(__file__).resolve().parents[1]/'docs/references').glob('*.xlsx')))
+        m=OpticalModel(b);c=StudyCase(.08,14,60,.2,5000)
+        inc=sso_inclination_deg(450.)
+        self.assertTrue(96 < inc < 99)
+        nodal_rate=-1.5*1.08262668e-3*c.frame_rate_rad_s*(6378.137/6821)**2*np.cos(np.radians(inc))
+        self.assertAlmostEqual(nodal_rate,2*np.pi/(365.2422*86400),places=14)
+        elapsed=1000.;u=15+np.degrees(c.frame_rate_rad_s*elapsed)
+        r,v=elements_to_states(6821,0,inc,40,0,u)
+        # Put a target directly along the observer's inclined zenith.
+        radial=r/np.linalg.norm(r)
+        position=r+100*radial
+        pop={f'{axis}_km':np.array([position[j]]) for j,axis in enumerate('xyz')}
+        pop.update({f'v{axis}_km_s':np.array([v[j]]) for j,axis in enumerate('xyz')})
+        pop['diameter_m']=np.array([1.])
+        result=classify_snapshot(pop,m,c,np.array([-1.,0,0]),elapsed_s=elapsed,
+            observer_inclination_deg=inc,observer_raan_deg=40,observer_initial_u_deg=15)
+        np.testing.assert_allclose(result['observer_position_km'],r,atol=1e-10)
+        np.testing.assert_allclose(result['observer_velocity_km_s'],v,atol=1e-12)
+        self.assertTrue(result['in_fov'][0])

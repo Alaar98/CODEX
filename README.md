@@ -259,3 +259,20 @@ El modelo radiométrico supone una longitud de onda representativa y extracción
 de toda la señal; incluye ruido de Poisson de señal y fondo, y ruido de lectura.
 Quedan pendientes la integración espectral, la corriente oscura, las pérdidas
 por movimiento, la PSF, saturación y un criterio de detección con falsas alarmas.
+
+## Comparación preliminar con observador SSO a 450 km
+
+```bash
+.venv/bin/python scripts/compare_sso_observer.py
+```
+
+Compara la ecuatorial con cuatro geometrías SSO (i=97,18769°), con LTAN
+06:00, 10:30, 13:30 y 18:00. Misma población, instrumento, duración de una
+órbita y muestreo de 15 s. La inclinación procede de la tasa secular J2;
+la propagación breve sigue siendo de dos cuerpos en los ejes TEME iniciales.
+Resultados y criterios de selección quedan en `data/generated/optical/sso_*`.
+Se añaden dos PNG en `outputs/optical/summary/`: comparación temporal y
+una instantánea SSO con los tres colores. No se modifica la imagen ecuatorial.
+Los IDs distintos detectables en las muestras son 1 (ecuatorial) y 10,3,5,8
+(SSO, en el orden anterior). Estos conteos muestreados de una sola órbita
+no son tasas de misión ni incluyen todos los tránsitos entre las muestras.

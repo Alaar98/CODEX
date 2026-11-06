@@ -66,16 +66,21 @@ def propagate_population(population, elapsed_s):
     return result
 
 
-def classify_snapshot(population, model, case, sun_direction, *, elapsed_s=0., geometry_only=False):
-    """450 km reference extended to a circular prograde equatorial orbit.
+def classify_snapshot(population, model, case, sun_direction, *, elapsed_s=0., geometry_only=False,
+                      observer_inclination_deg=0., observer_raan_deg=0., observer_initial_u_deg=0.):
+    """Circular observer with configurable inclination, node and initial phase.
 
     Camera zenith, horizontal along-track, vertical orbit normal; exposure
     centred on the propagated epoch. Sun at infinity; spherical opaque Earth.
     """
-    angle = case.frame_rate_rad_s*elapsed_s
-    radial = np.array([np.cos(angle),np.sin(angle),0.])
-    along_track = np.array([-np.sin(angle),np.cos(angle),0.])
-    camera_axes = np.column_stack((radial,along_track,[0.,0.,1.]))
+    angle = case.frame_rate_rad_s*elapsed_s+np.radians(observer_initial_u_deg)
+    inc,node = np.radians([observer_inclination_deg,observer_raan_deg])
+    axis_p = np.array([np.cos(node),np.sin(node),0.])
+    axis_q = np.array([-np.sin(node)*np.cos(inc),np.cos(node)*np.cos(inc),np.sin(inc)])
+    normal = np.cross(axis_p,axis_q)
+    radial = axis_p*np.cos(angle)+axis_q*np.sin(angle)
+    along_track = -axis_p*np.sin(angle)+axis_q*np.cos(angle)
+    camera_axes = np.column_stack((radial,along_track,normal))
     observer = (6371+case.observer_altitude_km)*radial
     velocity = case.frame_rate_rad_s*(6371+case.observer_altitude_km)*along_track
     position = np.column_stack([population[k] for k in ('x_km','y_km','z_km')])
@@ -84,7 +89,7 @@ def classify_snapshot(population, model, case, sun_direction, *, elapsed_s=0., g
     ranges = np.linalg.norm(delta,axis=1)
     los = delta/ranges[:,None]
     relative_velocity = target_velocity-velocity
-    frame_omega = np.array([0.,0.,case.frame_rate_rad_s])
+    frame_omega = case.frame_rate_rad_s*normal
     rotating_velocity = relative_velocity-np.cross(frame_omega,delta)
     los_rate = (rotating_velocity-los*np.sum(los*rotating_velocity,axis=1)[:,None])/ranges[:,None]
     angular_rate = np.linalg.norm(los_rate,axis=1)
