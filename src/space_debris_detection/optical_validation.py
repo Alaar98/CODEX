@@ -137,19 +137,35 @@ class OpticalModel:
         alpha = np.radians(degrees)
         return np.maximum(0., (np.sin(alpha)+(np.pi-alpha)*np.cos(alpha))/np.pi)
 
-    def evaluate(self, case, range_m, diameter_m=None, magnitude_ab=None):
+    def evaluate(self, case, range_m, diameter_m=None, magnitude_ab=None, *,
+                 phase_deg=None, apparent_rate_rad_s=None, exposure_overlap_s=None):
+        """Evaluate an envelope, or a snapshot with explicit phase/rate/overlap.
+
+        The optional overlap is the actual time inside the field during this
+        exposure and replaces the central-crossing envelope when provided.
+        """
         r = np.asarray(range_m, dtype=float)
         if np.any(r <= 0) or not np.isfinite(r).all():
             raise ValueError("Positive finite distances required")
         if (diameter_m is None) == (magnitude_ab is None):
             raise ValueError("Specify diameter OR equivalent AB magnitude")
         f, scale, area_eff = self.derived(case)
-        omega = np.abs(case.transverse_speed_m_s/r-case.frame_rate_rad_s)
+        omega = (np.abs(case.transverse_speed_m_s/r-case.frame_rate_rad_s)
+                 if apparent_rate_rad_s is None else np.asarray(apparent_rate_rad_s, dtype=float))
+        phase = case.phase_deg if phase_deg is None else np.asarray(phase_deg, dtype=float)
+        if np.any(~np.isfinite(omega)) or np.any(omega < 0):
+            raise ValueError("Finite nonnegative apparent rates required")
+        if np.any(~np.isfinite(phase)) or np.any((phase < 0) | (phase > 180)):
+            raise ValueError("Phase must be finite and within 0..180 degrees")
         # Maximum overlap of an exposure with a central crossing of the short-axis
         # field. This conditional envelope does not model random arrival times.
         field_span = 2*math.tan(math.radians(case.fov_deg)/2)
         crossing_time = np.divide(field_span, omega, out=np.full_like(omega, np.inf), where=omega > 0)
         visible_time = np.minimum(self.b["t_int"], crossing_time)
+        if exposure_overlap_s is not None:
+            visible_time = np.asarray(exposure_overlap_s, dtype=float)
+            if np.any(~np.isfinite(visible_time)) or np.any((visible_time < 0) | (visible_time > self.b["t_int"])):
+                raise ValueError("Overlap must be within the exposure")
         length_px = omega*visible_time/scale
         sigma = self.b["PSF_FWHM"]/(2*np.sqrt(2*np.log(2)))
         pixels = np.ceil(np.minimum(length_px+6*sigma, field_span/scale))*math.ceil(6*sigma)
@@ -161,7 +177,7 @@ class OpticalModel:
             d = np.asarray(diameter_m, dtype=float)
             if np.any(d <= 0) or not np.isfinite(d).all():
                 raise ValueError("Positive finite sizes required")
-            photons = self.solar_photons_m2_s*case.albedo*(d/(2*r))**2*self.phase_function(case.phase_deg)
+            photons = self.solar_photons_m2_s*case.albedo*(d/(2*r))**2*self.phase_function(phase)
             unresolved = d/r <= self.b["PSF_FWHM"]*scale
         total_e = photons*area_eff*visible_time
         signal = total_e*fraction
@@ -172,12 +188,12 @@ class OpticalModel:
         unsaturated = peak_total_e < self.b["FWC_high_gain"]
         variance = signal+pixels*((background_rate+self.b["I_dark"])*self.b["t_int"]+self.b["sigma_read"]**2)
         snr = signal/np.sqrt(variance)
-        full_transit = crossing_time >= self.b["t_int"]
-        solar_allowed = case.phase_deg <= 180-self.b["sun_exclusion_min"]
+        full_transit = visible_time >= self.b["t_int"]
+        solar_allowed = phase <= 180-self.b["sun_exclusion_min"]
         return {"snr": snr, "signal_e": signal, "pixels": pixels, "streak_px": length_px,
                 "magnitude_ab": -2.5*np.log10(np.maximum(photons, 1e-300)/self.ab_zero_photons_m2_s),
                 "full_transit": full_transit, "unresolved": unresolved,
-                "eligible": unresolved & solar_allowed & unsaturated,
+                "eligible": unresolved & solar_allowed & unsaturated & (visible_time > 0),
                 "partial_transit": ~full_transit, "visible_time_s": visible_time,
                 "crossing_time_s": crossing_time,
                 "unsaturated": unsaturated, "peak_pixel_e": peak_total_e,

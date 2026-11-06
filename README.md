@@ -230,7 +230,13 @@ solo informativa. El barrido actual va de 1 m a 20.000 km.
 Genera `outputs/optical/summary/trace_nominal_unresolved_source_limit_observer_450km.png`
 y un CSV con las distancias de los 50.000 objetos. Observador de referencia:
 TEME=(6821,0,0) km en 2026-11-05T00:00:00Z. Incluye objetos ocultos por la
-Tierra o fuera del campo: muestra tamaño angular, no detecciones.
+Tierra o fuera del campo. Verde identifica visibles y detectables (SNR ≥ 5,
+no saturados y no resueltos); gris identifica el resto. Se supone órbita
+ecuatorial circular prógrada, cámara al zenit, Sol aproximado y sombra
+terrestre cilíndrica. El tiempo de señal se calcula para la exposición
+centrada en la época nominal, admitiendo tránsitos parciales. Es una
+instantánea ilustrativa, no un conteo acumulado de misión. En esta geometría
+hay 3 objetos en el campo, todos en sombra: 0 puntos verdes.
 El umbral nominal es FWHM×δ = 0,000113165494 rad = 23,3421 arcsec.
 La línea roja es d[cm]=11,3165494 r[km]; la zona inferior sombreada es no resuelta.
 

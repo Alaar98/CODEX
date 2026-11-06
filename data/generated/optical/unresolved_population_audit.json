@@ -15,6 +15,33 @@
   "fwhm_angular_rad": 0.00011316549391972773,
   "fwhm_angular_arcsec": 23.3420586772096,
   "boundary_cm_per_km": 11.316549391972773,
-  "visibility_filter_applied": false,
+  "visibility_classification_applied": true,
+  "population_filtered": false,
+  "in_fov_objects": 3,
+  "visible_objects": 0,
+  "visible_detectable_objects": 0,
+  "grey_objects": 50000,
+  "sun_direction_approximate_teme": [
+    -0.7363544898393511,
+    -0.6207844252747315,
+    -0.26908876347731464
+  ],
+  "boresight_sun_deg": 137.4217929743378,
+  "observer_velocity_km_s": [
+    0.0,
+    7.644425686065925,
+    0.0
+  ],
+  "geometry_assumptions": [
+    "Illustrative circular equatorial prograde observer; zenith +X, horizontal +Y, vertical +Z",
+    "Rectangular field set by detector dimensions and nominal focal length",
+    "Exposure centred at nominal epoch; linear tangent-plane motion and field clipping",
+    "Phases and apparent rates calculated per object; geometric albedo remains nominal",
+    "Sun at infinity, low-precision mean-of-date direction approximated as TEME; no nutation correction",
+    "Opaque spherical Earth; cylindrical shadow without penumbra; no spacecraft self-shadow",
+    "Visible: inside field at exposure midpoint, Earth clear, illuminated, boresight solar exclusion",
+    "Detectable: visible AND SNR>=5 AND unsaturated AND unresolved AND target solar exclusion",
+    "Single snapshot only; no orbit propagation or accumulated mission counts"
+  ],
   "png": "trace_nominal_unresolved_source_limit_observer_450km.png"
 }

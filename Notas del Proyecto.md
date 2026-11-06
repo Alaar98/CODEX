@@ -1103,3 +1103,62 @@ El Excel activo contiene 854 casos únicos a 450 km y hojas adicionales con
 56 combinaciones exactas para diámetros de 1,5,10,100 cm. Los extremos mínimo
 y máximo siguen siendo las dos últimas columnas; se conservan los huecos
 en las hojas de intervalos. Ya no hay casos activos a 600 km.
+
+## Color de los objetos: visibilidad y detectabilidad en la instantánea
+
+A petición del usuario, la figura de tamaño frente a distancia conserva los
+50000 objetos y el límite angular anterior, pero usa verde para los objetos
+visibles y detectables y gris para el resto. **Debajo de la línea roja** se
+cumple d/r <= FWHM_px*delta: fuente NO resuelta. Los 50000 objetos cumplen
+este criterio para esta posición; estar en ese dominio no garantiza detección.
+
+Se extiende la geometría ilustrativa ya adoptada, sin mover al observador
+para buscar detecciones: r_obs=(6821,0,0) km TEME en
+2026-11-05T00:00:00Z. Para disponer de velocidad y giro del campo se supone
+órbita circular ecuatorial prógrada, v_obs=(0,7.644425686,0) km/s. Esta es una
+hipótesis de visualización, no la selección de órbita de misión. Cámara fija
+al bus en LVLH: zenit +X, horizontal +Y, vertical +Z. Campo rectangular
+según W_x/(2f) y W_y/(2f); los 14 grados corresponden al lado corto.
+
+El Sol se aproxima mediante longitud media y anomalía solar desde J2000,
+corrección de longitud 1.915 sin(g)+0.020 sin(2g) grados y oblicuidad media.
+La dirección ecuatorial media de fecha se utiliza como aproximación TEME,
+sin corrección de nutación/equinoccio: no es una efeméride solar de precisión.
+Se usa Sol en el infinito y sombra terrestre cilíndrica, sin penumbra, con
+Tierra esférica opaca de radio 6371 km. La ocultación de la línea de visión
+se calcula con la distancia mínima del segmento observador-objeto al centro
+terrestre. No se modela sombra del propio satélite ni luz terrestre dispersa.
+
+La fase de cada objeto es arccos(-LOS dot s_Sol). Se calcula la velocidad
+relativa de los estados nominales, incluyendo la velocidad del observador;
+se resta omega_LVLH cross delta_r para obtener el movimiento en cámara.
+La norma de la derivada transversal de LOS determina la longitud de traza.
+Se mantiene constante el albedo geométrico nominal p=0.2. No se usan fase
+60 grados y velocidad 5 km/s como sustitutos de la geometría de los objetos.
+
+La exposición de 77 ms se centra en la época nominal. En coordenadas
+ tangentes (delta_y/delta_x,delta_z/delta_x), la intersección de la trayectoria
+lineal con ambos límites del campo determina el tiempo de señal. Se admiten
+solapamientos parciales con SNR>=5. Se conservan fondo/dark durante toda
+la exposición y el criterio de carga pico High Gain <15000 e-/píxel.
+La fotometría y PSF siguen siendo las aproximaciones del estudio óptico.
+Para este mapa se exige que el centro esté dentro del campo en el instante
+central; un objeto que solo entra después no se clasifica como visible en
+esa instantánea. No hay propagación ni conteos acumulados de misión.
+
+Visible = dentro del campo, línea no ocultada por la Tierra, iluminado y
+exclusión solar de boresight >=90 grados. Verde = visible, SNR>=5,
+fuente no resuelta, no saturado y exclusión solar de la LOS satisfecha.
+Gris no identifica una causa única: los flags del CSV permiten distinguirlas.
+El SNR se pone a cero en sombra (no hay señal solar directa); los demás
+objetos tienen el SNR del solapamiento calculado, incluso si están ocultos,
+pero nunca se clasifican como detectables si no son visibles.
+
+Resultado de esta instantánea: 3 objetos dentro del campo; los 3 en sombra
+terrestre; 0 visibles y detectables. Por ello los 50000 puntos son grises y
+la leyenda verde indica cero. No se ha cambiado la geometría para forzar
+puntos verdes. Esto no demuestra un rendimiento nulo de TRACE: únicamente
+clasifica este instante y esta posición ilustrativa. El CSV de distancias
+incluye ahora todos los flags, fase, tasa aparente, tiempo visible y SNR;
+el JSON registra la geometría, el Sol aproximado y los conteos. Se verifica
+que el hash de la población nominal permanece intacto.
