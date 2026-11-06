@@ -1657,3 +1657,38 @@ La reproducción documental usa `python scripts/build_trace_word_report.py`,
 Pandoc y los paquetes descritos en la carpeta del informe. Los dos CSV de
 referencia ESA previamente modificados en el entorno no se utilizan ni se
 incluyen en este cambio; se preservan sus modificaciones.
+
+## Revisión didáctica del informe Word para principiantes
+
+Se sustituye el informe breve por una explicación progresiva: propósito,
+fuentes identificadas por título y función, construcción de población,
+definición de elementos orbitales, óptica/detector, señal y ruido, cruces
+parciales, alcances y encuentros diarios. Se explican PSF, FWHM, QE, albedo
+geométrico, fase, escala de píxel, exposición, ruido, fondo y full well con
+valores, unidades y consecuencias físicas. Las hipótesis se distinguen de
+los datos y de los resultados archivados.
+
+Se reutilizan 22 figuras existentes, sin modificar sus datos ni regenerarlas.
+Se retira el dibujo temporal del documento y sus recursos ya innecesarios;
+el solapamiento parcial se explica con intervalos y el ejemplo de 52 ms de
+señal dentro de una exposición de 77 ms. Se simplifica la notación de las
+15 ecuaciones OMML para evitar los subíndices encadenados problemáticos.
+Siete tablas nativas explican fuentes, elementos, parámetros y resultados.
+
+Por indicación del usuario, todas las páginas llevan «TRACE · AEK» arriba
+a la derecha, además del logo original a la izquierda. El pie utiliza los
+campos PAGE / NUMPAGES. Después de las tablas se inserta un párrafo vacío
+con separación explícita. Cada figura tiene guía de lectura y procedencia
+trazable en fuentes.json. Se revisan todas las páginas renderizadas y las
+ecuaciones, no solo el XML del Word.
+
+Las curvas SNR archivadas usan 10·log10(SNR), según el generador existente;
+el informe explica esa convención y que el umbral lineal 5 se representa a
+6,99 dB. Se mantiene esa convención gráfica sin alterar los resultados.
+El criterio de detección sigue aplicándose al SNR lineal.
+
+Entrada principal: scripts/build_trace_intro_report.py. El comando anterior
+build_trace_word_report.py delega en la revisión actual y conserva las
+utilidades de formato compartidas. No se modifica la población nominal,
+el Excel, los modelos ni los resultados científicos. Se preservan los dos
+CSV de referencia ESA previamente modificados en el entorno.

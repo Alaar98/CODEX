@@ -1,14 +1,17 @@
 {
   "document": "TRACE_Informe_Poblacion_Validacion_Optica.docx",
-  "sha256": "11446be36c4081ed4a7101af9bd8e8d3ad3fef30c2b431937a0ef980e6cb18ea",
-  "rendered_pages": 7,
-  "editable_omml_equations": 19,
-  "native_data_tables": 3,
-  "body_figures": 4,
-  "template_logo_bytes_preserved": true,
-  "logo_visible_on_all_pages": true,
+  "revision": "Guía introductoria revisada",
+  "sha256": "ec9a71cb3f3009841e3f3be50b374dbb0be3113598cd41aac0c37c03dabb7609",
+  "rendered_pages": 25,
+  "editable_omml_equations": 15,
+  "native_data_tables": 7,
+  "existing_project_figures": 22,
+  "template_logo_preserved": true,
+  "header_right_all_pages": "TRACE · AEK",
+  "footer_all_pages": "PAGE / NUMPAGES; valores renderizados verificados 1 / 25 a 25 / 25",
+  "blank_paragraph_after_each_data_table": true,
   "xml_and_zip_valid": true,
-  "source_hashes_verified": 13,
+  "verified_source_hashes": 36,
   "visual_review_pages": [
     1,
     2,
@@ -16,14 +19,34 @@
     4,
     5,
     6,
-    7
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
   ],
-  "visual_checks": [
-    "Logo y numeración en todas las páginas",
-    "Sin páginas vacías ni contenido recortado",
-    "Ecuaciones legibles y editables, tablas nativas",
-    "Figuras, pies y referencias legibles"
-  ],
+  "equations_visually_reviewed": 15,
   "render_tool": "LibreOffice 26.8.0 alpha",
-  "scope": "Verificación documental; no se repiten las simulaciones ni la suite científica."
+  "checks": [
+    "Sin desbordamientos, páginas vacías ni párrafos sueltos",
+    "Revisión de cada ecuación ampliada y de todas las páginas",
+    "Texto introductorio, referencias y explicación de variables",
+    "Retirado el esquema temporal; ejemplo numérico de tránsito parcial",
+    "Paginación y encabezado comprobados en cada página"
+  ],
+  "scope": "Revisión documental; no se repiten ni modifican simulaciones científicas."
 }

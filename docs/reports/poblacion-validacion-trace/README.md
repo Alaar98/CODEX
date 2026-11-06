@@ -1,41 +1,45 @@
-# TRACE — población sintética y validación óptica y radiométrica
+# TRACE — guía de población y validación óptica y radiométrica
 
-Documento principal: [TRACE_Informe_Poblacion_Validacion_Optica.docx](TRACE_Informe_Poblacion_Validacion_Optica.docx).
+[Descargar el informe Word](TRACE_Informe_Poblacion_Validacion_Optica.docx).
 
-Informe breve en español: población híbrida ESA–CelesTrak, geometría y
-tránsitos parciales, presupuesto radiométrico, ventanas ópticas y cruces de
-24 horas. Incluye ecuaciones nativas OMML, tablas editables y figuras.
+Revisión para lectores principiantes: explica las fuentes, la construcción de
+la población y cada variable del instrumento antes de introducir las ecuaciones.
+Incluye 22 figuras existentes del proyecto, con guías de lectura, 15 ecuaciones
+OMML editables y siete tablas de datos nativas. Sustituye al informe breve.
+Se retira el esquema temporal; el tránsito parcial se explica mediante un
+intervalo de exposición, su intersección con el cruce y un ejemplo numérico.
 
-## Reproducir desde la raíz del repositorio
+El encabezado conserva el logo y añade «TRACE · AEK» a la derecha. El pie
+contiene campos Word PAGE / NUMPAGES. Tras cada tabla se deja un párrafo de
+separación. Las ecuaciones usan notación simplificada con símbolos definidos;
+la antigua fórmula acumulativa de subíndices encadenados se sustituye por una
+explicación del muestreo de tamaños y ecuaciones sencillas del muestreo por capas.
 
-Requiere Python con los paquetes de `requirements.txt` de esta carpeta y
-Pandoc disponible en PATH. Usa la plantilla Word de la skill local, la
-población nominal y los resultados archivados; no vuelve a simularlos.
+## Reproducción
+
+Requiere Python con los paquetes de `requirements.txt` de esta carpeta y Pandoc.
+Desde la raíz del repositorio:
 
 ```bash
-python scripts/build_trace_word_report.py
+python scripts/build_trace_intro_report.py
 ```
 
-`ecuaciones.md` contiene el fuente LaTeX de las ecuaciones; Pandoc las
-convierte a ecuaciones editables de Word. `assets/` contiene las ediciones
-compactas de las figuras y el original SVG del esquema geométrico.
-`fuentes.json` registra las entradas y sus SHA-256.
+El comando anterior `python scripts/build_trace_word_report.py` también genera
+la revisión actual. Este archivo conserva las utilidades compartidas de Word;
+no restaura la versión anterior. Ningún comando regenera los resultados físicos.
 
-## Revisar el documento renderizado
+`ecuaciones.md` contiene las fórmulas LaTeX convertidas a OMML. `fuentes.json`
+registra rutas y SHA-256 de documentos, datos y PNG utilizados. Las imágenes
+se insertan desde los originales existentes en `outputs/`; no se alteran los
+CSV ni las gráficas de la población o de los estudios.
 
-Con LibreOffice disponible:
+## Revisión de la maquetación
 
 ```bash
 mkdir -p /tmp/trace-report-review
 soffice --headless --convert-to pdf --outdir /tmp/trace-report-review docs/reports/poblacion-validacion-trace/TRACE_Informe_Poblacion_Validacion_Optica.docx
 ```
 
-El control registrado en `verificacion.json` corresponde al DOCX entregado:
-se revisan las páginas renderizadas, ecuaciones, logo, numeración, tablas,
-figuras y trazabilidad. El PDF se usa como soporte de revisión; el documento
-editable principal es Word.
-
-Las gráficas se redibujan a tamaño de informe a partir de los CSV/JSON
-nominales archivados. La figura de ventana óptica se limita a diámetros de
-1 a 100 cm para evitar representar los máximos censurados de otros tamaños
-como si fueran raíces calculadas. Los conteos de encuentros son sin pesos.
+El PDF es un soporte temporal de revisión. El entregable principal es el DOCX.
+`verificacion.json` registra la comprobación del documento y de todas las
+páginas renderizadas, incluido encabezado, paginación, fórmulas y espacios.

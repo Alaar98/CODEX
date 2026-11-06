@@ -1,32 +1,102 @@
 {
-  "language": "es-ES",
   "document": "TRACE_Informe_Poblacion_Validacion_Optica.docx",
-  "equations_editable_omml": 19,
+  "revision": "Guía para principiantes; sustituye el informe breve",
   "template": ".agents/skills/documentos-tecnicos-word/assets/articulo-referencia.docx",
+  "equations_editable_omml": 15,
+  "figures": [
+    {
+      "path": "outputs/trace_nominal_altitude_histogram.png",
+      "sha256": "edf238bbf9b41bdc830163b4bdece4f978b334f25d4dd11f0de657615325a756"
+    },
+    {
+      "path": "outputs/trace_nominal_object_size_histogram.png",
+      "sha256": "0fd81287cbf871380c314df3e53b474c50f48c2ee092c5e582ddb517132c7112"
+    },
+    {
+      "path": "outputs/trace_nominal_size_vs_altitude.png",
+      "sha256": "0a31cc7331a342b3a43d898b59b951b9815e98471b14476100d7eb492946803d"
+    },
+    {
+      "path": "outputs/trace_nominal_inclination_vs_altitude.png",
+      "sha256": "f26603d93af8a7f7eae252d39c3ca0cd8ffa4e5092102bea1fcc77766d629dd1"
+    },
+    {
+      "path": "outputs/trace_nominal_eccentricity_vs_altitude.png",
+      "sha256": "7b09a3868cefffe5e4ccd2b6772a72bb146311ec0c859ac30a3da4eae1f54777"
+    },
+    {
+      "path": "outputs/trace_nominal_raan_vs_altitude.png",
+      "sha256": "5d7239e94d9a5023f2ecd09aba919022b33486fe455d27caf878f6789ec25b84"
+    },
+    {
+      "path": "outputs/trace_nominal_argument_of_perigee_vs_altitude.png",
+      "sha256": "69403d1bf3e87106c7229eef1424c252b2757dc8aee92e7d6b44b7ae08c5e108"
+    },
+    {
+      "path": "outputs/sensitivity/trace_comparison_nominal_raan_12_8_4_planes.png",
+      "sha256": "fee591dc50a3d3c7d2a6877d7c659184bb73a812a8a314913d531022e4c42c9c"
+    },
+    {
+      "path": "outputs/sensitivity/trace_comparison_nominal_argp_12_8_4_positions.png",
+      "sha256": "3ca3d6aec36b3495df64a03d9dc03dc23ff7197181f6fcf58d3ea2dd2a296644"
+    },
+    {
+      "path": "outputs/sensitivity/trace_comparison_nominal_eccentricity_circular_low_high.png",
+      "sha256": "b7ad618625b6e83043b10e65b27d7d98f324c92cba354f72494bd156953c2874"
+    },
+    {
+      "path": "outputs/optical/trace_instrument_reference_snr_vs_range_fov.png",
+      "sha256": "8db4be19742009ca8ccc6f778ecfb201f5c39da3a05280b60441a3adf2e7eb47"
+    },
+    {
+      "path": "outputs/optical/trace_instrument_reference_snr_vs_range_phase.png",
+      "sha256": "d33d65e61a8fa6226bf423dba2a509f77e8a03c28251c4a7487ca5e05eb54fb8"
+    },
+    {
+      "path": "outputs/optical/trace_instrument_reference_snr_vs_range_albedo.png",
+      "sha256": "449f5769fe6ee9b4db2be0aa886e0c460fe61ad20c5d908a9d4d69786a0678ca"
+    },
+    {
+      "path": "outputs/optical/trace_instrument_reference_snr_vs_range_aperture.png",
+      "sha256": "152d4f8c2e3081b1cd5e1d7fda20941231c693217a56d082963126a743ef0f27"
+    },
+    {
+      "path": "outputs/optical/summary/trace_nominal_unresolved_source_limit_sso_observer_450km.png",
+      "sha256": "0bf8c81e397f859091c332405bdb97a55ec73059b12d191741436bc678b3b1b0"
+    },
+    {
+      "path": "outputs/optical/trace_instrument_reference_range_vs_size_nominal.png",
+      "sha256": "f4fa568c8791edd21debc33b79ff7aba29225e0dd55b60bd5c171b89337e4ff2"
+    },
+    {
+      "path": "outputs/optical/trace_instrument_reference_range_vs_size_aperture.png",
+      "sha256": "787e7ac3bd6ede9faca65bdc8082a3dbead7e00079b643d22e194b506365c36c"
+    },
+    {
+      "path": "outputs/optical/trace_instrument_reference_range_vs_size_velocity.png",
+      "sha256": "eb79c54c4b97c8ac76c65acda666dc57ebd513763a005718206b63d6d6a2ce2e"
+    },
+    {
+      "path": "outputs/optical/summary/trace_nominal_sso450km_24h_apparent_magnitude_vs_range.png",
+      "sha256": "5b17eced89cd455946f47f6849741f6a330c40a57031c348ba36f269fc0746ed"
+    },
+    {
+      "path": "outputs/optical/summary/trace_nominal_sso450km_24h_apparent_magnitude_vs_transverse_velocity.png",
+      "sha256": "1fc5ece55610ed420df14010cb3cb21544dcc55b9292c6796099b5441dff0192"
+    },
+    {
+      "path": "outputs/optical/summary/trace_nominal_sso450km_24h_magnitude_margin_vs_range.png",
+      "sha256": "4f1bedf2d7ce0c10bbe2d553b0ea32a4a235b0be5217ea48df7783c16fe2b302"
+    },
+    {
+      "path": "outputs/optical/summary/trace_nominal_sso450km_24h_magnitude_margin_vs_transverse_velocity.png",
+      "sha256": "2e14121bca0128bbec1bd2753d253c47fcd19684c8ec295e09d3d0e25cc43944"
+    }
+  ],
   "inputs": [
     {
-      "path": "data/generated/trace_population_50000.csv",
-      "sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56"
-    },
-    {
-      "path": "data/generated/trace_population_metadata.json",
-      "sha256": "dadfd36d7cf50b997828548a4e33e9911f05209368468ab5c0b98d10b7300d0a"
-    },
-    {
-      "path": "data/generated/validation.json",
-      "sha256": "dab32b1413c2b4a074bcc10a1309093a7c137d80029e236215ebeab44cc97a7a"
-    },
-    {
-      "path": "data/generated/optical/manifest.json",
-      "sha256": "c8e07abdddef3cfcedfc74950bf3b7a9f78a8f27bcc3bbf146306dd87fbfe32a"
-    },
-    {
-      "path": "data/generated/optical/range_vs_size_nominal.json",
-      "sha256": "6c14271781d115c2755bbefe2eada83e1f4086621a96ee083840b148cda46341"
-    },
-    {
-      "path": "data/generated/optical/size_comparison_cases.csv",
-      "sha256": "502f82c2b51490fe97f651f309ba871d7a60553fb22e1617b806296b738d62b8"
+      "path": ".agents/skills/documentos-tecnicos-word/assets/articulo-referencia.docx",
+      "sha256": "592c4670626dfd984b1faf0212a3e2073072625c86e90a4465a52b0a95e55213"
     },
     {
       "path": "data/generated/encounters/sso450km_24h_encounters.csv",
@@ -41,6 +111,30 @@
       "sha256": "eda064a7c9ca3c5b8ee052cedfc0183d006ceb3c5e60ba14557e1abb1875d990"
     },
     {
+      "path": "data/generated/optical/manifest.json",
+      "sha256": "c8e07abdddef3cfcedfc74950bf3b7a9f78a8f27bcc3bbf146306dd87fbfe32a"
+    },
+    {
+      "path": "data/generated/optical/range_vs_size_nominal.json",
+      "sha256": "6c14271781d115c2755bbefe2eada83e1f4086621a96ee083840b148cda46341"
+    },
+    {
+      "path": "data/generated/optical/size_comparison_cases.csv",
+      "sha256": "502f82c2b51490fe97f651f309ba871d7a60553fb22e1617b806296b738d62b8"
+    },
+    {
+      "path": "data/generated/trace_population_50000.csv",
+      "sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56"
+    },
+    {
+      "path": "data/generated/trace_population_metadata.json",
+      "sha256": "dadfd36d7cf50b997828548a4e33e9911f05209368468ab5c0b98d10b7300d0a"
+    },
+    {
+      "path": "data/generated/validation.json",
+      "sha256": "dab32b1413c2b4a074bcc10a1309093a7c137d80029e236215ebeab44cc97a7a"
+    },
+    {
       "path": "docs/references/ESA_Space_Environment_Report_2026.pdf",
       "sha256": "de4e108156a9daab1aa4d59c37aacc409d413ff6848920604d084d94e7840a45"
     },
@@ -53,15 +147,98 @@
       "sha256": "d0974311900755a319c10a1d33c8e4cfe032b30344c86d700d3a17b486dfa293"
     },
     {
-      "path": ".agents/skills/documentos-tecnicos-word/assets/articulo-referencia.docx",
-      "sha256": "592c4670626dfd984b1faf0212a3e2073072625c86e90a4465a52b0a95e55213"
+      "path": "docs/references/TRACE_Mission_Validation_Specification (1).md",
+      "sha256": "fe1ceaaf55612a3fca06ad3ccf85c1a3d4684a46eb71f2ad867f7566275b1fa5"
+    },
+    {
+      "path": "outputs/optical/summary/trace_nominal_sso450km_24h_apparent_magnitude_vs_range.png",
+      "sha256": "5b17eced89cd455946f47f6849741f6a330c40a57031c348ba36f269fc0746ed"
+    },
+    {
+      "path": "outputs/optical/summary/trace_nominal_sso450km_24h_apparent_magnitude_vs_transverse_velocity.png",
+      "sha256": "1fc5ece55610ed420df14010cb3cb21544dcc55b9292c6796099b5441dff0192"
+    },
+    {
+      "path": "outputs/optical/summary/trace_nominal_sso450km_24h_magnitude_margin_vs_range.png",
+      "sha256": "4f1bedf2d7ce0c10bbe2d553b0ea32a4a235b0be5217ea48df7783c16fe2b302"
+    },
+    {
+      "path": "outputs/optical/summary/trace_nominal_sso450km_24h_magnitude_margin_vs_transverse_velocity.png",
+      "sha256": "2e14121bca0128bbec1bd2753d253c47fcd19684c8ec295e09d3d0e25cc43944"
+    },
+    {
+      "path": "outputs/optical/summary/trace_nominal_unresolved_source_limit_sso_observer_450km.png",
+      "sha256": "0bf8c81e397f859091c332405bdb97a55ec73059b12d191741436bc678b3b1b0"
+    },
+    {
+      "path": "outputs/optical/trace_instrument_reference_range_vs_size_aperture.png",
+      "sha256": "787e7ac3bd6ede9faca65bdc8082a3dbead7e00079b643d22e194b506365c36c"
+    },
+    {
+      "path": "outputs/optical/trace_instrument_reference_range_vs_size_nominal.png",
+      "sha256": "f4fa568c8791edd21debc33b79ff7aba29225e0dd55b60bd5c171b89337e4ff2"
+    },
+    {
+      "path": "outputs/optical/trace_instrument_reference_range_vs_size_velocity.png",
+      "sha256": "eb79c54c4b97c8ac76c65acda666dc57ebd513763a005718206b63d6d6a2ce2e"
+    },
+    {
+      "path": "outputs/optical/trace_instrument_reference_snr_vs_range_albedo.png",
+      "sha256": "449f5769fe6ee9b4db2be0aa886e0c460fe61ad20c5d908a9d4d69786a0678ca"
+    },
+    {
+      "path": "outputs/optical/trace_instrument_reference_snr_vs_range_aperture.png",
+      "sha256": "152d4f8c2e3081b1cd5e1d7fda20941231c693217a56d082963126a743ef0f27"
+    },
+    {
+      "path": "outputs/optical/trace_instrument_reference_snr_vs_range_fov.png",
+      "sha256": "8db4be19742009ca8ccc6f778ecfb201f5c39da3a05280b60441a3adf2e7eb47"
+    },
+    {
+      "path": "outputs/optical/trace_instrument_reference_snr_vs_range_phase.png",
+      "sha256": "d33d65e61a8fa6226bf423dba2a509f77e8a03c28251c4a7487ca5e05eb54fb8"
+    },
+    {
+      "path": "outputs/sensitivity/trace_comparison_nominal_argp_12_8_4_positions.png",
+      "sha256": "3ca3d6aec36b3495df64a03d9dc03dc23ff7197181f6fcf58d3ea2dd2a296644"
+    },
+    {
+      "path": "outputs/sensitivity/trace_comparison_nominal_eccentricity_circular_low_high.png",
+      "sha256": "b7ad618625b6e83043b10e65b27d7d98f324c92cba354f72494bd156953c2874"
+    },
+    {
+      "path": "outputs/sensitivity/trace_comparison_nominal_raan_12_8_4_planes.png",
+      "sha256": "fee591dc50a3d3c7d2a6877d7c659184bb73a812a8a314913d531022e4c42c9c"
+    },
+    {
+      "path": "outputs/trace_nominal_altitude_histogram.png",
+      "sha256": "edf238bbf9b41bdc830163b4bdece4f978b334f25d4dd11f0de657615325a756"
+    },
+    {
+      "path": "outputs/trace_nominal_argument_of_perigee_vs_altitude.png",
+      "sha256": "69403d1bf3e87106c7229eef1424c252b2757dc8aee92e7d6b44b7ae08c5e108"
+    },
+    {
+      "path": "outputs/trace_nominal_eccentricity_vs_altitude.png",
+      "sha256": "7b09a3868cefffe5e4ccd2b6772a72bb146311ec0c859ac30a3da4eae1f54777"
+    },
+    {
+      "path": "outputs/trace_nominal_inclination_vs_altitude.png",
+      "sha256": "f26603d93af8a7f7eae252d39c3ca0cd8ffa4e5092102bea1fcc77766d629dd1"
+    },
+    {
+      "path": "outputs/trace_nominal_object_size_histogram.png",
+      "sha256": "0fd81287cbf871380c314df3e53b474c50f48c2ee092c5e582ddb517132c7112"
+    },
+    {
+      "path": "outputs/trace_nominal_raan_vs_altitude.png",
+      "sha256": "5d7239e94d9a5023f2ecd09aba919022b33486fe455d27caf878f6789ec25b84"
+    },
+    {
+      "path": "outputs/trace_nominal_size_vs_altitude.png",
+      "sha256": "0a31cc7331a342b3a43d898b59b951b9815e98471b14476100d7eb492946803d"
     }
   ],
-  "figure_source": "redrawn compact report editions from frozen nominal CSV and archived optical/encounter results; geometry illustrative",
-  "input_population_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
-  "scope": "no population or simulation regenerated; report data remain the archived nominal results",
-  "runtime": {
-    "python": "3.12.14",
-    "pandoc": "pandoc 3.1.11.1"
-  }
+  "scope": "Resultados nominales archivados; sin regenerar población ni simulaciones. Figuras existentes reutilizadas sin cambiar sus datos.",
+  "entrypoint": "scripts/build_trace_intro_report.py"
 }
