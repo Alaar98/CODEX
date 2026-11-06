@@ -1,0 +1,67 @@
+{
+  "language": "es-ES",
+  "document": "TRACE_Informe_Poblacion_Validacion_Optica.docx",
+  "equations_editable_omml": 19,
+  "template": ".agents/skills/documentos-tecnicos-word/assets/articulo-referencia.docx",
+  "inputs": [
+    {
+      "path": "data/generated/trace_population_50000.csv",
+      "sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56"
+    },
+    {
+      "path": "data/generated/trace_population_metadata.json",
+      "sha256": "dadfd36d7cf50b997828548a4e33e9911f05209368468ab5c0b98d10b7300d0a"
+    },
+    {
+      "path": "data/generated/validation.json",
+      "sha256": "dab32b1413c2b4a074bcc10a1309093a7c137d80029e236215ebeab44cc97a7a"
+    },
+    {
+      "path": "data/generated/optical/manifest.json",
+      "sha256": "c8e07abdddef3cfcedfc74950bf3b7a9f78a8f27bcc3bbf146306dd87fbfe32a"
+    },
+    {
+      "path": "data/generated/optical/range_vs_size_nominal.json",
+      "sha256": "6c14271781d115c2755bbefe2eada83e1f4086621a96ee083840b148cda46341"
+    },
+    {
+      "path": "data/generated/optical/size_comparison_cases.csv",
+      "sha256": "502f82c2b51490fe97f651f309ba871d7a60553fb22e1617b806296b738d62b8"
+    },
+    {
+      "path": "data/generated/encounters/sso450km_24h_encounters.csv",
+      "sha256": "84b4d3ddcecf772ab85fa93d5d19a5a3f9a7b26bd06241a3a56f845237320d75"
+    },
+    {
+      "path": "data/generated/encounters/sso450km_24h_photometry.json",
+      "sha256": "048f486f55e367094a3d97cf45fb931443d5cff9158be76d21c89370e4524b7c"
+    },
+    {
+      "path": "data/generated/encounters/sso450km_24h_validation.json",
+      "sha256": "eda064a7c9ca3c5b8ee052cedfc0183d006ceb3c5e60ba14557e1abb1875d990"
+    },
+    {
+      "path": "docs/references/ESA_Space_Environment_Report_2026.pdf",
+      "sha256": "de4e108156a9daab1aa4d59c37aacc409d413ff6848920604d084d94e7840a45"
+    },
+    {
+      "path": "docs/references/Space debris mission scientific paper.pdf",
+      "sha256": "1f5dce9e115ff3aa8826763b5c463100712e893d1147a22695443787c8a88e6f"
+    },
+    {
+      "path": "docs/references/TRACE_Detector_Optical_Baseline (1).xlsx",
+      "sha256": "d0974311900755a319c10a1d33c8e4cfe032b30344c86d700d3a17b486dfa293"
+    },
+    {
+      "path": ".agents/skills/documentos-tecnicos-word/assets/articulo-referencia.docx",
+      "sha256": "592c4670626dfd984b1faf0212a3e2073072625c86e90a4465a52b0a95e55213"
+    }
+  ],
+  "figure_source": "redrawn compact report editions from frozen nominal CSV and archived optical/encounter results; geometry illustrative",
+  "input_population_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+  "scope": "no population or simulation regenerated; report data remain the archived nominal results",
+  "runtime": {
+    "python": "3.12.14",
+    "pandoc": "pandoc 3.1.11.1"
+  }
+}

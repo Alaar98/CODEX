@@ -1,0 +1,29 @@
+{
+  "document": "TRACE_Informe_Poblacion_Validacion_Optica.docx",
+  "sha256": "11446be36c4081ed4a7101af9bd8e8d3ad3fef30c2b431937a0ef980e6cb18ea",
+  "rendered_pages": 7,
+  "editable_omml_equations": 19,
+  "native_data_tables": 3,
+  "body_figures": 4,
+  "template_logo_bytes_preserved": true,
+  "logo_visible_on_all_pages": true,
+  "xml_and_zip_valid": true,
+  "source_hashes_verified": 13,
+  "visual_review_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "visual_checks": [
+    "Logo y numeración en todas las páginas",
+    "Sin páginas vacías ni contenido recortado",
+    "Ecuaciones legibles y editables, tablas nativas",
+    "Figuras, pies y referencias legibles"
+  ],
+  "render_tool": "LibreOffice 26.8.0 alpha",
+  "scope": "Verificación documental; no se repiten las simulaciones ni la suite científica."
+}

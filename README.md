@@ -361,6 +361,11 @@ tamaño y símbolos de revisita. Sus nombres contienen
 
 ## Skills de documentación técnica
 
+El [informe breve de población sintética y validación óptica y radiométrica](docs/reports/poblacion-validacion-trace/TRACE_Informe_Poblacion_Validacion_Optica.docx)
+resume el modelo actual en siete páginas, con ecuaciones y tablas editables,
+figuras y el tratamiento de los tránsitos parciales. Sus fuentes, trazabilidad
+y procedimiento de reproducción están en [la carpeta del informe](docs/reports/poblacion-validacion-trace/README.md).
+
 Las dos skills adjuntas están incorporadas en `.agents/skills/`, con sus
 instrucciones, guías de estilo, plantillas, logo y esquemas de referencia:
 

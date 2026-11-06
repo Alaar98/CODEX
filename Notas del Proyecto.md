@@ -1630,3 +1630,30 @@ recursos vectoriales de informes, respetando que outputs/ solo contiene PNG.
 Las convenciones físicas, fuentes y trazabilidad de TRACE se mantienen al
 redactar documentos. Incorporar los paquetes no constituye la generación
 o validación de un informe nuevo, ni cambia los cálculos del proyecto.
+
+## Informe breve de población y validación óptica y radiométrica
+
+Por petición del usuario se aplica la skill local documentos-tecnicos-word
+para generar `docs/reports/poblacion-validacion-trace/TRACE_Informe_Poblacion_Validacion_Optica.docx`.
+Se conserva la plantilla suministrada, incluido su logo; el informe contiene
+siete páginas, 19 ecuaciones OMML editables, tres tablas de datos nativas y
+cuatro figuras. El esquema de fase y solapamiento temporal tiene original SVG.
+Las gráficas compactas usan el estilo científico compartido y los resultados
+nominales archivados; no se repite la propagación ni se cambia la población.
+
+El texto distingue datos e hipótesis: aproximación ESA–CelesTrak, soporte
+limitado de los donantes, fase Lambertiana, PSF gaussiana, umbral SNR≥5,
+fuente no resuelta, saturación por píxel y sincronización ideal del frame.
+Un tránsito parcial contribuye con el tiempo de solapamiento dentro del
+FoV; el ruido de fondo y de oscuridad integra la exposición completa.
+El observador de referencia parte de una SSO circular osculante de 450 km,
+cuya altitud varía bajo J2. Los conteos de encuentros se presentan sin pesos,
+y los alcances ópticos condicionales no se interpretan como cobertura real.
+
+`fuentes.json` registra los SHA-256 de las entradas utilizadas y
+`verificacion.json` documenta los controles del DOCX y la revisión visual de
+todas las páginas renderizadas. El PDF temporal solo sirve para revisión.
+La reproducción documental usa `python scripts/build_trace_word_report.py`,
+Pandoc y los paquetes descritos en la carpeta del informe. Los dos CSV de
+referencia ESA previamente modificados en el entorno no se utilizan ni se
+incluyen en este cambio; se preservan sus modificaciones.
