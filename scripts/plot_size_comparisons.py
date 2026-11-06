@@ -27,9 +27,9 @@ def main():
     sizes=(1,5,10,100);colors=('#0072B2','#009E73','#E3B900','#7B3294')
     groups={k:[StudyCase(**{f:v for f,v in c.items() if f!='label'}) for c in values]
             for k,values in manifest['groups'].items()}
-    groups['altitude']=[nominal,replace(nominal,observer_altitude_km=450)]
+    groups['altitude']=[nominal]
     titles={'phase':'Fase','albedo':'Albedo','fov':'FOV','aperture':'Apertura',
-            'velocity':'Velocidad transversal','altitude':'Altitud del observador'}
+            'velocity':'Velocidad transversal','altitude':'Referencia a 450 km'}
     fields={'phase':'phase_deg','albedo':'albedo','fov':'fov_deg','aperture':'aperture_m',
             'velocity':'transverse_speed_m_s','altitude':'observer_altitude_km'}
     units={'phase':'°','albedo':'','fov':'°','aperture':' mm','velocity':' km/s','altitude':' km'}
@@ -73,7 +73,7 @@ def main():
         fig.legend(handles=handles,loc='outside upper center',ncol=4,frameon=False,
                    title='TRACE — ventanas ópticas por tamaño de objeto',title_fontsize=17)
         fig.supxlabel('Cada barra va del mínimo al máximo elegible. Los huecos se conservan. Flecha: máximo censurado por el barrido.\n'
-                      'Referencia: D=80 mm, FOV=14°, fase=60°, p=0,2, v⊥=5 km/s, 77 ms, 600 km. Un parámetro cambia por panel.',fontsize=10)
+                      'Referencia: D=80 mm, FOV=14°, fase=60°, p=0,2, v⊥=5 km/s, 77 ms, 450 km. Incluye tránsitos parciales con SNR ≥ 5. Un parámetro cambia por panel.',fontsize=10)
         save_figure(fig,output,'trace_instrument_reference_sizes_1_5_10_100cm_windows_'+('log' if logarithmic else 'linear'))
     rows=[];interval_rows=[]
     for j,((case,size),ivs) in enumerate(cache.items(),1):
@@ -126,22 +126,12 @@ def main():
         writer=csv.writer(f,lineterminator='\n');writer.writerow(['panel','lower_cm','upper_cm','objects'])
         for label,edge,values in [('full',edges,counts),('zoom_1_10cm',zoom_edges,zoom_counts)]:
             writer.writerows(zip([label]*len(values),edge[:-1],edge[1:],values))
-    fig,ax=plt.subplots(figsize=(5,5),layout='constrained')
-    ax.axhline(0,color='black');ax.text(.5,15,'Superficie terrestre',ha='center')
-    for h,color,label in [(450,'#0072B2','Observador a 450 km'),(600,'#009E73','Observador a 600 km'),(800,'#555555','Mismo objeto a 800 km')]:
-        ax.plot(.5,h,'o',color=color);ax.text(.55,h,label,va='center',fontsize=10)
-    for x,lo,label in [(.17,450,'350 km'),(.33,600,'200 km')]:
-        ax.annotate('',xy=(x,800),xytext=(x,lo),arrowprops={'arrowstyle':'<->','color':'#D55E00'})
-        ax.text(x-.025,(800+lo)/2,label,rotation=90,ha='right',va='center',fontsize=10)
-    ax.annotate('Zenit',xy=(.5,950),xytext=(.5,850),ha='center',arrowprops={'arrowstyle':'->'})
-    ax.set(xlim=(0,1.15),ylim=(-20,980),xticks=[],ylabel='Altitud sobre la Tierra [km]',title='TRACE — ejemplo de distancia al zenit')
-    fig.supxlabel('Observadores alternativos, alineados radialmente con el objeto.\nLa distancia al objeto no es la altitud de su órbita.',fontsize=9)
-    save_figure(fig,output,'trace_instrument_reference_450_600_zenith_geometry')
+    (output/'trace_instrument_reference_450_600_zenith_geometry.png').unlink(missing_ok=True)
     assert hashlib.sha256(nominal_path.read_bytes()).hexdigest()==sha
     audit={'cases':len(rows),'sizes_cm':sizes,'nominal_sha256_unchanged':sha,'histogram_count':int(counts.sum()),
            'histogram_zoom_count':int(zoom_counts.sum()),'histogram_max_cm':float(diameters.max()),
            'orbit_examples':[{"altitude_km":h,'period_minutes':2*np.pi/replace(nominal,observer_altitude_km=h).frame_rate_rad_s/60,
-                              'rotation_deg_per_minute':replace(nominal,observer_altitude_km=h).frame_rate_rad_s*180/np.pi*60} for h in (450,600)]}
+                              'rotation_deg_per_minute':replace(nominal,observer_altitude_km=h).frame_rate_rad_s*180/np.pi*60} for h in (450,)]}
     (source/'size_visualization_audit.json').write_text(json.dumps(audit,indent=2)+'\n')
     print(json.dumps(audit,indent=2))
 

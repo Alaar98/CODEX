@@ -1,0 +1,20 @@
+{
+  "population_sha256": "c6deb9b1b5a60377628a81337fa3df266bc5afa31bb5bd7435987c40d3d41d56",
+  "objects": 50000,
+  "unresolved_objects": 50000,
+  "resolved_objects": 0,
+  "observer_teme_km": [
+    6821.0,
+    0.0,
+    0.0
+  ],
+  "epoch_utc": "2026-11-05T00:00:00Z",
+  "fov_deg": 14.0,
+  "fwhm_px": 2,
+  "pixel_scale_rad_px": 5.6582746959863864e-05,
+  "fwhm_angular_rad": 0.00011316549391972773,
+  "fwhm_angular_arcsec": 23.3420586772096,
+  "boundary_cm_per_km": 11.316549391972773,
+  "visibility_filter_applied": false,
+  "png": "trace_nominal_unresolved_source_limit_observer_450km.png"
+}

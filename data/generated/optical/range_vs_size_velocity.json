@@ -6,13 +6,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.01,
     "intervals": [
       {
-        "lower_m": 266.3050577910782,
-        "upper_m": 85021.09464055367,
+        "lower_m": 266.3307258043886,
+        "upper_m": 85021.09464061755,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -28,13 +28,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.011220184543019636,
     "intervals": [
       {
-        "lower_m": 335.5108033498601,
-        "upper_m": 95395.23719156394,
+        "lower_m": 335.551609419528,
+        "upper_m": 95395.23719158552,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -50,13 +50,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.012589254117941675,
     "intervals": [
       {
-        "lower_m": 422.7847874165688,
-        "upper_m": 107035.21658145347,
+        "lower_m": 422.8497117370683,
+        "upper_m": 107035.21658144842,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -72,13 +72,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.01412537544622754,
     "intervals": [
       {
-        "lower_m": 532.8939333738939,
-        "upper_m": 120095.48826469584,
+        "lower_m": 532.9973365572887,
+        "upper_m": 120095.48826477141,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -94,13 +94,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.015848931924611134,
     "intervals": [
       {
-        "lower_m": 671.892668913049,
-        "upper_m": 134749.35411130576,
+        "lower_m": 672.0575702082407,
+        "upper_m": 134749.354111456,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -116,13 +116,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.01778279410038923,
     "intervals": [
       {
-        "lower_m": 847.4888736257662,
-        "upper_m": 151191.26201810595,
+        "lower_m": 847.7522832917466,
+        "upper_m": 151191.26201811509,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -138,13 +138,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0199526231496888,
     "intervals": [
       {
-        "lower_m": 1069.525152427098,
-        "upper_m": 169639.38611378008,
+        "lower_m": 1069.9468055845123,
+        "upper_m": 169639.38611381018,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -160,13 +160,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0223872113856834,
     "intervals": [
       {
-        "lower_m": 1350.6189596820964,
-        "upper_m": 190338.52179598622,
+        "lower_m": 1351.2957480969687,
+        "upper_m": 190338.52179604245,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -182,13 +182,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.025118864315095794,
     "intervals": [
       {
-        "lower_m": 1707.0261845519585,
-        "upper_m": 213563.3340194958,
+        "lower_m": 1708.1162743433297,
+        "upper_m": 213563.33401961674,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -204,13 +204,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.028183829312644536,
     "intervals": [
       {
-        "lower_m": 2159.827252726721,
-        "upper_m": 237871.79475841584,
+        "lower_m": 2161.5909779484523,
+        "upper_m": 231251.92421320302,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -226,13 +226,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.03162277660168379,
     "intervals": [
       {
-        "lower_m": 2736.593448101419,
-        "upper_m": 259468.92656008742,
+        "lower_m": 2739.4639636036945,
+        "upper_m": 259468.92655991332,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -248,13 +248,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.03548133892335755,
     "intervals": [
       {
-        "lower_m": 3473.795929054382,
-        "upper_m": 291128.92391855945,
+        "lower_m": 3478.5043057280154,
+        "upper_m": 291128.9239184842,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -270,13 +270,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.039810717055349734,
     "intervals": [
       {
-        "lower_m": 4420.417971468491,
-        "upper_m": 326652.0252177489,
+        "lower_m": 4428.2219534154,
+        "upper_m": 326652.0252174544,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -292,13 +292,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0446683592150963,
     "intervals": [
       {
-        "lower_m": 5643.631741326029,
-        "upper_m": 366509.60042893706,
+        "lower_m": 5656.752531913306,
+        "upper_m": 366509.60042917903,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -314,13 +314,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.05011872336272725,
     "intervals": [
       {
-        "lower_m": 7238.282948999798,
-        "upper_m": 411230.53536006087,
+        "lower_m": 7260.789882256373,
+        "upper_m": 411230.5353601664,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -336,13 +336,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.056234132519034905,
     "intervals": [
       {
-        "lower_m": 9344.087811151068,
-        "upper_m": 461408.24964712444,
+        "lower_m": 9383.84522312989,
+        "upper_m": 461408.2496470912,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -358,13 +358,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.06309573444801933,
     "intervals": [
       {
-        "lower_m": 12180.556232283188,
-        "upper_m": 517708.57107043377,
+        "lower_m": 12254.064359650063,
+        "upper_m": 517708.57107086637,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -380,13 +380,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0707945784384138,
     "intervals": [
       {
-        "lower_m": 16128.913024820293,
-        "upper_m": 580878.570692292,
+        "lower_m": 16275.207795302162,
+        "upper_m": 580878.5706917825,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -402,13 +402,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.07943282347242814,
     "intervals": [
       {
-        "lower_m": 21765.02947430176,
-        "upper_m": 651756.4760249599,
+        "lower_m": 22040.979150879222,
+        "upper_m": 651756.4760241357,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -424,13 +424,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.08912509381337459,
     "intervals": [
       {
-        "lower_m": 28519.884477609525,
-        "upper_m": 731282.7938103791,
+        "lower_m": 28826.983024926172,
+        "upper_m": 731282.7938103182,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -446,13 +446,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.1,
     "intervals": [
       {
-        "lower_m": 35111.19136136251,
-        "upper_m": 820512.7899696594,
+        "lower_m": 35375.261170993595,
+        "upper_m": 820512.7899691672,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -468,13 +468,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.11220184543019636,
     "intervals": [
       {
-        "lower_m": 41580.68417835856,
-        "upper_m": 920630.492335246,
+        "lower_m": 41800.607354340755,
+        "upper_m": 920630.4923354231,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -490,13 +490,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.12589254117941676,
     "intervals": [
       {
-        "lower_m": 48208.16062963431,
-        "upper_m": 1032964.4019947727,
+        "lower_m": 48389.401157536064,
+        "upper_m": 1032964.4019937462,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -512,13 +512,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.14125375446227548,
     "intervals": [
       {
-        "lower_m": 55197.780055204035,
-        "upper_m": 1159005.1216735053,
+        "lower_m": 55343.62854385085,
+        "upper_m": 1159005.1216732212,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -534,13 +534,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.1584893192461114,
     "intervals": [
       {
-        "lower_m": 62705.249641607865,
-        "upper_m": 1300425.1351488545,
+        "lower_m": 62816.94527653856,
+        "upper_m": 1300425.1351493674,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -556,13 +556,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.1778279410038923,
     "intervals": [
       {
-        "lower_m": 70865.47290639635,
-        "upper_m": 1459101.0000753184,
+        "lower_m": 70942.79736647062,
+        "upper_m": 1459101.0000752131,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -578,13 +578,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.19952623149688797,
     "intervals": [
       {
-        "lower_m": 79807.3378986654,
-        "upper_m": 1637138.2487751232,
+        "lower_m": 79849.0013286859,
+        "upper_m": 1637138.2487757741,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -600,13 +600,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.223872113856834,
     "intervals": [
       {
-        "lower_m": 89661.93638168955,
-        "upper_m": 1836899.327367934,
+        "lower_m": 89665.79326091518,
+        "upper_m": 1836899.3273701547,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -622,13 +622,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.25118864315095807,
     "intervals": [
       {
-        "lower_m": 100567.72458146374,
-        "upper_m": 2061034.9440020015,
+        "lower_m": 100530.88518885573,
+        "upper_m": 2061034.9440043347,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -644,13 +644,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.2818382931264455,
     "intervals": [
       {
-        "lower_m": 112674.25309840712,
-        "upper_m": 2312519.242130882,
+        "lower_m": 112593.13131698422,
+        "upper_m": 2312519.242130993,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -666,13 +666,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.31622776601683794,
     "intervals": [
       {
-        "lower_m": 126145.2449670331,
-        "upper_m": 2594689.2656009686,
+        "lower_m": 126015.56515461956,
+        "upper_m": 2594689.2656034846,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -688,13 +688,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.35481338923357547,
     "intervals": [
       {
-        "lower_m": 141161.4223674587,
-        "upper_m": 2911289.2391828,
+        "lower_m": 140978.19783330162,
+        "upper_m": 2911289.2391841495,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -710,13 +710,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.3981071705534973,
     "intervals": [
       {
-        "lower_m": 157923.3066703911,
-        "upper_m": 3266520.2521750866,
+        "lower_m": 157680.79666267167,
+        "upper_m": 3266520.2521731663,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -732,13 +732,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.44668359215096326,
     "intervals": [
       {
-        "lower_m": 176654.13124402522,
-        "upper_m": 3665096.004293523,
+        "lower_m": 176345.78017825875,
+        "upper_m": 3665096.004289064,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -754,13 +754,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.5011872336272725,
     "intervals": [
       {
-        "lower_m": 197602.96396505012,
-        "upper_m": 4112305.35360187,
+        "lower_m": 197221.32473947154,
+        "upper_m": 4112305.353604709,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -776,13 +776,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.5623413251903491,
     "intervals": [
       {
-        "lower_m": 221048.11527282879,
-        "upper_m": 4614082.496468313,
+        "lower_m": 220584.75734144513,
+        "upper_m": 4614082.49647205,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -798,13 +798,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.6309573444801932,
     "intervals": [
       {
-        "lower_m": 247300.89790016203,
-        "upper_m": 5177085.710711432,
+        "lower_m": 246746.29998900666,
+        "upper_m": 5177085.710707206,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -820,13 +820,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.707945784384138,
     "intervals": [
       {
-        "lower_m": 276709.80116521526,
-        "upper_m": 5808785.706918646,
+        "lower_m": 276053.2279412389,
+        "upper_m": 5808785.706913155,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -842,13 +842,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.7943282347242817,
     "intervals": [
       {
-        "lower_m": 309665.14344228257,
-        "upper_m": 6517564.760241887,
+        "lower_m": 308894.50500079157,
+        "upper_m": 6517564.760245423,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -864,13 +864,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.8912509381337459,
     "intervals": [
       {
-        "lower_m": 346604.2698195111,
-        "upper_m": 7312827.938109763,
+        "lower_m": 345705.9624717628,
+        "upper_m": 7312827.938104842,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -886,13 +886,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.0,
     "intervals": [
       {
-        "lower_m": 388017.3673351775,
-        "upper_m": 8205127.899682071,
+        "lower_m": 386976.0938113456,
+        "upper_m": 8205127.899691217,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -908,13 +908,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.1220184543019642,
     "intervals": [
       {
-        "lower_m": 434453.9771752155,
-        "upper_m": 9206304.923355293,
+        "lower_m": 433252.5440377548,
+        "upper_m": 9206304.923352446,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -930,13 +930,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.2589254117941675,
     "intervals": [
       {
-        "lower_m": 486530.29171707464,
-        "upper_m": 10329644.019944213,
+        "lower_m": 485149.381390619,
+        "upper_m": 10329644.01993365,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -952,13 +952,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.412537544622754,
     "intervals": [
       {
-        "lower_m": 544937.3341949878,
-        "upper_m": 11590051.21675159,
+        "lower_m": 543355.2486800954,
+        "upper_m": 11590051.216732733,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -974,13 +974,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.584893192461114,
     "intervals": [
       {
-        "lower_m": 610450.1301484684,
-        "upper_m": 13004251.351481449,
+        "lower_m": 608642.5030688022,
+        "upper_m": 13004251.351502419,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -996,13 +996,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.7782794100389228,
     "intervals": [
       {
-        "lower_m": 683937.9927864221,
-        "upper_m": 14591010.00075988,
+        "lower_m": 681877.4659772157,
+        "upper_m": 14591010.000746086,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1018,13 +1018,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.9952623149688808,
     "intervals": [
       {
-        "lower_m": 766376.0589930404,
-        "upper_m": 16371382.48774303,
+        "lower_m": 764031.9193765479,
+        "upper_m": 16371382.487735502,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1040,13 +1040,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 2.23872113856834,
     "intervals": [
       {
-        "lower_m": 858858.2292528669,
-        "upper_m": 18368993.27369928,
+        "lower_m": 856196.0011766334,
+        "upper_m": 18368993.27369634,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1062,12 +1062,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 2.5118864315095824,
     "intervals": [
       {
-        "lower_m": 962611.6832850347,
+        "lower_m": 959592.6709456169,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -1084,12 +1084,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 2.818382931264455,
     "intervals": [
       {
-        "lower_m": 1079013.1641058358,
+        "lower_m": 1075593.9379793485,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -1106,12 +1106,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 3.1622776601683795,
     "intervals": [
       {
-        "lower_m": 1209607.246623354,
+        "lower_m": 1205739.0670871816,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -1128,12 +1128,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 3.548133892335757,
     "intervals": [
       {
-        "lower_m": 1356126.833225314,
+        "lower_m": 1351755.0037285057,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -1150,12 +1150,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 3.981071705534973,
     "intervals": [
       {
-        "lower_m": 1520516.148326323,
+        "lower_m": 1515579.2895347527,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -1172,12 +1172,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 4.4668359215096345,
     "intervals": [
       {
-        "lower_m": 1704956.5370138653,
+        "lower_m": 1699385.7722845827,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -1194,12 +1194,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 5.011872336272725,
     "intervals": [
       {
-        "lower_m": 1911895.410159259,
+        "lower_m": 1905613.4515318996,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -1216,12 +1216,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 5.62341325190349,
     "intervals": [
       {
-        "lower_m": 2144078.720025223,
+        "lower_m": 2136998.842623835,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -1238,12 +1238,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 6.309573444801936,
     "intervals": [
       {
-        "lower_m": 2404587.397371645,
+        "lower_m": 2396612.288574924,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -1260,12 +1260,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 7.07945784384138,
     "intervals": [
       {
-        "lower_m": 2696878.2335030455,
+        "lower_m": 2687898.7016373007,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -1282,12 +1282,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 7.943282347242821,
     "intervals": [
       {
-        "lower_m": 3024829.7497644695,
+        "lower_m": 3014723.2751848586,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -1304,12 +1304,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 8.91250938133746,
     "intervals": [
       {
-        "lower_m": 3392793.663156722,
+        "lower_m": 3381422.772441603,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -1326,12 +1326,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 100,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 10.0,
     "intervals": [
       {
-        "lower_m": 3805652.6309485044,
+        "lower_m": 3792863.0727136973,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -1348,17 +1348,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.01,
     "intervals": [
       {
-        "lower_m": 313.4507239013669,
-        "upper_m": 59630.023770918895,
+        "lower_m": 88.3661587435846,
+        "upper_m": 59630.02377095973,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -1370,17 +1370,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.011220184543019636,
     "intervals": [
       {
-        "lower_m": 313.4507239013669,
-        "upper_m": 68826.01841564843,
+        "lower_m": 99.14846084592867,
+        "upper_m": 68826.0184155403,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -1392,17 +1392,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.012589254117941675,
     "intervals": [
       {
-        "lower_m": 313.4507239013669,
-        "upper_m": 79734.54062014527,
+        "lower_m": 111.24640278487274,
+        "upper_m": 79734.54062009492,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -1414,17 +1414,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.01412537544622754,
     "intervals": [
       {
-        "lower_m": 313.4507239013669,
-        "upper_m": 91629.0046925139,
+        "lower_m": 124.82051689930353,
+        "upper_m": 91629.00469260328,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -1436,17 +1436,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.015848931924611134,
     "intervals": [
       {
-        "lower_m": 313.4507239013669,
-        "upper_m": 105571.5428893707,
+        "lower_m": 140.0509234365236,
+        "upper_m": 105571.54288940679,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -1458,17 +1458,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.01778279410038923,
     "intervals": [
       {
-        "lower_m": 313.4507239013669,
-        "upper_m": 122029.57698206224,
+        "lower_m": 157.13972063792102,
+        "upper_m": 122029.57698219406,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -1480,17 +1480,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0199526231496888,
     "intervals": [
       {
-        "lower_m": 313.4507239013669,
-        "upper_m": 139177.0520424682,
+        "lower_m": 176.31366645960742,
+        "upper_m": 139177.05204256537,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -1502,17 +1502,26 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0223872113856834,
     "intervals": [
       {
-        "lower_m": 313.4507239013669,
-        "upper_m": 158921.10942130163,
+        "lower_m": 197.82718751329293,
+        "upper_m": 158921.10942143912,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
+        ]
+      },
+      {
+        "lower_m": 161443.65716112847,
+        "upper_m": 161952.25364859367,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
         ]
       }
     ]
@@ -1524,22 +1533,22 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.025118864315095794,
     "intervals": [
       {
-        "lower_m": 313.4507239013669,
-        "upper_m": 181713.41730961035,
+        "lower_m": 221.9657551526126,
+        "upper_m": 181713.41730936395,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       },
       {
-        "lower_m": 184389.82092094712,
-        "upper_m": 185474.56417619847,
+        "lower_m": 183174.65517543931,
+        "upper_m": 185474.56417632828,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1555,17 +1564,26 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.028183829312644536,
     "intervals": [
       {
-        "lower_m": 313.4507239013669,
-        "upper_m": 208105.88380942465,
+        "lower_m": 249.04967350408157,
+        "upper_m": 208105.88380937107,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
+        ]
+      },
+      {
+        "lower_m": 211665.76036344236,
+        "upper_m": 212815.0444283287,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
         ]
       }
     ]
@@ -1577,17 +1595,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.03162277660168379,
     "intervals": [
       {
-        "lower_m": 313.4507239013669,
-        "upper_m": 238782.40720157156,
+        "lower_m": 279.43832970958334,
+        "upper_m": 238782.40720147826,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -1599,13 +1617,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.03548133892335755,
     "intervals": [
       {
-        "lower_m": 334.4110444025938,
-        "upper_m": 274605.5604663704,
+        "lower_m": 334.41507083168597,
+        "upper_m": 274605.5604661973,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1621,26 +1639,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.039810717055349734,
     "intervals": [
       {
-        "lower_m": 421.038140255544,
-        "upper_m": 308112.50649750384,
+        "lower_m": 421.0445241558744,
+        "upper_m": 316688.24951598415,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
           "full_well"
-        ]
-      },
-      {
-        "lower_m": 310677.6565940045,
-        "upper_m": 316688.24951623974,
-        "lower_censored": false,
-        "upper_censored": false,
-        "lower_constraints": [
-          "SNR"
         ]
       }
     ]
@@ -1652,13 +1661,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0446683592150963,
     "intervals": [
       {
-        "lower_m": 530.1183684106738,
-        "upper_m": 355330.06021787,
+        "lower_m": 530.1284910847015,
+        "upper_m": 355330.06021782407,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1674,26 +1683,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.05011872336272725,
     "intervals": [
       {
-        "lower_m": 667.4789973638125,
-        "upper_m": 398686.88493274164,
+        "lower_m": 667.4950504549578,
+        "upper_m": 411230.5353601664,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
           "full_well"
-        ]
-      },
-      {
-        "lower_m": 402587.93418288947,
-        "upper_m": 411230.53536006087,
-        "lower_censored": false,
-        "upper_censored": false,
-        "lower_constraints": [
-          "SNR"
         ]
       }
     ]
@@ -1705,13 +1705,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.056234132519034905,
     "intervals": [
       {
-        "lower_m": 840.4640940335837,
-        "upper_m": 461408.24964712444,
+        "lower_m": 840.4895559120657,
+        "upper_m": 461408.2496470912,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1727,13 +1727,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.06309573444801933,
     "intervals": [
       {
-        "lower_m": 1058.3319498302785,
-        "upper_m": 517708.57107043377,
+        "lower_m": 1058.372343051561,
+        "upper_m": 517708.57107086637,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1749,13 +1749,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0707945784384138,
     "intervals": [
       {
-        "lower_m": 1332.7581792273065,
-        "upper_m": 601903.2553453807,
+        "lower_m": 1332.822275864406,
+        "upper_m": 601903.2553455196,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1771,13 +1771,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.07943282347242814,
     "intervals": [
       {
-        "lower_m": 1678.4734982160912,
-        "upper_m": 675346.5602015853,
+        "lower_m": 1678.575239965226,
+        "upper_m": 675346.5602010931,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1793,13 +1793,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.08912509381337459,
     "intervals": [
       {
-        "lower_m": 2114.0736906079596,
-        "upper_m": 757751.3035958698,
+        "lower_m": 2114.235251534571,
+        "upper_m": 757751.3035950954,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1815,13 +1815,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.1,
     "intervals": [
       {
-        "lower_m": 2663.050577914232,
-        "upper_m": 850210.9464048346,
+        "lower_m": 2663.307258039902,
+        "upper_m": 850210.9464053833,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1837,13 +1837,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.11220184543019636,
     "intervals": [
       {
-        "lower_m": 3355.1080335010793,
-        "upper_m": 953952.3719166294,
+        "lower_m": 3355.5160941966824,
+        "upper_m": 953952.3719155848,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1859,13 +1859,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.12589254117941676,
     "intervals": [
       {
-        "lower_m": 4227.847874163675,
-        "upper_m": 1070352.165814749,
+        "lower_m": 4228.497117375643,
+        "upper_m": 1070352.1658148123,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1881,13 +1881,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.14125375446227548,
     "intervals": [
       {
-        "lower_m": 5328.939333735424,
-        "upper_m": 1200954.8826462873,
+        "lower_m": 5329.973365576638,
+        "upper_m": 1200954.8826464636,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1903,13 +1903,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.1584893192461114,
     "intervals": [
       {
-        "lower_m": 6718.926689137017,
-        "upper_m": 1347493.5411145757,
+        "lower_m": 6720.575702075106,
+        "upper_m": 1347493.5411139159,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1925,13 +1925,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.1778279410038923,
     "intervals": [
       {
-        "lower_m": 8474.888736270615,
-        "upper_m": 1511912.620182795,
+        "lower_m": 8477.522832916415,
+        "upper_m": 1511912.6201813444,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1947,13 +1947,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.19952623149688797,
     "intervals": [
       {
-        "lower_m": 10695.251524266365,
-        "upper_m": 1696393.8611379515,
+        "lower_m": 10699.468055840869,
+        "upper_m": 1696393.8611362558,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1969,13 +1969,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.223872113856834,
     "intervals": [
       {
-        "lower_m": 13506.189596799632,
-        "upper_m": 1903385.2179609719,
+        "lower_m": 13512.957480975025,
+        "upper_m": 1903385.2179598794,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -1991,13 +1991,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.25118864315095807,
     "intervals": [
       {
-        "lower_m": 17070.26184551129,
-        "upper_m": 2135633.340196588,
+        "lower_m": 17081.1627434431,
+        "upper_m": 2135633.3401976074,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2013,13 +2013,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.2818382931264455,
     "intervals": [
       {
-        "lower_m": 21598.27252726086,
-        "upper_m": 2378717.9475859283,
+        "lower_m": 21615.90977945816,
+        "upper_m": 2312519.242130993,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2035,13 +2035,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.31622776601683794,
     "intervals": [
       {
-        "lower_m": 27365.934481040495,
-        "upper_m": 2594689.2656009686,
+        "lower_m": 27394.639636036656,
+        "upper_m": 2594689.2656034846,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2057,13 +2057,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.35481338923357547,
     "intervals": [
       {
-        "lower_m": 34737.95929055052,
-        "upper_m": 2911289.2391828,
+        "lower_m": 34785.04305731003,
+        "upper_m": 2911289.2391841495,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2079,13 +2079,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.3981071705534973,
     "intervals": [
       {
-        "lower_m": 44204.17971468438,
-        "upper_m": 3266520.2521750866,
+        "lower_m": 44282.21953414507,
+        "upper_m": 3266520.2521731663,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2101,13 +2101,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.44668359215096326,
     "intervals": [
       {
-        "lower_m": 56436.3174131828,
-        "upper_m": 3665096.004293523,
+        "lower_m": 56567.525319129694,
+        "upper_m": 3665096.004289064,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2123,13 +2123,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.5011872336272725,
     "intervals": [
       {
-        "lower_m": 72382.82948998443,
-        "upper_m": 4112305.35360187,
+        "lower_m": 72607.89882252677,
+        "upper_m": 4112305.353604709,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2145,13 +2145,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.5623413251903491,
     "intervals": [
       {
-        "lower_m": 93440.87811152381,
-        "upper_m": 4614082.496468313,
+        "lower_m": 93838.45223128164,
+        "upper_m": 4614082.49647205,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2167,13 +2167,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.6309573444801932,
     "intervals": [
       {
-        "lower_m": 121805.56232284171,
-        "upper_m": 5177085.710711432,
+        "lower_m": 122540.64359646357,
+        "upper_m": 5177085.710707206,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2189,13 +2189,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.707945784384138,
     "intervals": [
       {
-        "lower_m": 161289.1302482845,
-        "upper_m": 5808785.706918646,
+        "lower_m": 162752.07795320434,
+        "upper_m": 5808785.706913155,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2211,13 +2211,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.7943282347242817,
     "intervals": [
       {
-        "lower_m": 217650.29474322684,
-        "upper_m": 6517564.760241887,
+        "lower_m": 220409.79150894657,
+        "upper_m": 6517564.760245423,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2233,13 +2233,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.8912509381337459,
     "intervals": [
       {
-        "lower_m": 285198.84477590397,
-        "upper_m": 7312827.938109763,
+        "lower_m": 288269.8302488192,
+        "upper_m": 7312827.938104842,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2255,13 +2255,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.0,
     "intervals": [
       {
-        "lower_m": 351111.9136134111,
-        "upper_m": 8205127.899682071,
+        "lower_m": 353752.61170962977,
+        "upper_m": 8205127.899691217,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2277,13 +2277,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.1220184543019642,
     "intervals": [
       {
-        "lower_m": 415806.84178307303,
-        "upper_m": 9206304.923355293,
+        "lower_m": 418006.07354353566,
+        "upper_m": 9206304.923352446,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2299,13 +2299,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.2589254117941675,
     "intervals": [
       {
-        "lower_m": 482081.606296376,
-        "upper_m": 10329644.019944213,
+        "lower_m": 483894.01157568314,
+        "upper_m": 10329644.01993365,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2321,13 +2321,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.412537544622754,
     "intervals": [
       {
-        "lower_m": 551977.80055179,
-        "upper_m": 11590051.21675159,
+        "lower_m": 553436.2854387856,
+        "upper_m": 11590051.216732733,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2343,13 +2343,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.584893192461114,
     "intervals": [
       {
-        "lower_m": 627052.4964161551,
-        "upper_m": 13004251.351481449,
+        "lower_m": 628169.4527648129,
+        "upper_m": 13004251.351502419,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2365,13 +2365,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.7782794100389228,
     "intervals": [
       {
-        "lower_m": 708654.7290635919,
-        "upper_m": 14591010.00075988,
+        "lower_m": 709427.9736643934,
+        "upper_m": 14591010.000746086,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2387,13 +2387,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.9952623149688808,
     "intervals": [
       {
-        "lower_m": 798073.3789876872,
-        "upper_m": 16371382.48774303,
+        "lower_m": 798490.0132871916,
+        "upper_m": 16371382.487735502,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2409,13 +2409,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 2.23872113856834,
     "intervals": [
       {
-        "lower_m": 896619.3638177963,
-        "upper_m": 18368993.27369928,
+        "lower_m": 896657.932609021,
+        "upper_m": 18368993.27369634,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -2431,12 +2431,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 2.5118864315095824,
     "intervals": [
       {
-        "lower_m": 1005677.2458141976,
+        "lower_m": 1005308.851890064,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -2453,12 +2453,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 2.818382931264455,
     "intervals": [
       {
-        "lower_m": 1126742.530983726,
+        "lower_m": 1125931.3131702372,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -2475,12 +2475,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 3.1622776601683795,
     "intervals": [
       {
-        "lower_m": 1261452.449668745,
+        "lower_m": 1260155.6515481914,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -2497,12 +2497,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 3.548133892335757,
     "intervals": [
       {
-        "lower_m": 1411614.2236756664,
+        "lower_m": 1409781.978333217,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -2519,12 +2519,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 3.981071705534973,
     "intervals": [
       {
-        "lower_m": 1579233.066704499,
+        "lower_m": 1576807.9666261952,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -2541,12 +2541,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 4.4668359215096345,
     "intervals": [
       {
-        "lower_m": 1766541.3124417625,
+        "lower_m": 1763457.8017817866,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -2563,12 +2563,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 5.011872336272725,
     "intervals": [
       {
-        "lower_m": 1976029.639653198,
+        "lower_m": 1972213.2473955895,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -2585,12 +2585,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 5.62341325190349,
     "intervals": [
       {
-        "lower_m": 2210481.152730562,
+        "lower_m": 2205847.573416738,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -2607,12 +2607,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 6.309573444801936,
     "intervals": [
       {
-        "lower_m": 2473008.9789996445,
+        "lower_m": 2467462.999891344,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -2629,12 +2629,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 7.07945784384138,
     "intervals": [
       {
-        "lower_m": 2767098.011651072,
+        "lower_m": 2760532.279410174,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -2651,12 +2651,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 7.943282347242821,
     "intervals": [
       {
-        "lower_m": 3096651.4344197754,
+        "lower_m": 3088945.0500089666,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -2673,12 +2673,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 8.91250938133746,
     "intervals": [
       {
-        "lower_m": 3466042.69819649,
+        "lower_m": 3457059.6247170335,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -2695,12 +2695,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 1000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 10.0,
     "intervals": [
       {
-        "lower_m": 3880173.6733475607,
+        "lower_m": 3869760.938112879,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -2717,17 +2717,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.01,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 37193.147990767786,
+        "lower_m": 88.3661587435846,
+        "upper_m": 37193.14799076475,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -2739,17 +2739,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.011220184543019636,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 43298.51950391219,
+        "lower_m": 99.14846084592867,
+        "upper_m": 43298.51950390356,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -2761,17 +2761,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.012589254117941675,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 50369.552824806844,
+        "lower_m": 111.24640278487274,
+        "upper_m": 50369.55282484408,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -2783,17 +2783,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.01412537544622754,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 58593.44341207984,
+        "lower_m": 124.82051689930353,
+        "upper_m": 58593.443411971835,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -2805,17 +2805,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.015848931924611134,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 68091.91595506393,
+        "lower_m": 140.0509234365236,
+        "upper_m": 68091.91595495363,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -2827,17 +2827,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.01778279410038923,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 79154.92439012253,
+        "lower_m": 157.13972063792102,
+        "upper_m": 79154.92439014126,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -2849,17 +2849,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0199526231496888,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 91977.06758622293,
+        "lower_m": 176.31366645960742,
+        "upper_m": 91977.06758627326,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -2871,17 +2871,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0223872113856834,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 106716.3911959423,
+        "lower_m": 197.82718751329293,
+        "upper_m": 106716.39119597501,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -2893,17 +2893,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.025118864315095794,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 123954.62413692966,
+        "lower_m": 221.9657551526126,
+        "upper_m": 123954.62413683967,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -2915,17 +2915,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.028183829312644536,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 144099.08273595013,
+        "lower_m": 249.04967350408157,
+        "upper_m": 144099.08273602658,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -2937,17 +2937,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.03162277660168379,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 166672.06303175172,
+        "lower_m": 279.43832970958334,
+        "upper_m": 166672.06303173886,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -2959,17 +2959,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.03548133892335755,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 193609.04092139957,
+        "lower_m": 313.53496277358227,
+        "upper_m": 193609.04092159786,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -2981,17 +2981,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.039810717055349734,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 224561.0826118521,
+        "lower_m": 351.7920143004361,
+        "upper_m": 224561.08261198783,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -3003,17 +3003,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0446683592150963,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 259686.29134813475,
+        "lower_m": 394.7171321210544,
+        "upper_m": 259686.2913481673,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -3025,17 +3025,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.05011872336272725,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 298858.0665490724,
+        "lower_m": 442.8799064694792,
+        "upper_m": 298858.0665491526,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -3047,17 +3047,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.056234132519034905,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 344947.2177130844,
+        "lower_m": 496.9194280978881,
+        "upper_m": 344947.2177128751,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -3069,17 +3069,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.06309573444801933,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 399619.3383791712,
+        "lower_m": 557.5527686268185,
+        "upper_m": 399619.33837985486,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -3091,17 +3091,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0707945784384138,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 459232.87381886085,
+        "lower_m": 625.584495646817,
+        "upper_m": 459232.87381889595,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -3113,17 +3113,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.07943282347242814,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 529111.0953049839,
+        "lower_m": 701.9173488409906,
+        "upper_m": 529111.0953050213,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -3135,17 +3135,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.08912509381337459,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 611596.6610843588,
+        "lower_m": 787.564218794377,
+        "upper_m": 611596.6610834614,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -3157,17 +3157,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.1,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 697537.6169760663,
+        "lower_m": 883.6615874356994,
+        "upper_m": 697537.6169756926,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -3179,17 +3179,26 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.11220184543019636,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 796492.3119584615,
+        "lower_m": 991.4846084602249,
+        "upper_m": 796492.3119588422,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
+        ]
+      },
+      {
+        "lower_m": 807218.2858058128,
+        "upper_m": 811684.0198585975,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
         ]
       }
     ]
@@ -3201,22 +3210,22 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.12589254117941676,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 910724.4493423714,
+        "lower_m": 1112.464027847737,
+        "upper_m": 910724.449342927,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       },
       {
-        "lower_m": 921949.1046058421,
-        "upper_m": 929574.8372775523,
+        "lower_m": 915873.2758763649,
+        "upper_m": 929574.8372783624,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3232,17 +3241,26 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.14125375446227548,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 1043000.1220809119,
+        "lower_m": 1248.2051689935038,
+        "upper_m": 1043000.1220794164,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
+        ]
+      },
+      {
+        "lower_m": 1058328.8018180588,
+        "upper_m": 1066601.8339117228,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
         ]
       }
     ]
@@ -3254,17 +3272,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.1584893192461114,
     "intervals": [
       {
-        "lower_m": 1567.2536195068785,
-        "upper_m": 1196746.941040988,
+        "lower_m": 1400.5092343651706,
+        "upper_m": 1196746.9410425923,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -3276,13 +3294,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.1778279410038923,
     "intervals": [
       {
-        "lower_m": 1680.0080296157853,
-        "upper_m": 1376288.011888651,
+        "lower_m": 1680.0283537984437,
+        "upper_m": 1376288.011888336,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3298,26 +3316,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.19952623149688797,
     "intervals": [
       {
-        "lower_m": 2115.2045806783703,
-        "upper_m": 1544220.5477720099,
+        "lower_m": 2115.236804717956,
+        "upper_m": 1587201.0769714992,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
           "full_well"
-        ]
-      },
-      {
-        "lower_m": 1553388.282972148,
-        "upper_m": 1587201.0769733586,
-        "lower_censored": false,
-        "upper_censored": false,
-        "lower_constraints": [
-          "SNR"
         ]
       }
     ]
@@ -3329,13 +3338,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.223872113856834,
     "intervals": [
       {
-        "lower_m": 2663.2015632089556,
-        "upper_m": 1780868.899051683,
+        "lower_m": 2663.2526595801537,
+        "upper_m": 1780868.8990522516,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3351,26 +3360,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.25118864315095807,
     "intervals": [
       {
-        "lower_m": 3353.274434057663,
-        "upper_m": 1998167.7694285733,
+        "lower_m": 3353.3554657185614,
+        "upper_m": 2061034.9440043347,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
           "full_well"
-        ]
-      },
-      {
-        "lower_m": 2012939.6709134467,
-        "upper_m": 2061034.9440020015,
-        "lower_censored": false,
-        "upper_censored": false,
-        "lower_constraints": [
-          "SNR"
         ]
       }
     ]
@@ -3382,13 +3382,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.2818382931264455,
     "intervals": [
       {
-        "lower_m": 4222.319043853509,
-        "upper_m": 2312519.242130882,
+        "lower_m": 4222.447568999297,
+        "upper_m": 2312519.242130993,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3404,13 +3404,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.31622776601683794,
     "intervals": [
       {
-        "lower_m": 5316.848417681454,
-        "upper_m": 2594689.2656009686,
+        "lower_m": 5317.05231340456,
+        "upper_m": 2594689.2656034846,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3426,13 +3426,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.35481338923357547,
     "intervals": [
       {
-        "lower_m": 6695.520530397373,
-        "upper_m": 3016662.2745770807,
+        "lower_m": 6695.844077428257,
+        "upper_m": 3016662.274577678,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3448,13 +3448,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.3981071705534973,
     "intervals": [
       {
-        "lower_m": 8432.342875298324,
-        "upper_m": 3384750.7424682854,
+        "lower_m": 8432.856451095668,
+        "upper_m": 3384750.742468053,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3470,13 +3470,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.44668359215096326,
     "intervals": [
       {
-        "lower_m": 10620.742373241732,
-        "upper_m": 3797752.7962649195,
+        "lower_m": 10621.557914059209,
+        "upper_m": 3797752.79626616,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3492,13 +3492,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.5011872336272725,
     "intervals": [
       {
-        "lower_m": 13378.746048718189,
-        "upper_m": 4261148.72228264,
+        "lower_m": 13380.041755339951,
+        "upper_m": 4261148.722281543,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3514,13 +3514,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.5623413251903491,
     "intervals": [
       {
-        "lower_m": 16855.594502618063,
-        "upper_m": 4781087.502928492,
+        "lower_m": 16857.65440006293,
+        "upper_m": 4781087.502926227,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3536,13 +3536,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.6309573444801932,
     "intervals": [
       {
-        "lower_m": 21240.214860899097,
-        "upper_m": 5364468.409920484,
+        "lower_m": 21243.49231309867,
+        "upper_m": 5364468.409917958,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3558,13 +3558,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.707945784384138,
     "intervals": [
       {
-        "lower_m": 26772.12524317018,
-        "upper_m": 6019032.553445298,
+        "lower_m": 26777.345275131793,
+        "upper_m": 6019032.553454232,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3580,13 +3580,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.7943282347242817,
     "intervals": [
       {
-        "lower_m": 33755.54863675064,
-        "upper_m": 6753465.602014688,
+        "lower_m": 33763.873486737495,
+        "upper_m": 6753465.602008732,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3602,13 +3602,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.8912509381337459,
     "intervals": [
       {
-        "lower_m": 42577.81203110056,
-        "upper_m": 7577513.035958088,
+        "lower_m": 42591.11047263176,
+        "upper_m": 7577513.035961017,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3624,13 +3624,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.0,
     "intervals": [
       {
-        "lower_m": 53733.548924641684,
-        "upper_m": 8502109.464059085,
+        "lower_m": 53754.837458111724,
+        "upper_m": 8502109.464061953,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3646,13 +3646,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.1220184543019642,
     "intervals": [
       {
-        "lower_m": 67856.89858745302,
-        "upper_m": 9539523.719162492,
+        "lower_m": 67891.07061283104,
+        "upper_m": 9539523.719159953,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3668,13 +3668,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.2589254117941675,
     "intervals": [
       {
-        "lower_m": 85764.96004971559,
-        "upper_m": 10703521.658154098,
+        "lower_m": 85820.00474638294,
+        "upper_m": 10703521.658144988,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3690,13 +3690,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.412537544622754,
     "intervals": [
       {
-        "lower_m": 108517.49924402763,
-        "upper_m": 11893589.737913698,
+        "lower_m": 108606.56898535517,
+        "upper_m": 11590051.216732733,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3712,13 +3712,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.584893192461114,
     "intervals": [
       {
-        "lower_m": 137500.87389311177,
-        "upper_m": 13004251.351481449,
+        "lower_m": 137645.85774570363,
+        "upper_m": 13004251.351502419,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3734,13 +3734,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.7782794100389228,
     "intervals": [
       {
-        "lower_m": 174549.44525759795,
-        "upper_m": 14591010.00075988,
+        "lower_m": 174787.29973931535,
+        "upper_m": 14591010.000746086,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3756,13 +3756,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.9952623149688808,
     "intervals": [
       {
-        "lower_m": 222127.78620580665,
-        "upper_m": 16371382.48774303,
+        "lower_m": 222522.1209937479,
+        "upper_m": 16371382.487735502,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3778,13 +3778,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 2.23872113856834,
     "intervals": [
       {
-        "lower_m": 283617.3433245849,
-        "upper_m": 18368993.27369928,
+        "lower_m": 284280.5657663914,
+        "upper_m": 18368993.27369634,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -3800,12 +3800,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 2.5118864315095824,
     "intervals": [
       {
-        "lower_m": 363796.0820220372,
+        "lower_m": 364934.3131041975,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -3822,12 +3822,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 2.818382931264455,
     "intervals": [
       {
-        "lower_m": 469709.8592316399,
+        "lower_m": 471721.9817763991,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -3844,12 +3844,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 3.1622776601683795,
     "intervals": [
       {
-        "lower_m": 612446.9317244862,
+        "lower_m": 616171.6372831701,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -3866,12 +3866,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 3.548133892335757,
     "intervals": [
       {
-        "lower_m": 811307.4874562991,
+        "lower_m": 818732.6393896646,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -3888,12 +3888,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 3.981071705534973,
     "intervals": [
       {
-        "lower_m": 1094956.302801918,
+        "lower_m": 1108867.045042945,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -3910,12 +3910,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 4.4668359215096345,
     "intervals": [
       {
-        "lower_m": 1432935.425300592,
+        "lower_m": 1448259.6958078276,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -3932,12 +3932,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 5.011872336272725,
     "intervals": [
       {
-        "lower_m": 1762231.1896890695,
+        "lower_m": 1775386.5066837254,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -3954,12 +3954,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 5.62341325190349,
     "intervals": [
       {
-        "lower_m": 2085739.6727968557,
+        "lower_m": 2096693.5036166976,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -3976,12 +3976,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 6.309573444801936,
     "intervals": [
       {
-        "lower_m": 2417395.0549431173,
+        "lower_m": 2426419.3769438323,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -3998,12 +3998,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 7.07945784384138,
     "intervals": [
       {
-        "lower_m": 2767336.2220982704,
+        "lower_m": 2774593.1383208577,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -4020,12 +4020,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 7.943282347242821,
     "intervals": [
       {
-        "lower_m": 3143315.966072305,
+        "lower_m": 3148865.665232443,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -4042,12 +4042,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 8.91250938133746,
     "intervals": [
       {
-        "lower_m": 3552067.381405295,
+        "lower_m": 3555897.6849356582,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -4064,12 +4064,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 5000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 10.0,
     "intervals": [
       {
-        "lower_m": 4000033.7278230675,
+        "lower_m": 4002079.1753651416,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -4086,17 +4086,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.01,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 29744.324600174095,
+        "lower_m": 88.3661587435846,
+        "upper_m": 29760.29355968951,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4108,17 +4108,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.011220184543019636,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 34650.52148317009,
+        "lower_m": 99.14846084592867,
+        "upper_m": 34650.52148316949,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4130,17 +4130,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.012589254117941675,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 40369.06852099289,
+        "lower_m": 111.24640278487274,
+        "upper_m": 40369.06852101286,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4152,17 +4152,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.01412537544622754,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 46986.34640148989,
+        "lower_m": 124.82051689930353,
+        "upper_m": 47025.92400698182,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4174,17 +4174,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.015848931924611134,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 54712.08408857662,
+        "lower_m": 140.0509234365236,
+        "upper_m": 54712.084088634714,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4196,17 +4196,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.01778279410038923,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 63685.53678001756,
+        "lower_m": 157.13972063792102,
+        "upper_m": 63685.536779938404,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4218,17 +4218,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0199526231496888,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 74112.6311373046,
+        "lower_m": 176.31366645960742,
+        "upper_m": 74112.63113729519,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4240,17 +4240,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0223872113856834,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 86260.34941505207,
+        "lower_m": 197.82718751329293,
+        "upper_m": 86260.34941511376,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4262,17 +4262,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.025118864315095794,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 100323.52983882894,
+        "lower_m": 221.9657551526126,
+        "upper_m": 100323.52983881976,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4284,17 +4284,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.028183829312644536,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 116671.34513880147,
+        "lower_m": 249.04967350408157,
+        "upper_m": 116671.34513886266,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4306,17 +4306,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.03162277660168379,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 135861.23385904304,
+        "lower_m": 279.43832970958334,
+        "upper_m": 135861.23385899665,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4328,17 +4328,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.03548133892335755,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 157934.83767989525,
+        "lower_m": 313.53496277358227,
+        "upper_m": 157934.83767978748,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4350,17 +4350,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.039810717055349734,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 183518.37679632567,
+        "lower_m": 351.7920143004361,
+        "upper_m": 183518.37679603623,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4372,17 +4372,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0446683592150963,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 212927.19374285484,
+        "lower_m": 394.7171321210544,
+        "upper_m": 212927.19374295705,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4394,17 +4394,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.05011872336272725,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 247321.99030620878,
+        "lower_m": 442.8799064694792,
+        "upper_m": 247321.99030617773,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4416,17 +4416,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.056234132519034905,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 286161.33177105547,
+        "lower_m": 496.9194280978881,
+        "upper_m": 287515.4694048483,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4438,17 +4438,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.06309573444801933,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 332554.4863252251,
+        "lower_m": 557.5527686268185,
+        "upper_m": 332554.4863250792,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4460,17 +4460,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0707945784384138,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 386300.8231877249,
+        "lower_m": 625.584495646817,
+        "upper_m": 386300.82318803575,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4482,17 +4482,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.07943282347242814,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 444931.36769888364,
+        "lower_m": 701.9173488409906,
+        "upper_m": 444931.3676989879,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4504,17 +4504,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.08912509381337459,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 518142.2708411566,
+        "lower_m": 787.564218794377,
+        "upper_m": 514062.8345676651,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4526,17 +4526,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.1,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 596300.2377097129,
+        "lower_m": 883.6615874356994,
+        "upper_m": 596300.2377099246,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4548,17 +4548,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.11220184543019636,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 688260.184155645,
+        "lower_m": 991.4846084602249,
+        "upper_m": 688260.1841565778,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4570,17 +4570,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.12589254117941676,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 797345.4062012434,
+        "lower_m": 1112.464027847737,
+        "upper_m": 797345.4062015023,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4592,17 +4592,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.14125375446227548,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 916290.0469256364,
+        "lower_m": 1248.2051689935038,
+        "upper_m": 916290.0469255275,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4614,17 +4614,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.1584893192461114,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 1055715.4288946483,
+        "lower_m": 1400.5092343651706,
+        "upper_m": 1055715.4288928234,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4636,17 +4636,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.1778279410038923,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 1220295.7698207411,
+        "lower_m": 1571.3972063787655,
+        "upper_m": 1220295.76982127,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4658,17 +4658,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.19952623149688797,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 1391770.5204243085,
+        "lower_m": 1763.1366645954245,
+        "upper_m": 1391770.5204257905,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4680,17 +4680,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.223872113856834,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 1589211.0942149954,
+        "lower_m": 1978.2718751322511,
+        "upper_m": 1589211.094214439,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4702,17 +4702,26 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.25118864315095807,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 1817134.1730953343,
+        "lower_m": 2219.6575515255845,
+        "upper_m": 1817134.1730928232,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
+        ]
+      },
+      {
+        "lower_m": 1831746.551753712,
+        "upper_m": 1854745.6417622815,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
         ]
       }
     ]
@@ -4724,17 +4733,26 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.2818382931264455,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 2081058.8380959593,
+        "lower_m": 2490.4967350405523,
+        "upper_m": 2081058.838094488,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
+        ]
+      },
+      {
+        "lower_m": 2116657.60363683,
+        "upper_m": 2128150.4442803194,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
         ]
       }
     ]
@@ -4746,17 +4764,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.31622776601683794,
     "intervals": [
       {
-        "lower_m": 3134.507239013189,
-        "upper_m": 2387824.072016432,
+        "lower_m": 2794.3832970958974,
+        "upper_m": 2387824.0720151993,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -4768,13 +4786,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.35481338923357547,
     "intervals": [
       {
-        "lower_m": 3344.1104440255704,
-        "upper_m": 2746055.604665372,
+        "lower_m": 3344.150708321049,
+        "upper_m": 2746055.604664965,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -4790,26 +4808,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.3981071705534973,
     "intervals": [
       {
-        "lower_m": 4210.381402550079,
-        "upper_m": 3081125.0649710097,
+        "lower_m": 4210.445241558853,
+        "upper_m": 3166882.4951591548,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
           "full_well"
-        ]
-      },
-      {
-        "lower_m": 3106776.565940789,
-        "upper_m": 3166882.495161945,
-        "lower_censored": false,
-        "upper_censored": false,
-        "lower_constraints": [
-          "SNR"
         ]
       }
     ]
@@ -4821,13 +4830,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.44668359215096326,
     "intervals": [
       {
-        "lower_m": 5301.183684109106,
-        "upper_m": 3553300.6021795394,
+        "lower_m": 5301.284910841825,
+        "upper_m": 3553300.602175859,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -4843,26 +4852,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.5011872336272725,
     "intervals": [
       {
-        "lower_m": 6674.789973635936,
-        "upper_m": 3986868.8493248792,
+        "lower_m": 6674.950504543765,
+        "upper_m": 4112305.353604709,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
           "full_well"
-        ]
-      },
-      {
-        "lower_m": 4025879.341826574,
-        "upper_m": 4112305.35360187,
-        "lower_censored": false,
-        "upper_censored": false,
-        "lower_constraints": [
-          "SNR"
         ]
       }
     ]
@@ -4874,13 +4874,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.5623413251903491,
     "intervals": [
       {
-        "lower_m": 8404.640940329304,
-        "upper_m": 4614082.496468313,
+        "lower_m": 8404.895559118631,
+        "upper_m": 4614082.49647205,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -4896,13 +4896,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.6309573444801932,
     "intervals": [
       {
-        "lower_m": 10583.319498311605,
-        "upper_m": 5177085.710711432,
+        "lower_m": 10583.723430508526,
+        "upper_m": 5177085.710707206,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -4918,13 +4918,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.707945784384138,
     "intervals": [
       {
-        "lower_m": 13327.581792289086,
-        "upper_m": 6019032.553445298,
+        "lower_m": 13328.222758659227,
+        "upper_m": 6019032.553454232,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -4940,13 +4940,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.7943282347242817,
     "intervals": [
       {
-        "lower_m": 16784.73498218263,
-        "upper_m": 6753465.602014688,
+        "lower_m": 16785.75239965813,
+        "upper_m": 6753465.602008732,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -4962,13 +4962,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.8912509381337459,
     "intervals": [
       {
-        "lower_m": 21140.736906069273,
-        "upper_m": 7577513.035958088,
+        "lower_m": 21142.352515333223,
+        "upper_m": 7577513.035961017,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -4984,13 +4984,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.0,
     "intervals": [
       {
-        "lower_m": 26630.50577913619,
-        "upper_m": 8502109.464059085,
+        "lower_m": 26633.072580416243,
+        "upper_m": 8502109.464061953,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -5006,13 +5006,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.1220184543019642,
     "intervals": [
       {
-        "lower_m": 33551.08033501971,
-        "upper_m": 9539523.719162492,
+        "lower_m": 33555.16094193482,
+        "upper_m": 9539523.719159953,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -5028,13 +5028,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.2589254117941675,
     "intervals": [
       {
-        "lower_m": 42278.4787415886,
-        "upper_m": 10703521.658154098,
+        "lower_m": 42284.971173751626,
+        "upper_m": 10703521.658144988,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -5050,13 +5050,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.412537544622754,
     "intervals": [
       {
-        "lower_m": 53289.39333740315,
-        "upper_m": 12009548.826479204,
+        "lower_m": 53299.73365573109,
+        "upper_m": 12009548.826472541,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -5072,13 +5072,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.584893192461114,
     "intervals": [
       {
-        "lower_m": 67189.26689132281,
-        "upper_m": 13474935.411142062,
+        "lower_m": 67205.75702086058,
+        "upper_m": 13474935.411131525,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -5094,13 +5094,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.7782794100389228,
     "intervals": [
       {
-        "lower_m": 84748.88736257754,
-        "upper_m": 15119126.201823425,
+        "lower_m": 84775.2283291232,
+        "upper_m": 15119126.20181058,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -5116,13 +5116,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.9952623149688808,
     "intervals": [
       {
-        "lower_m": 106952.51524262245,
-        "upper_m": 16963938.611355245,
+        "lower_m": 106994.68055833204,
+        "upper_m": 16963938.61135982,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -5138,13 +5138,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 2.23872113856834,
     "intervals": [
       {
-        "lower_m": 135061.89596809846,
-        "upper_m": 19033852.179613683,
+        "lower_m": 135129.57480986512,
+        "upper_m": 19033852.17958895,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -5160,12 +5160,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 2.5118864315095824,
     "intervals": [
       {
-        "lower_m": 170702.61845521058,
+        "lower_m": 170811.62743457203,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -5182,12 +5182,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 2.818382931264455,
     "intervals": [
       {
-        "lower_m": 215982.7252727094,
+        "lower_m": 216159.09779469576,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -5204,12 +5204,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 3.1622776601683795,
     "intervals": [
       {
-        "lower_m": 273659.3448105423,
+        "lower_m": 273946.3963602453,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -5226,12 +5226,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 3.548133892335757,
     "intervals": [
       {
-        "lower_m": 347379.59290526854,
+        "lower_m": 347850.43057329825,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -5248,12 +5248,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 3.981071705534973,
     "intervals": [
       {
-        "lower_m": 442041.79714612936,
+        "lower_m": 442822.19534142344,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -5270,12 +5270,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 4.4668359215096345,
     "intervals": [
       {
-        "lower_m": 564363.174132745,
+        "lower_m": 565675.2531913521,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -5292,12 +5292,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 5.011872336272725,
     "intervals": [
       {
-        "lower_m": 723828.2948997674,
+        "lower_m": 726078.9882261651,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -5314,12 +5314,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 5.62341325190349,
     "intervals": [
       {
-        "lower_m": 934408.7811157876,
+        "lower_m": 938384.5223126243,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -5336,12 +5336,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 6.309573444801936,
     "intervals": [
       {
-        "lower_m": 1218055.6232277104,
+        "lower_m": 1225406.4359650412,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -5358,12 +5358,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 7.07945784384138,
     "intervals": [
       {
-        "lower_m": 1612891.3024807938,
+        "lower_m": 1627520.779530216,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -5380,12 +5380,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 7.943282347242821,
     "intervals": [
       {
-        "lower_m": 2176502.9474298917,
+        "lower_m": 2204097.915089623,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -5402,12 +5402,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 8.91250938133746,
     "intervals": [
       {
-        "lower_m": 2851988.4477585265,
+        "lower_m": 2882698.302490224,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -5424,12 +5424,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 10000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 10.0,
     "intervals": [
       {
-        "lower_m": 3511119.1361323968,
+        "lower_m": 3537526.1170961326,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -5446,17 +5446,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.01,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 26063.792382915814,
+        "lower_m": 88.3661587435846,
+        "upper_m": 26063.792382915264,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5468,17 +5468,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.011220184543019636,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 30357.39890871643,
+        "lower_m": 99.14846084592867,
+        "upper_m": 30368.53428719114,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5490,17 +5490,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.012589254117941675,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 35378.276824314744,
+        "lower_m": 111.24640278487274,
+        "upper_m": 35378.27682430825,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5512,17 +5512,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.01412537544622754,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 41200.21184378444,
+        "lower_m": 124.82051689930353,
+        "upper_m": 41220.655362275735,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5534,17 +5534,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.015848931924611134,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 48014.77942437345,
+        "lower_m": 140.0509234365236,
+        "upper_m": 48014.77942436161,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5556,17 +5556,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.01778279410038923,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 55920.44430553529,
+        "lower_m": 157.13972063792102,
+        "upper_m": 55920.44430562291,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5578,17 +5578,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0199526231496888,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 65095.05456369778,
+        "lower_m": 176.31366645960742,
+        "upper_m": 65095.05456367417,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5600,17 +5600,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0223872113856834,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 75844.3790114232,
+        "lower_m": 197.82718751329293,
+        "upper_m": 75844.37901136026,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5622,17 +5622,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.025118864315095794,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 88306.98082080441,
+        "lower_m": 221.9657551526126,
+        "upper_m": 88306.98082073379,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5644,17 +5644,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.028183829312644536,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 102724.84512451704,
+        "lower_m": 249.04967350408157,
+        "upper_m": 102724.84512453893,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5666,17 +5666,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.03162277660168379,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 119552.3329641553,
+        "lower_m": 279.43832970958334,
+        "upper_m": 119552.33296428598,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5688,17 +5688,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.03548133892335755,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 139099.35832979917,
+        "lower_m": 313.53496277358227,
+        "upper_m": 139099.35832980007,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5710,17 +5710,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.039810717055349734,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 161924.33363494015,
+        "lower_m": 351.7920143004361,
+        "upper_m": 161924.33363502775,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5732,17 +5732,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0446683592150963,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 188452.71054384444,
+        "lower_m": 394.7171321210544,
+        "upper_m": 188042.17147380707,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5754,17 +5754,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.05011872336272725,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 219034.14946110127,
+        "lower_m": 442.8799064694792,
+        "upper_m": 219034.14946099534,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5776,17 +5776,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.056234132519034905,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 253835.72998432652,
+        "lower_m": 496.9194280978881,
+        "upper_m": 254571.65881033824,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5798,17 +5798,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.06309573444801933,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 295603.06273994676,
+        "lower_m": 557.5527686268185,
+        "upper_m": 295603.0627394855,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5820,17 +5820,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.0707945784384138,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 342494.2548086052,
+        "lower_m": 625.584495646817,
+        "upper_m": 342494.2548085103,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5842,17 +5842,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.07943282347242814,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 398736.1284071071,
+        "lower_m": 701.9173488409906,
+        "upper_m": 398736.1284074102,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5864,17 +5864,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.08912509381337459,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 462443.44876926264,
+        "lower_m": 787.564218794377,
+        "upper_m": 462443.44876921363,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5886,17 +5886,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.1,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 535956.1308462389,
+        "lower_m": 883.6615874356994,
+        "upper_m": 535956.1308462656,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5908,17 +5908,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.11220184543019636,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 620094.982586165,
+        "lower_m": 991.4846084602249,
+        "upper_m": 620094.9825855084,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5930,17 +5930,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.12589254117941676,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 715261.9996001357,
+        "lower_m": 1112.464027847737,
+        "upper_m": 720593.6251904984,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5952,17 +5952,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.14125375446227548,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 827934.5770286811,
+        "lower_m": 1248.2051689935038,
+        "upper_m": 827934.5770294319,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5974,17 +5974,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.1584893192461114,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 962713.9203455057,
+        "lower_m": 1400.5092343651706,
+        "upper_m": 962713.9203446761,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -5996,17 +5996,26 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.1778279410038923,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 1102009.3995749177,
+        "lower_m": 1571.3972063787655,
+        "upper_m": 1102009.3995748041,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
+        ]
+      },
+      {
+        "lower_m": 1107622.5011972776,
+        "upper_m": 1113808.9567435603,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
         ]
       }
     ]
@@ -6018,17 +6027,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.19952623149688797,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 1278535.6477605812,
+        "lower_m": 1763.1366645954245,
+        "upper_m": 1278535.6477585651,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -6040,17 +6049,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.223872113856834,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 1471071.6201950852,
+        "lower_m": 1978.2718751322511,
+        "upper_m": 1471071.6201965564,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -6062,17 +6071,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.25118864315095807,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 1697497.8718918127,
+        "lower_m": 2219.6575515255845,
+        "upper_m": 1697497.8718929277,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -6084,17 +6093,26 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.2818382931264455,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 1934038.458380442,
+        "lower_m": 2490.4967350405523,
+        "upper_m": 1934038.458380153,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
+        ]
+      },
+      {
+        "lower_m": 1957255.3296433412,
+        "upper_m": 1965928.1136014797,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
         ]
       }
     ]
@@ -6106,17 +6124,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.31622776601683794,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 2244820.336908523,
+        "lower_m": 2794.3832970958974,
+        "upper_m": 2244820.33690957,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -6128,17 +6146,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.35481338923357547,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 2566770.24311395,
+        "lower_m": 3135.34962773618,
+        "upper_m": 2566770.2431120523,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -6150,17 +6168,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.3981071705534973,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 2939573.7413756205,
+        "lower_m": 3517.9201430048256,
+        "upper_m": 2939573.741379103,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -6172,17 +6190,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.44668359215096326,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 3372891.151675068,
+        "lower_m": 3947.171321210662,
+        "upper_m": 3372891.1516749193,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "point_source_domain"
         ]
       }
     ]
@@ -6194,17 +6212,17 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.5011872336272725,
     "intervals": [
       {
-        "lower_m": 4701.760858521961,
-        "upper_m": 3878906.641212661,
+        "lower_m": 4448.116379965513,
+        "upper_m": 3878906.641208212,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
-          "transit"
+          "full_well"
         ]
       }
     ]
@@ -6216,13 +6234,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.5623413251903491,
     "intervals": [
       {
-        "lower_m": 5600.253734681712,
-        "upper_m": 4352204.8339555655,
+        "lower_m": 5600.329021846013,
+        "upper_m": 4352204.833949411,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -6238,13 +6256,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.6309573444801932,
     "intervals": [
       {
-        "lower_m": 7051.0418012260925,
-        "upper_m": 5019170.507904397,
+        "lower_m": 7051.161174283454,
+        "upper_m": 5019170.507907843,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -6260,13 +6278,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.707945784384138,
     "intervals": [
       {
-        "lower_m": 8877.909179230817,
-        "upper_m": 5631601.935154529,
+        "lower_m": 8878.09847453885,
+        "upper_m": 5631601.935159371,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -6282,13 +6300,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.7943282347242817,
     "intervals": [
       {
-        "lower_m": 11178.486415196883,
-        "upper_m": 6517564.760241887,
+        "lower_m": 11178.786631311032,
+        "upper_m": 6517564.760245423,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -6304,13 +6322,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 0.8912509381337459,
     "intervals": [
       {
-        "lower_m": 14075.832234806194,
-        "upper_m": 7312827.938109763,
+        "lower_m": 14076.308451425877,
+        "upper_m": 7312827.938104842,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -6326,17 +6344,26 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.0,
     "intervals": [
       {
-        "lower_m": 17725.105335502813,
-        "upper_m": 8205127.899682071,
+        "lower_m": 17725.860899799954,
+        "upper_m": 8205127.899691217,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
           "full_well"
+        ]
+      },
+      {
+        "lower_m": 8403049.705810066,
+        "upper_m": 8502109.464061953,
+        "lower_censored": false,
+        "upper_censored": false,
+        "lower_constraints": [
+          "SNR"
         ]
       }
     ]
@@ -6348,13 +6375,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.1220184543019642,
     "intervals": [
       {
-        "lower_m": 22322.01557911026,
-        "upper_m": 9539523.719162492,
+        "lower_m": 22323.214691347617,
+        "upper_m": 9539523.719159953,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -6370,13 +6397,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.2589254117941675,
     "intervals": [
       {
-        "lower_m": 28113.54623392733,
-        "upper_m": 10703521.658154098,
+        "lower_m": 28115.44994731871,
+        "upper_m": 10703521.658144988,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -6392,13 +6419,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.412537544622754,
     "intervals": [
       {
-        "lower_m": 35411.58486281155,
-        "upper_m": 12009548.826479204,
+        "lower_m": 35414.60855058738,
+        "upper_m": 12009548.826472541,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -6414,13 +6441,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.584893192461114,
     "intervals": [
       {
-        "lower_m": 44610.29567802997,
-        "upper_m": 13474935.411142062,
+        "lower_m": 44615.10093959276,
+        "upper_m": 13474935.411131525,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -6436,13 +6463,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.7782794100389228,
     "intervals": [
       {
-        "lower_m": 56208.33074952368,
-        "upper_m": 15119126.201823425,
+        "lower_m": 56215.97274322303,
+        "upper_m": 15119126.20181058,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -6458,13 +6485,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 1.9952623149688808,
     "intervals": [
       {
-        "lower_m": 70837.34153727151,
-        "upper_m": 16963938.611355245,
+        "lower_m": 70849.5058737919,
+        "upper_m": 16963938.61135982,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -6480,13 +6507,13 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 2.23872113856834,
     "intervals": [
       {
-        "lower_m": 89298.76225528862,
-        "upper_m": 19033852.179613683,
+        "lower_m": 89318.14733625686,
+        "upper_m": 19033852.17958895,
         "lower_censored": false,
         "upper_censored": false,
         "lower_constraints": [
@@ -6502,12 +6529,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 2.5118864315095824,
     "intervals": [
       {
-        "lower_m": 112611.56585354701,
+        "lower_m": 112642.50292573462,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -6524,12 +6551,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 2.818382931264455,
     "intervals": [
       {
-        "lower_m": 142074.76083405537,
+        "lower_m": 142124.2257010755,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -6546,12 +6573,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 3.1622776601683795,
     "intervals": [
       {
-        "lower_m": 179350.00139670778,
+        "lower_m": 179429.27804940732,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -6568,12 +6595,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 3.548133892335757,
     "intervals": [
       {
-        "lower_m": 226572.16788060317,
+        "lower_m": 226699.6113837201,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -6590,12 +6617,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 3.981071705534973,
     "intervals": [
       {
-        "lower_m": 286499.75463995757,
+        "lower_m": 286705.4383582562,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -6612,12 +6639,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 4.4668359215096345,
     "intervals": [
       {
-        "lower_m": 362723.52971638564,
+        "lower_m": 363057.19130799954,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -6634,12 +6661,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 5.011872336272725,
     "intervals": [
       {
-        "lower_m": 459963.46612138837,
+        "lower_m": 460508.38632529165,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -6656,12 +6683,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 5.62341325190349,
     "intervals": [
       {
-        "lower_m": 584505.0909414933,
+        "lower_m": 585403.0208963436,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -6678,12 +6705,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 6.309573444801936,
     "intervals": [
       {
-        "lower_m": 744867.6268620552,
+        "lower_m": 746365.2484037577,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -6700,12 +6727,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 7.07945784384138,
     "intervals": [
       {
-        "lower_m": 952882.9426840027,
+        "lower_m": 955422.9009829134,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -6722,12 +6749,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 7.943282347242821,
     "intervals": [
       {
-        "lower_m": 1225564.3511558932,
+        "lower_m": 1229976.3892205385,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -6744,12 +6771,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 8.91250938133746,
     "intervals": [
       {
-        "lower_m": 1588666.1585741257,
+        "lower_m": 1596610.2578447696,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,
@@ -6766,12 +6793,12 @@
       "phase_deg": 60.0,
       "albedo": 0.2,
       "transverse_speed_m_s": 15000,
-      "observer_altitude_km": 600.0
+      "observer_altitude_km": 450.0
     },
     "diameter_m": 10.0,
     "intervals": [
       {
-        "lower_m": 2084438.2363240612,
+        "lower_m": 2099595.8299695747,
         "upper_m": 20000000.0,
         "lower_censored": false,
         "upper_censored": true,

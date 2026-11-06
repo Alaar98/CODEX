@@ -40,6 +40,28 @@ class OpticalTests(unittest.TestCase):
         self.assertFalse(m.evaluate(c, minimum*.99,diameter_m=.01)["full_transit"])
         self.assertTrue(m.evaluate(c, minimum*1.01,diameter_m=.01)["full_transit"])
 
+    def test_partial_crossing_signal_noise_and_acceptance(self):
+        m, c, b = self.model, self.case, self.b
+        result = m.evaluate(c, 500., diameter_m=.01)
+        self.assertTrue(result['partial_transit'])
+        self.assertFalse(result['full_transit'])
+        self.assertTrue(result['eligible'])
+        self.assertGreater(result['snr'], 5)
+        omega = abs(c.transverse_speed_m_s/500-c.frame_rate_rad_s)
+        crossing = 2*np.tan(np.radians(c.fov_deg)/2)/omega
+        self.assertAlmostEqual(float(result['visible_time_s']), crossing)
+        area = m.derived(c)[2]
+        photons = m.solar_photons_m2_s*c.albedo*(.01/1000)**2*m.phase_function(c.phase_deg)
+        import math
+        expected = photons*area*crossing*math.erf(3/math.sqrt(2))**2
+        self.assertAlmostEqual(float(result['signal_e']), float(expected))
+        variance = result['signal_e'] + result['pixels']*((result['background_e_per_pixel_s']+b['I_dark'])*b['t_int']+b['sigma_read']**2)
+        self.assertAlmostEqual(float(result['snr']), float(expected/np.sqrt(variance)))
+        intervals = m.range_intervals(c,.01,np.geomspace(1,2e7,2049))
+        self.assertTrue(any(iv['lower_m'] < 500 < iv['upper_m'] for iv in intervals))
+        self.assertNotIn('transit', intervals[0]['lower_constraints'])
+        self.assertEqual(c.observer_altitude_km, 450)
+
     def test_range_scan_convergence_and_boundary(self):
         boundaries = []
         for points in (1025,2049):

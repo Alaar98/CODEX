@@ -1,5 +1,5 @@
 {
-  "cases": 60,
+  "cases": 56,
   "sizes_cm": [
     1,
     5,
@@ -15,11 +15,6 @@
       "altitude_km": 450,
       "period_minutes": 93.43977939025507,
       "rotation_deg_per_minute": 3.852748822280982
-    },
-    {
-      "altitude_km": 600,
-      "period_minutes": 96.5389018265515,
-      "rotation_deg_per_minute": 3.729066657986239
     }
   ]
 }

@@ -105,7 +105,7 @@ class StudyCase:
     phase_deg: float
     albedo: float
     transverse_speed_m_s: float
-    observer_altitude_km: float = 600.
+    observer_altitude_km: float = 450.
 
     @property
     def frame_rate_rad_s(self):
@@ -145,9 +145,14 @@ class OpticalModel:
             raise ValueError("Specify diameter OR equivalent AB magnitude")
         f, scale, area_eff = self.derived(case)
         omega = np.abs(case.transverse_speed_m_s/r-case.frame_rate_rad_s)
-        length_px = omega*self.b["t_int"]/scale
+        # Maximum overlap of an exposure with a central crossing of the short-axis
+        # field. This conditional envelope does not model random arrival times.
+        field_span = 2*math.tan(math.radians(case.fov_deg)/2)
+        crossing_time = np.divide(field_span, omega, out=np.full_like(omega, np.inf), where=omega > 0)
+        visible_time = np.minimum(self.b["t_int"], crossing_time)
+        length_px = omega*visible_time/scale
         sigma = self.b["PSF_FWHM"]/(2*np.sqrt(2*np.log(2)))
-        pixels = np.ceil(length_px+6*sigma)*math.ceil(6*sigma)
+        pixels = np.ceil(np.minimum(length_px+6*sigma, field_span/scale))*math.ceil(6*sigma)
         fraction = math.erf(3/math.sqrt(2))**2
         if magnitude_ab is not None:
             photons = self.ab_zero_photons_m2_s*10**(-.4*np.asarray(magnitude_ab))
@@ -158,7 +163,7 @@ class OpticalModel:
                 raise ValueError("Positive finite sizes required")
             photons = self.solar_photons_m2_s*case.albedo*(d/(2*r))**2*self.phase_function(case.phase_deg)
             unresolved = d/r <= self.b["PSF_FWHM"]*scale
-        total_e = photons*area_eff*self.b["t_int"]
+        total_e = photons*area_eff*visible_time
         signal = total_e*fraction
         background_rate = (self.ab_zero_photons_m2_s*10**(-.4*self.b["sky_background"])
                            *area_eff*(scale*ARCSEC_PER_RAD)**2)
@@ -167,12 +172,14 @@ class OpticalModel:
         unsaturated = peak_total_e < self.b["FWC_high_gain"]
         variance = signal+pixels*((background_rate+self.b["I_dark"])*self.b["t_int"]+self.b["sigma_read"]**2)
         snr = signal/np.sqrt(variance)
-        full_transit = omega*self.b["t_int"] <= 2*math.tan(math.radians(case.fov_deg)/2)
+        full_transit = crossing_time >= self.b["t_int"]
         solar_allowed = case.phase_deg <= 180-self.b["sun_exclusion_min"]
         return {"snr": snr, "signal_e": signal, "pixels": pixels, "streak_px": length_px,
                 "magnitude_ab": -2.5*np.log10(np.maximum(photons, 1e-300)/self.ab_zero_photons_m2_s),
                 "full_transit": full_transit, "unresolved": unresolved,
-                "eligible": full_transit & unresolved & solar_allowed & unsaturated,
+                "eligible": unresolved & solar_allowed & unsaturated,
+                "partial_transit": ~full_transit, "visible_time_s": visible_time,
+                "crossing_time_s": crossing_time,
                 "unsaturated": unsaturated, "peak_pixel_e": peak_total_e,
                 "peak_object_pixel_e": peak_object_e,
                 "full_well_e_per_pixel": self.b["FWC_high_gain"],
@@ -215,7 +222,7 @@ class OpticalModel:
                 else: hi = float((a+b)/2)
             below = self.evaluate(case,lo*(1-1e-6),diameter_m=diameter_m)
             constraints = []
-            for key, label in (("unsaturated", "full_well"), ("full_transit", "transit"), ("unresolved", "point_source_domain")):
+            for key, label in (("unsaturated", "full_well"), ("unresolved", "point_source_domain")):
                 if not bool(below[key]): constraints.append(label)
             if float(below["snr"]) < self.b["SNR_min"]: constraints.append("SNR")
             if start == 0: constraints.append("distance_scan_lower_bound")

@@ -25,7 +25,7 @@ def main():
                  for p in (root/"data/generated").rglob("*.csv*") if "optical" not in p.parts}
     publication_style()
     sizes = np.geomspace(.01, 10, 61)
-    ranges = np.geomspace(100, 2e7, 1537)
+    ranges = np.geomspace(1, 2e7, 2049)
     groups = {
         "phase": [(replace(nominal, phase_deg=v), rf"$\alpha={v:g}^\circ$") for v in (0, 30, 60, 85)],
         "albedo": [(replace(nominal, albedo=b[k]), rf"$p={b[k]:g}$") for k in ("albedo_pess", "albedo_nom", "albedo_opt")],
@@ -53,9 +53,11 @@ def main():
         "albedo": "geometric", "background_system": "AB; flat Fnu per arcsec2 over band",
         "solar_model": "5772 K blackbody, bolometric normalization 1361 W/m2 at 1 AU",
         "solar_photons_in_band_m2_s": model.solar_photons_m2_s,
-        "psf_extraction": "horizontal uniform streak convolved with Gaussian; rectangular 3-sigma padding",
+        "psf_extraction": "horizontal uniform streak convolved with Gaussian; 3-sigma padding capped at short-axis field width; conservative fixed enclosed fraction",
+        "partial_transits": "accepted at SNR >= 5 with all other eligibility criteria; object time=min(77 ms, central crossing time); maximum temporal overlap; background/dark integrate full exposure",
+        "full_transit_boundary": "diagnostic only, never rejects a partial transit",
         "saturation": "expected charge in worst-aligned central pixel incl. sky and dark; reject >= high-gain full well",
-        "attitude": "circular LVLH at 600 km; zenith LOS; positive along-track transverse relative motion",
+        "attitude": "circular LVLH at 450 km; zenith LOS; positive along-track transverse relative motion",
         "not_modelled": ["ADC clipping", "full-well uncertainty", "platform shadow", "Earth eclipse",
                          "mission encounter geometry", "resolved-target photometry", "off-axis response"]}
 
@@ -66,7 +68,7 @@ def main():
 
     caption = (rf"Reference: $D={nominal.aperture_m*1000:g}$ mm, FOV $={nominal.fov_deg:g}^\circ$, "
                rf"$p={nominal.albedo:g}$, $\alpha={nominal.phase_deg:g}^\circ$, $v_\perp={nominal.transverse_speed_m_s/1000:g}$ km/s"
-               f"\nCircular observer at 600 km; high-gain full well = {b['FWC_high_gain']/1000:g} ke"+r"$^-$ per pixel")
+               f"\nCircular observer at 450 km; high-gain full well = {b['FWC_high_gain']/1000:g} ke"+r"$^-$ per pixel")
     for group, cases in {"nominal": [(nominal, "Reference")], **groups}.items():
         fig, ax = plt.subplots(figsize=(7.2, 4.8))
         records = []
@@ -95,7 +97,7 @@ def main():
         ax.grid(which="major", alpha=.3, linestyle="--")
         ax.legend(fontsize=9)
         finish(fig, f"trace_instrument_reference_range_vs_size_{group}",
-               caption+"\nSolid: upper; dash-dot: lower eligible boundary; dashed: transit; triangles: distance-scan limit")
+               caption+"\nSolid: upper; dash-dot: lower eligible boundary; dashed: full-exposure boundary (not a rejection); triangles: distance-scan limit")
         (data_dir/f"range_vs_size_{group}.json").write_text(json.dumps(records, indent=2)+"\n")
         with (data_dir/f"range_vs_size_{group}.csv").open("w", newline="") as f:
             writer = csv.writer(f, lineterminator="\n")
@@ -115,16 +117,16 @@ def main():
             ax.semilogx(ranges/1000,np.where(~result["eligible"],db,np.nan),
                         color=line.get_color(),linestyle=":",alpha=.5)
             rows.extend(zip(np.full(len(ranges), j), ranges, result["snr"], result["eligible"],
-                            result["peak_pixel_e"], result["unsaturated"], result["full_transit"], result["unresolved"]))
+                            result["peak_pixel_e"], result["unsaturated"], result["full_transit"], result["unresolved"], result["partial_transit"], result["visible_time_s"]))
         ax.axhline(10*np.log10(b["SNR_min"]), color="crimson", linestyle="--", label=f"SNR = {b['SNR_min']:g}")
         ax.set(xlabel="Instrument–object distance [km]", ylabel=r"$10\log_{10}(\mathrm{SNR})$ [dB]",
                title="TRACE — 10 cm target; conditional point-source model")
         ax.legend(fontsize=9)
         ax.grid(alpha=.3, linestyle="--")
-        finish(fig, f"trace_instrument_reference_snr_vs_range_{group}", caption+"\nDotted: saturated or outside full-transit/point-source domain; flags provided in CSV")
+        finish(fig, f"trace_instrument_reference_snr_vs_range_{group}", caption+"\nDotted: saturated or outside point-source/solar domain; flags provided in CSV")
         with (data_dir/f"snr_vs_range_{group}.csv").open("w", newline="") as f:
             w = csv.writer(f, lineterminator="\n"); w.writerow(["case_index", "range_m", "snr_linear", "eligible",
-                "peak_pixel_e", "unsaturated", "full_transit", "unresolved"]); w.writerows(rows)
+                "peak_pixel_e", "unsaturated", "full_transit", "unresolved", "partial_transit", "visible_time_s"]); w.writerows(rows)
         if group not in {"fov", "aperture", "velocity"}:
             continue
         fig, ax = plt.subplots(figsize=(7.2, 4.8))

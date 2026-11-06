@@ -159,11 +159,11 @@ de detecciones de una población concreta. No se alteran las diez poblaciones.
 Incluye SNR–magnitud AB, SNR–distancia y distancia–tamaño, variando apertura,
 FOV, velocidad transversal, albedo y fase. La referencia de estudio es el
 punto medio de apertura/FOV del Excel, fase 60°, albedo nominal, velocidad
-transversal de 5 km/s y observador circular a 600 km (hipótesis de prueba, no
+transversal de 5 km/s y observador circular a 450 km (hipótesis de prueba, no
 arquitectura de misión adoptada). Se incluye el giro LVLH en el movimiento
 aparente para una LOS al zenit y movimiento relativo en sentido along-track.
 
-Los intervalos exigen SNR >= umbral, tránsito completo y dominio de fuente
+Los intervalos exigen SNR >= umbral y dominio de fuente
 no resuelta y ausencia de saturación de carga. El Excel incluye ahora **15 ke⁻
 por píxel en la ganancia más alta** y **>140 ke⁻ en la más baja**. El modo High
 Gain utiliza el primer valor. La carga pico se integra por píxel para una PSF
@@ -187,17 +187,16 @@ extracción especificada; no se afirma reproducir íntegramente su figura 2.
 ```
 
 Produce `data/generated/optical/TRACE_Resultados_Estudio_Optico.xlsx` con 854
-casos únicos del estudio a 600 km y 854 casos emparejados nuevos a 450 km.
+casos únicos, todos a 450 km.
 Una fila representa tamaño y configuración, consolidando referencias repetidas
 entre barridos. Las dos últimas columnas de Casos son alcance mínimo y máximo
-en km. Incluye Guía, Resumen_10cm, Casos, Intervalos y Comparacion_altitud.
+en km. Incluye Guía, Resumen_10cm, Casos e Intervalos.
 Los máximos censurados y los huecos entre intervalos están identificados.
 
 En `outputs/optical/summary/` se muestran ventanas de detección mediante barras
-horizontales para 1, 10 y 100 cm, separando cada parámetro en un panel; además
-se presenta el efecto aislado de cambiar la altitud. Las poblaciones originales
-y los resultados a 600 km permanecen intactos. Los 600 km solo fijan el giro
-LVLH de esta prueba condicional: todavía no se comparan misiones completas.
+horizontales para 1, 10 y 100 cm, separando cada parámetro en un panel.
+El sexto panel muestra la referencia a 450 km. Las poblaciones originales
+permanecen intactas. Todavía no se comparan misiones completas.
 
 ## Comparación simultánea por tamaño e histograma nominal
 
@@ -216,7 +215,24 @@ Los casos se guardan en data/generated/optical/size_comparison_cases.csv.
 El histograma `outputs/trace_nominal_object_size_histogram.png` cuenta todos
 los objetos nominales: vista completa con bins logarítmicos y un detalle lineal
 1–10 cm. Los conteos de cada bin están en data/generated/nominal_size_histogram.csv.
-También se incluye un esquema de las distancias al zenit a 450 y 600 km.
+
+Se aceptan tránsitos parciales con SNR ≥ 5, siempre que no saturen y cumplan
+el dominio no resuelto y la exclusión solar. La señal usa el tiempo visible
+`min(exposición, cruce central)`; fondo y dark usan toda la exposición.
+Se supone el máximo solapamiento temporal posible: no es una simulación de
+instantes aleatorios de entrada al campo. La línea de tránsito completo es
+solo informativa. El barrido actual va de 1 m a 20.000 km.
+
+```bash
+.venv/bin/python scripts/plot_unresolved_population.py
+```
+
+Genera `outputs/optical/summary/trace_nominal_unresolved_source_limit_observer_450km.png`
+y un CSV con las distancias de los 50.000 objetos. Observador de referencia:
+TEME=(6821,0,0) km en 2026-11-05T00:00:00Z. Incluye objetos ocultos por la
+Tierra o fuera del campo: muestra tamaño angular, no detecciones.
+El umbral nominal es FWHM×δ = 0,000113165494 rad = 23,3421 arcsec.
+La línea roja es d[cm]=11,3165494 r[km]; la zona inferior sombreada es no resuelta.
 
 ## Alcance de los modelos iniciales anteriores
 

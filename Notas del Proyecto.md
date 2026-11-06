@@ -1028,3 +1028,78 @@ a 450 y 600 km: las distancias son 350 y 200 km. El ejemplo supone alineación
 al zenit, no observadores reales coincidentes. Ilustra por qué una comparación
 de misiones debe recalcular distancias/velocidades/encuentros, además del
 pequeño cambio de giro usado en la prueba paramétrica actual.
+
+
+## Revisión: observador a 450 km, tránsitos parciales y tamaño angular
+
+Esta revisión sustituye en los resultados activos la referencia de 600 km y
+el rechazo de tránsitos parciales descritos en las secciones históricas.
+Todas las configuraciones del estudio óptico se recalculan a 450 km. Se
+retiran de outputs las comparaciones antiguas 450/600 y el esquema asociado;
+Git conserva sus versiones previas. La población nominal y las alternativas
+orbitales no se modifican. El chequeo independiente del paper conserva los
+parámetros publicados: es una referencia bibliográfica, no un caso TRACE.
+
+**Tiempo visible y detección parcial.** Se conserva la LOS al zenit con actitud
+fija en LVLH, sin seguimiento del objeto, y movimiento relativo transversal
+en sentido along-track. Se aproxima la tasa como
+omega=abs(v_perp/r - sqrt(mu/(R_T+450 km)^3)). Se mantiene la aproximación
+paraxial/tangencial del modelo anterior: cruce central a lo largo del lado
+corto del sensor, extensión de campo q=2 tan(FOV/2), velocidad y flujo
+constantes durante una exposición. El tiempo de cruce es q/omega (infinito
+si omega=0). El tiempo de señal es t_obj=min(t_exp,q/omega), y la longitud
+de traza es L_px=omega*t_obj/delta. t_exp=77 ms.
+
+Se supone que la exposición se centra temporalmente sobre el cruce para
+obtener el máximo solapamiento posible. Por tanto, son ventanas ópticas
+condicionales; una entrada cerca del final de una exposición puede producir
+menos señal. No se asigna este tiempo máximo a encuentros reales ni se
+calcula todavía la estadística de instantes de llegada. Tampoco se modelan
+cuerdas descentradas, viñeteo o variación de PSF en los bordes.
+
+La señal total antes de extracción es N_tot=Phi_gamma*A_eff*t_obj, y la
+extraída S=N_tot*erf(3/sqrt(2))^2. Se conserva esta fracción conservadora
+para la traza, incluyendo cruces del campo completo; no se hace una
+integración bidimensional detallada del borde del detector. Se limita la
+longitud de la máscara al ancho del campo:
+n_px=ceil(min(L_px+6*sigma_px,q/delta))*ceil(6*sigma_px).
+El ruido de fondo y la corriente oscura siguen integrando **t_exp completo**:
+SNR=S/sqrt(S+n_px*((B_px+I_dark)*t_exp+sigma_read^2)). La saturación usa
+N_tot multiplicado por la fracción pico de la PSF/traza, más fondo y dark
+durante t_exp, frente a 15000 e-/píxel en High Gain.
+
+Un tránsito parcial cuenta como detección condicional si SNR>=5, fuente
+no resuelta, ausencia de saturación y exclusión solar satisfecha. El flag
+full_transit solo clasifica; ya no veta. La línea del mínimo de tránsito
+completo en las curvas es informativa. El barrido se amplía a 1 m–20000 km
+con 2049 muestras logarítmicas y refinamiento de 32 bisecciones; siguen
+indicándose límites censurados e intervalos separados. Las ventanas muy
+estrechas pueden escapar a una malla finita.
+
+**Umbral de tamaño angular.** Para FOV=14°, detector corto W=43,4 mm,
+píxel p=10 micras y FWHM=2 px:
+f=W/(2 tan(7°))=0,1767323175 m;
+delta=p/f=5,658274696e-5 rad/px;
+FWHM_px*delta=1,131654939e-4 rad, aproximadamente 23,34 arcsec.
+No es una constante universal de resolución: depende del FOV y de la PSF
+asumida. Es el límite operativo del modelo de fuente puntual, no una
+validación de fotometría de fuentes extendidas ni un criterio de Rayleigh.
+Con apertura variable y FOV fijo se mantiene FWHM=2 px por hipótesis; no se
+recalcula una PSF por difracción en este estudio.
+
+**Nueva figura de 50000 objetos.** Se calcula la distancia euclídea a un
+observador ilustrativo en TEME=(6821,0,0) km, a 450 km sobre la esfera terrestre
+de radio 6371 km, en la época nominal 2026-11-05T00:00:00Z. La posición
+es una hipótesis explícita; no define inclinación ni fase orbital de la
+futura misión. Cada registro nominal genera un punto sin ponderación.
+Ejes logarítmicos: distancia en km y diámetro en cm. Línea roja discontinua:
+d_cm=11,31654939*r_km. Debajo: d/r<=FWHM_px*delta, dominio no resuelto,
+sombreado rojo transparente. Se incluyen los 50000 registros, aunque estén
+ocultos por la Tierra o fuera del FoV; la figura no cuenta detecciones.
+CSV de distancias, manifiesto con geometría/umbral/conteos y hash nominal
+se guardan en data/generated/optical. El hash del nominal se verifica.
+
+El Excel activo contiene 854 casos únicos a 450 km y hojas adicionales con
+56 combinaciones exactas para diámetros de 1,5,10,100 cm. Los extremos mínimo
+y máximo siguen siendo las dos últimas columnas; se conservan los huecos
+en las hojas de intervalos. Ya no hay casos activos a 600 km.
