@@ -68,11 +68,11 @@ def main():
     ax.fill_between(x, boundary, top, color='red', alpha=.12,
                     label='Fuentes resueltas: fuera del modelo puntual', zorder=0)
     ax.scatter(ranges[grey],sizes[grey],s=2,color='#737373',alpha=.4,linewidths=0,
-               label=f'Resto de objetos: {int(grey.sum()):,}'.replace(',','.'),zorder=2)
+               label='Objetos ni visibles ni detectables',zorder=2)
     ax.scatter(ranges[visible_only],sizes[visible_only],s=24,color='#B57EDC',alpha=1,linewidths=.3,
-               edgecolors='#553366',label=f'Visibles no detectables: {int(visible_only.sum())}',zorder=4)
+               edgecolors='#553366',label='Objetos visibles no detectables',zorder=4)
     ax.scatter(ranges[detected],sizes[detected],s=22,color='#009E3C',alpha=1,linewidths=.3,
-               edgecolors='black',label=f'Visibles y detectables: {count}',zorder=4)
+               edgecolors='black',label='Objetos visibles y detectables',zorder=4)
     ax.plot(x,boundary,'--',color='red',lw=1.4,
             label=r'Límite: $d=r\,\mathrm{FWHM}_{\mathrm{px}}\,\delta$',zorder=3)
     ax.set(xscale='log',yscale='log',xlim=(x[0],x[-1]),

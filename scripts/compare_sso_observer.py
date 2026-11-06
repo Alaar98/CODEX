@@ -105,9 +105,9 @@ def main():
     ax.fill_between(x,line,top,color='red',alpha=.12,label='Fuentes resueltas: fuera del modelo puntual',zorder=0)
     masks=[~result['visible'],result['visible']&~result['detectable'],result['detectable']]
     for mask,color,label,sz in zip(masks,('#737373','#B57EDC','#009E3C'),
-                                  ('Resto','Visibles no detectables','Visibles y detectables'),(2,24,24)):
+                                  ('Objetos ni visibles ni detectables','Objetos visibles no detectables','Objetos visibles y detectables'),(2,24,24)):
         ax.scatter(ranges[mask],sizes[mask],s=sz,color=color,alpha=.4 if sz==2 else 1,
-                   linewidths=0,label=f'{label}: {int(mask.sum())}',zorder=2 if sz==2 else 4)
+                   linewidths=0,label=label,zorder=2 if sz==2 else 4)
     ax.plot(x,line,'r--',lw=1.3,label=r'Límite $d=r\,\mathrm{FWHM}_{\mathrm{px}}\delta$')
     ax.set(xscale='log',yscale='log',xlim=(x[0],x[-1]),ylim=(bottom,top),
            xlabel='Distancia al instrumento [km]',ylabel='Diámetro equivalente [cm]',
