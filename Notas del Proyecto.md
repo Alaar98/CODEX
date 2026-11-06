@@ -1587,3 +1587,27 @@ filtrar la figura. Se actualizan límites de ejes, pies de figura y manifiesto.
 
 El renderizado se separa del cálculo para reutilizar resultados guardados:
 `.venv/bin/python -m scripts.plot_day_encounters --plots-only`.
+
+
+## Dos vistas adicionales con magnitud aparente sin umbral de SNR
+
+Por petición del usuario se añaden las mismas dos figuras de cruces válidos
+de 24 horas, pero con la magnitud aparente AB (`magnitude_ab`) directamente
+en el eje Y, frente a distancia y velocidad relativa transversal. No se
+dibuja la línea SNR=5, sombreado de SNR ni una clasificación visual por
+detectabilidad. Se conservan los 8312 cruces válidos de 7344 objetos, los
+colores de tamaño y los símbolos de primer/segundo/tercer cruce y posteriores.
+Los cruces excluidos siguen sin representarse.
+
+Se reutilizan exactamente los mismos registros e instantes representativos
+del CSV existente; no se vuelve a propagar ni se cambia la selección de
+exposición de cada cruce. Por tanto, aunque estas figuras no muestran SNR,
+sus instantes siguen siendo los de mayor SNR válido encontrados en el
+estudio previo. La magnitud se lee sin restarle la magnitud límite, usando
+las mismas hipótesis de albedo, fase, iluminación y banda AB anteriores.
+Las dos figuras de margen normalizado se conservan como vistas separadas.
+
+Reproducción: `.venv/bin/python -m scripts.plot_day_encounters --plots-only --apparent-magnitude`.
+Los nombres PNG contienen `sso450km_24h_apparent_magnitude_vs_`; el manifiesto
+fotométrico añade `apparent_magnitude_figures` y su convención. El CSV de
+cruces y las poblaciones no se modifican.

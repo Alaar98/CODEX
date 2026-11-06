@@ -75,43 +75,59 @@ def best_node(result):
     return len(result['time_s'])//2
 
 
-def render_figures(rows,audit,root,tag):
+def render_figures(rows,audit,root,tag,apparent_magnitude=False):
     propagation=audit['propagation']
     valid_count=sum(r['valid'] for r in rows)
     plotted_ids=len({r['object_id'] for r in rows if r['valid']})
     publication_style();colors={'1_to_5cm':'#0072B2','5_to_10cm':'#009E73','10cm_up':'#B57EDC'}
     labels={'1_to_5cm':r'$1\leq d<5$ cm','5_to_10cm':r'$5\leq d<10$ cm','10cm_up':r'$d\geq10$ cm'}
-    valid=np.array([r['valid'] for r in rows]);margin=np.array([r['magnitude_margin'] for r in rows])
+    valid=np.array([r['valid'] for r in rows])
+    field='magnitude_ab' if apparent_magnitude else 'magnitude_margin'
+    margin=np.array([r[field] for r in rows])
     finite=margin[valid]
     low=min(-1.,float(np.floor(finite.min()))-1) if len(finite) else -1.
     high=max(1.,float(np.ceil(finite.max()))+1) if len(finite) else 1.
+    if apparent_magnitude and len(finite):
+        low=float(np.floor(finite.min()))-1
+        high=float(np.ceil(finite.max()))+1
     ymap=margin
     handles=[Line2D([0],[0],marker='o',ls='none',color=c,label=labels[g]) for g,c in colors.items()]
     handles += [Line2D([0],[0],marker=m,ls='none',color='#444444',label=label) for m,label in
                 [('o','Primer cruce'),('x','Segundo cruce'),('^','Tercer cruce y posteriores')]]
-    handles += [Line2D([0],[0],color='red',ls='--',label='SNR = 5'),Patch(facecolor='red',alpha=.12,label='SNR < 5')]
+    if not apparent_magnitude:
+        handles += [Line2D([0],[0],color='red',ls='--',label='SNR = 5'),Patch(facecolor='red',alpha=.12,label='SNR < 5')]
     figure_names=[]
     for xfield,xlabel,suffix,log in [('range_km','Distancia observador–objeto [km]','range',True),
                                    ('transverse_speed_km_s',r'Velocidad relativa transversal $v_\perp$ [km/s]','transverse_velocity',False)]:
         fig,ax=plt.subplots(figsize=(10,7),layout='none');fig.subplots_adjust(left=.1,right=.98,bottom=.22,top=.79)
-        ax.axhspan(0,high,color='red',alpha=.12,zorder=0);ax.axhline(0,color='red',ls='--',lw=1.4)
+        if not apparent_magnitude:
+            ax.axhspan(0,high,color='red',alpha=.12,zorder=0);ax.axhline(0,color='red',ls='--',lw=1.4)
         xs=np.array([r[xfield] for r in rows])
         for group,color in colors.items():
             for marker in ('o','x','^'):
                 mask=valid & np.array([r['size_group']==group and r['marker']==marker for r in rows])
                 ax.scatter(xs[mask],ymap[mask],c=color,marker=marker,s=9,alpha=.55,linewidths=.35,zorder=3)
-        ax.set(xlabel=xlabel,ylabel=r'$m_{\mathrm{AB}}-m_{\mathrm{AB},\,\mathrm{SNR}=5}$ [mag]',
+        ylabel='Magnitud aparente AB [mag]' if apparent_magnitude else r'$m_{\mathrm{AB}}-m_{\mathrm{AB},\,\mathrm{SNR}=5}$ [mag]'
+        ax.set(xlabel=xlabel,ylabel=ylabel,
                ylim=(low,high),title=f'TRACE — cruces por el campo en {propagation["duration_s"]/3600:g} h · SSO 450 km')
         if log:ax.set_xscale('log')
         ax.grid(which='major',alpha=.35,lw=.5);ax.grid(which='minor',alpha=.2,lw=.3)
         fig.legend(handles=handles,loc='upper center',bbox_to_anchor=(.5,.995),ncol=3,frameon=False,fontsize=8)
-        fig.supxlabel(f'{propagation["population_count"]} objetos propagados; {valid_count} cruces válidos de {plotted_ids} objetos. SSO LTAN 06:00, i=97,1877°.\n'
-            f'Intervalo UTC: {propagation["epoch0"]} + {propagation["duration_s"]/3600:g} h. D=80 mm, FOV=14°, 77 ms, albedo=0,2; gravedad central + J2.\n'
-            'Un punto por cruce: mejor SNR válido encontrado. Solo cruces por el FoV dentro del dominio del modelo.\n'
-            'Debajo de cero: SNR ≥ 5 dentro del dominio válido. Los símbolos cuentan cruces de cada objeto, no exposiciones.',fontsize=8,y=.015)
-        fig_name='trace_nominal_'+tag+'_magnitude_margin_vs_'+suffix;figure_names.append(fig_name+'.png')
+        common=(f'{propagation["population_count"]} objetos propagados; {valid_count} cruces válidos de {plotted_ids} objetos. SSO LTAN 06:00, i=97,1877°.\n'
+            f'Intervalo UTC: {propagation["epoch0"]} + {propagation["duration_s"]/3600:g} h. D=80 mm, FOV=14°, 77 ms, albedo=0,2; gravedad central + J2.\n')
+        if apparent_magnitude:
+            caption='Un punto por cruce, en su instante representativo guardado. Solo cruces válidos por el FoV.\nLos colores indican tamaño y los símbolos el ordinal de cruce de cada objeto durante el día.'
+        else:
+            caption=('Un punto por cruce: mejor SNR válido encontrado. Solo cruces por el FoV dentro del dominio del modelo.\n'
+                     'Debajo de cero: SNR ≥ 5 dentro del dominio válido. Los símbolos cuentan cruces de cada objeto, no exposiciones.')
+        fig.supxlabel(common+caption,fontsize=8,y=.015)
+        prefix='apparent_magnitude' if apparent_magnitude else 'magnitude_margin'
+        fig_name='trace_nominal_'+tag+'_'+prefix+'_vs_'+suffix;figure_names.append(fig_name+'.png')
         save_figure(fig,root/'outputs/optical/summary',fig_name)
-    audit['figures']=figure_names
+    key='apparent_magnitude_figures' if apparent_magnitude else 'figures'
+    audit[key]=figure_names
+    if apparent_magnitude:
+        audit['apparent_magnitude_plot']='same valid crossings and representative times; raw magnitude_ab; no SNR line, shading or detection labels'
     audit['plot_exclusions']='excluded events omitted from figures; retained in complete encounter CSV'
     audit['plotted_events']=valid_count
     audit['plotted_distinct_objects']=plotted_ids
@@ -122,6 +138,7 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--tag',default='sso450km_24h')
     parser.add_argument('--sample',type=float,default=.25);parser.add_argument('--suffix',default='')
     parser.add_argument('--plots-only',action='store_true')
+    parser.add_argument('--apparent-magnitude',action='store_true')
     args=parser.parse_args();root=Path(__file__).resolve().parents[1];source=root/'data/generated/encounters'
     if args.plots_only:
         name=args.tag+args.suffix
@@ -130,11 +147,12 @@ def main():
             rows=list(csv.DictReader(f))
         for row in rows:
             row['valid']=row['valid']=='True'
-            for field in ('magnitude_margin','range_km','transverse_speed_km_s'):
+            for field in ('magnitude_margin','magnitude_ab','range_km','transverse_speed_km_s'):
                 row[field]=float(row[field]) if row[field] else np.nan
-        audit=render_figures(rows,audit,root,args.tag)
+        audit=render_figures(rows,audit,root,args.tag,apparent_magnitude=args.apparent_magnitude)
         (source/(name+'_photometry.json')).write_text(json.dumps(audit,indent=2)+'\n')
-        print(json.dumps({k:audit[k] for k in ('plotted_events','plotted_distinct_objects','figures')},indent=2))
+        figure_key='apparent_magnitude_figures' if args.apparent_magnitude else 'figures'
+        print(json.dumps({k:audit[k] for k in ('plotted_events','plotted_distinct_objects',figure_key)},indent=2))
         return
     propagation=json.loads((source/(args.tag+'_propagation.json')).read_text())
     with np.load(source/(args.tag+'_trajectories.npz')) as archive:
@@ -200,7 +218,7 @@ def main():
            'revisits':'chronological FoV passages per ID, including excluded passages; not individual exposures'}
     (source/(name+'_photometry.json')).write_text(json.dumps(audit,indent=2)+'\n')
     if args.suffix:print(json.dumps({k:v for k,v in audit.items() if k!='propagation'},indent=2));return
-    audit=render_figures(rows,audit,root,args.tag)
+    audit=render_figures(rows,audit,root,args.tag,apparent_magnitude=args.apparent_magnitude)
     (source/(name+'_photometry.json')).write_text(json.dumps(audit,indent=2)+'\n')
     assert hashlib.sha256(path.read_bytes()).hexdigest()==propagation['population_sha256']
     print(json.dumps({k:v for k,v in audit.items() if k!='propagation'},indent=2),flush=True)

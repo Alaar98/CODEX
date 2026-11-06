@@ -83,5 +83,10 @@
     "trace_nominal_sso450km_24h_magnitude_margin_vs_transverse_velocity.png"
   ],
   "plotted_events": 8312,
-  "plotted_distinct_objects": 7344
+  "plotted_distinct_objects": 7344,
+  "apparent_magnitude_figures": [
+    "trace_nominal_sso450km_24h_apparent_magnitude_vs_range.png",
+    "trace_nominal_sso450km_24h_apparent_magnitude_vs_transverse_velocity.png"
+  ],
+  "apparent_magnitude_plot": "same valid crossings and representative times; raw magnitude_ab; no SNR line, shading or detection labels"
 }

@@ -345,3 +345,15 @@ prefijo `trace_nominal_sso450km_24h_magnitude_margin_vs_`.
 
 Para regenerar únicamente estas figuras desde el CSV guardado, sin repetir
 propagación ni fotometría: `.venv/bin/python -m scripts.plot_day_encounters --plots-only`.
+
+
+Para las mismas dos vistas con **magnitud aparente AB directamente en Y**,
+sin umbral de SNR ni sombreado:
+
+```bash
+.venv/bin/python -m scripts.plot_day_encounters --plots-only --apparent-magnitude
+```
+
+Conservan los mismos cruces válidos, instantes representativos, colores por
+tamaño y símbolos de revisita. Sus nombres contienen
+`trace_nominal_sso450km_24h_apparent_magnitude_vs_`.
