@@ -1,0 +1,91 @@
+{
+  "instrument_case": {
+    "aperture_m": 0.08,
+    "fov_deg": 14.0,
+    "phase_deg": 60.0,
+    "albedo": 0.2,
+    "transverse_speed_m_s": 5000.0,
+    "observer_altitude_km": 450.0
+  },
+  "workbook": "TRACE_Detector_Optical_Baseline (1).xlsx",
+  "workbook_sha256": "d0974311900755a319c10a1d33c8e4cfe032b30344c86d700d3a17b486dfa293",
+  "detector_baseline_si": {
+    "N_x": 4500,
+    "N_y": 4340,
+    "p_pixel": 9.999999999999999e-06,
+    "W_x": 0.045,
+    "W_y": 0.0434,
+    "QE": 0.9,
+    "lambda_min": 4.5000000000000003e-07,
+    "lambda_max": 7.5e-07,
+    "t_int": 0.077,
+    "sigma_read": 5,
+    "I_dark": 0.01,
+    "SNR_min": 5,
+    "FOV_min": 8,
+    "FOV_max": 20,
+    "D_ap_min": 0.06,
+    "D_ap_max": 0.1,
+    "T_optics": 0.8,
+    "PSF_FWHM": 2,
+    "sky_background": 22,
+    "albedo_pess": 0.05,
+    "albedo_nom": 0.2,
+    "albedo_opt": 0.5,
+    "detector_short_dim": 0.0434,
+    "sun_exclusion_min": 90,
+    "FWC_high_gain": 15000,
+    "FWC_low_gain_lower_bound": 140000
+  },
+  "velocity_plot_diameter_m": 0.05,
+  "snr_threshold": 5,
+  "magnitude_system": "equivalent band AB over 450\u2013750 nm; flat-Fnu calibration",
+  "apparent_magnitude_grid": [
+    0.0,
+    20.0,
+    601
+  ],
+  "magnitude_range_grid_m": [
+    10.0,
+    20000000.0,
+    1001
+  ],
+  "velocity_grid_km_s": [
+    0.0,
+    15.0,
+    751
+  ],
+  "velocity_range_grid_m": [
+    10.0,
+    2000000.0,
+    1401
+  ],
+  "red_shading": "SNR<5 only; not the complement of complete detectability",
+  "grey_shading": "resolved source (velocity plot only); point-source SNR extrapolated outside domain",
+  "grey_hatching": "saturation; formal linear-model SNR is not a valid performance prediction there",
+  "angular_motion": "abs(v_perp/r-n_LVLH), positive along-track zenith simplification",
+  "partial_transits": "maximum overlap central crossing; background and dark integrate full exposure",
+  "magnitude_distance_convention": "apparent magnitude already fixes received flux; range affects motion only, no second inverse-square loss",
+  "source_size_in_magnitude_plot": "not specified; point-source assumption, unresolved size not inferred from magnitude",
+  "phase_albedo_in_magnitude_plot": "already encoded by apparent flux; not multiplied into AB brightness again",
+  "range_scan_limitation": "instrument envelope; not a set of available LEO encounter distances",
+  "population_used": false,
+  "mission_detection_counts_computed": false,
+  "velocity_contour_max_abs_snr_error": 0.28010544841841245,
+  "velocity_contour_method": "linear interpolation of sampled SNR; integer extraction pixels can produce jumps",
+  "nominal_5cm_intervals_m": [
+    {
+      "lower_m": 441.8307937179045,
+      "upper_m": 298150.11885474774,
+      "lower_censored": false,
+      "upper_censored": false,
+      "lower_constraints": [
+        "point_source_domain"
+      ]
+    }
+  ],
+  "figures": [
+    "trace_instrument_reference_apparent_magnitude_vs_range_snr5_450km.png",
+    "trace_instrument_reference_transverse_velocity_vs_range_5cm_snr5_450km.png"
+  ]
+}

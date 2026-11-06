@@ -278,3 +278,19 @@ una instantánea SSO con los tres colores. No se modifica la imagen ecuatorial.
 Los IDs distintos detectables en las muestras son 1 (ecuatorial) y 10,3,5,8
 (SSO, en el orden anterior). Estos conteos muestreados de una sola órbita
 no son tasas de misión ni incluyen todos los tránsitos entre las muestras.
+
+## Mapas SNR = 5 frente a distancia
+
+```bash
+.venv/bin/python scripts/plot_snr_range_maps.py
+```
+
+Genera dos PNG de la configuración nominal a 450 km: magnitud aparente AB
+frente a distancia (v transversal 5 km/s) y velocidad transversal frente a
+distancia (objeto de **5 cm**, albedo 0,2, fase 60°). Línea roja discontinua:
+SNR=5; sombreado rojo: SNR<5. Rayado gris: saturación; fondo gris en el mapa
+de velocidad: fuente resuelta. Se mantienen los tránsitos parciales.
+La magnitud aparente ya contiene la dilución del flujo: no se aplica otra
+pérdida 1/r² al variar el rango con magnitud fija. Son mapas instrumentales,
+no conteos de población. Curvas, mallas NPZ y manifiesto quedan en
+`data/generated/optical/snr*`; figuras en `outputs/optical/summary/`.

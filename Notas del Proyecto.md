@@ -1309,3 +1309,66 @@ puntual del modelo. La región inferior, no resuelta, queda sin sombrear.
 Se actualizan las leyendas para identificar el dominio excluido. Este cambio
 es visual: no modifica el criterio de tamaño angular, los parámetros,
 los cálculos ni la clasificación gris/lila/verde de los objetos.
+
+## Mapas de SNR: magnitud aparente y velocidad transversal frente a distancia
+
+Por petición del usuario se añaden dos PNG científicos para la configuración
+nominal: apertura 80 mm, FOV corto 14 grados, exposición 77 ms, High Gain,
+observador circular a 450 km. La segunda figura usa **diámetro 5 cm**, elegido
+explícitamente por el usuario, albedo geométrico 0.2 y fase 60 grados.
+La primera fija v_perp=5 km/s. Ambas mantienen tránsitos parciales mediante
+el máximo solapamiento de cruce central, ruido de fondo y dark durante toda
+la exposición y el giro LVLH. No son gráficos de la población ni conteos
+geométricos de misión; no se propagan órbitas para estos mapas instrumentales.
+
+1. Eje Y: magnitud aparente AB equivalente en la banda 450–750 nm, entre
+0 y 20 mag. Eje X: rango logarítmico de 0.01 a 20000 km, 1001 muestras.
+La magnitud APARENTE ya determina el flujo recibido: NO se aplica otra vez
+un factor inverso al cuadrado de la distancia. La distancia solo cambia
+la velocidad angular, la traza y el tiempo de señal de una fuente con ese
+brillo aparente fijo. Tampoco se multiplican de nuevo albedo y función de
+fase: sus efectos sobre el flujo ya están contenidos en la magnitud.
+No se fija diámetro en este mapa; se asume fuente puntual. Su condición de
+resolución angular no puede inferirse solo de la magnitud sin más hipótesis.
+
+Se calcula el límite de magnitud analíticamente dentro del modelo:
+si V=n_px*((B_px+I_dark)*t_exp+sigma_read^2) y q=5,
+S_req=(q^2+sqrt(q^4+4*q^2*V))/2;
+m_lim=-2.5*log10(S_req/S_m0), donde S_m0 es la señal extraída para m_AB=0.
+Se sustituye de nuevo en OpticalModel.evaluate para comprobar SNR=5 con
+precisión numérica. Una fuente con mayor magnitud es más débil: la zona
+por encima de m_lim tiene SNR<5 y se sombrea en rojo transparente.
+La magnitud límite puede aumentar al crecer el rango porque, a flujo
+aparente FIJO, la traza se acorta. No significa que alejar un objeto físico
+de tamaño y fase constantes lo vuelva más fácil de detectar.
+
+2. Eje Y: velocidad relativa transversal positiva along-track, 0–15 km/s,
+751 muestras. Eje X: rango logarítmico 0.01–2000 km, 1401 muestras.
+Se usa omega=abs(v_perp/r-n_LVLH) como en el estudio nominal. El brillo se
+calcula ahora para el objeto fijo de 5 cm, e incluye su pérdida 1/r^2.
+La línea roja discontinua es el contorno SNR=5 de la malla; se conserva
+cualquier no monotonía debida a la compensación de giro LVLH y al número
+entero de píxeles de extracción. Se interpola el contorno entre muestras:
+en un salto del número de píxeles puede no existir una raíz exacta SNR=5.
+El manifiesto registra la desviación al evaluar sus vértices (máxima
+aproximadamente 0.28 de SNR en esta malla), sin suavizar artificialmente
+los escalones físicos/discretos del modelo. El rojo marca SNR<5.
+
+En ambas figuras la saturación de carga se marca con rayado gris separado:
+el SNR formal calculado más allá de full well no representa fotometría lineal
+válida. En la segunda, el dominio de fuente resuelta d/r>FWHM_px*delta se
+marca con fondo gris (r<0.44183 km para 5 cm y FOV nominal). El rojo no
+representa la unión de todos los motivos de rechazo; únicamente SNR<5.
+Una región sin rojo aún debe cumplir fuente puntual, no saturación y las
+condiciones geométricas/de iluminación de misión antes de hablar de detección.
+
+Los barridos incluyen rangos que no corresponden necesariamente a encuentros
+LEO disponibles: son mapas condicionales de respuesta del instrumento.
+En el corte nominal v_perp=5 km/s, los intervalos elegibles para 5 cm son
+0.44183079–298.15011885 km, coherentes con el estudio anterior.
+
+Reproducción: scripts/plot_snr_range_maps.py. Curva de magnitud, vértices del
+contorno de velocidad, mallas numéricas comprimidas NPZ y manifiesto con
+unidades/hipótesis/hash del Excel se guardan en data/generated/optical.
+Los PNG quedan en outputs/optical/summary y usan el estilo compartido a
+300 dpi. Las poblaciones y los CSV de referencia ESA no se modifican.
