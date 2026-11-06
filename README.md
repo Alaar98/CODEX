@@ -333,7 +333,8 @@ posteriores. Color por tamaño: azul 1–5 cm, verde 5–10 cm, lila >=10 cm
 Por decisión del usuario el eje Y es **magnitud aparente menos su magnitud
 límite individual**. La línea roja discontinua en cero corresponde a SNR=5;
 por encima (rojo) SNR<5. Los cruces sin iluminación o fuera de las hipótesis
-del modelo se conservan en la franja «Excluidos». Se incluyen exposiciones
+del modelo se conservan en la tabla completa, pero se omiten de las gráficas.
+Las figuras muestran 8312 cruces válidos de 7344 objetos. Se incluyen exposiciones
 parciales; se supone sincronización ideal del frame con el instante elegido.
 No es una simulación de cadencia y lectura electrónica reales.
 
@@ -341,3 +342,6 @@ Resultado: 16578 cruces de 13304 objetos distintos; 271 cruces válidos con
 SNR>=5, de 251 objetos distintos. Datos, hipótesis y comprobaciones en
 `data/generated/encounters/`; dos PNG en `outputs/optical/summary/` con
 prefijo `trace_nominal_sso450km_24h_magnitude_margin_vs_`.
+
+Para regenerar únicamente estas figuras desde el CSV guardado, sin repetir
+propagación ni fotometría: `.venv/bin/python -m scripts.plot_day_encounters --plots-only`.

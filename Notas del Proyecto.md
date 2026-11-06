@@ -1567,3 +1567,23 @@ el resumen validado, sin archivar productos temporales duplicados.
 El resumen de convergencia se regenera, tras los dos refinamientos, con
 `.venv/bin/python -m scripts.validate_day_encounters`. Las 42 pruebas de
 la suite pasan.
+
+
+## Figuras de 24 h sin cruces excluidos
+
+Por petición del usuario se elimina la franja «Excluidos» y todos sus puntos
+de las dos gráficas de 24 h. Se representan solamente los cruces por el FoV
+con representante válido (`valid=True`), conservando también los de SNR<5:
+8312 cruces correspondientes a 7344 objetos distintos. De ellos 271 cruces
+alcanzan SNR>=5, de 251 objetos distintos, igual que antes.
+
+Los 8266 cruces excluidos también eran cruces geométricos por el campo,
+pero no cumplían alguna condición del dominio óptico/de iluminación. Ahora
+se omiten visualmente; no se eliminan del CSV completo ni se reclasifican.
+No se cambia la propagación, el SNR, la normalización, los colores por tamaño
+ni los ordinales/símbolos de revisita. Los ordinales siguen contando todos
+los cruces del día, incluidos los que no se muestran: no se renumeran al
+filtrar la figura. Se actualizan límites de ejes, pies de figura y manifiesto.
+
+El renderizado se separa del cálculo para reutilizar resultados guardados:
+`.venv/bin/python -m scripts.plot_day_encounters --plots-only`.

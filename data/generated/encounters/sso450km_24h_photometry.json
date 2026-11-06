@@ -75,11 +75,13 @@
   },
   "excluded_events": 8266,
   "normalization": "m_AB - m_AB(SNR=5), per exposure geometry, noise pixels and actual visible time",
-  "plot_exclusions": "shadow, Earth occultation, solar exclusion, saturation or resolved sources are categorical, not assigned a fake margin",
+  "plot_exclusions": "excluded events omitted from figures; retained in complete encounter CSV",
   "exposure": "77 ms exposure centred at selected instant; actual entry/exit truncation for partial passes",
   "revisits": "chronological FoV passages per ID, including excluded passages; not individual exposures",
   "figures": [
     "trace_nominal_sso450km_24h_magnitude_margin_vs_range.png",
     "trace_nominal_sso450km_24h_magnitude_margin_vs_transverse_velocity.png"
-  ]
+  ],
+  "plotted_events": 8312,
+  "plotted_distinct_objects": 7344
 }
