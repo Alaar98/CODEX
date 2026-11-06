@@ -41,3 +41,22 @@
   Gain read noise to claim Low Gain performance. Use peak pixel charge, not
   integrated streak signal, to test saturation. Optical curves are conditional
   instrument results, not population detection counts; keep the populations intact.
+
+
+## Local document skills
+
+- For technical documents requested in LaTeX, TeX or Overleaf, or explicitly
+  invoking `$documentos-tecnicos-latex`, read and apply
+  [.agents/skills/documentos-tecnicos-latex/SKILL.md](.agents/skills/documentos-tecnicos-latex/SKILL.md).
+- For technical documents requested in Word or DOCX, or explicitly invoking
+  `$documentos-tecnicos-word`, read and apply
+  [.agents/skills/documentos-tecnicos-word/SKILL.md](.agents/skills/documentos-tecnicos-word/SKILL.md).
+- Each skill is self-contained: read its references/estilo.md and use its
+  supplied template and assets when authoring the requested document.
+  Scope these instructions to document tasks. Preserve TRACE model provenance,
+  scientific conventions and the shared plot style.
+- Put report sources and document deliverables (TEX, DOCX, PDF and supporting
+  vector drawings) under docs/reports/<report-name>/, using relative paths.
+  The outputs/ directory remains PNG-only.
+- Uploaded skill files are preserved byte-for-byte; archive and file hashes
+  are recorded in docs/skills-provenance.json.

@@ -1,0 +1,122 @@
+{
+  "source": "user-uploaded ZIP archives",
+  "installation_root": ".agents/skills",
+  "packages": [
+    {
+      "name": "documentos-tecnicos-latex",
+      "archive_name": "documentos-tecnicos-latex.zip",
+      "archive_sha256": "a752425eaef959eb701711fb70a961f2b8005b9457cded79b4e28c2e19604ebf",
+      "installed_path": ".agents/skills/documentos-tecnicos-latex",
+      "files": [
+        {
+          "path": ".agents/skills/documentos-tecnicos-latex/SKILL.md",
+          "sha256": "5acfb3e52e1832d254154f692455e4b54a234eaf99aeb8e99b11971a358e262c",
+          "bytes": 1919
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-latex/agents/openai.yaml",
+          "sha256": "2aeffab485141de4b8a1ce7cac4004cc1cb7b9ad192cf849aad63cdf13aa0336",
+          "bytes": 399
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-latex/assets/Thales_Alenia_Space_Logo.png",
+          "sha256": "a0e9c8e01c664c747027c945189e023dfaf7bc487a87f11f301aa5c84de8d650",
+          "bytes": 75593
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-latex/assets/angulo-fase.png",
+          "sha256": "c09ab67bf80264147870a17cc7592ca6098293109830b32f14ed18ff41dce96a",
+          "bytes": 130695
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-latex/assets/articulo.tex",
+          "sha256": "e9b7c24482ebb0308172f6b5d96d54853a8f374c0099c984cbe45cf50470aa17",
+          "bytes": 1573
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-latex/assets/campo-vision.png",
+          "sha256": "e1d5496682b1abb1728a25d54e8989c4d2b0a467c5d16ecedf6ebaa4130e590f",
+          "bytes": 210210
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-latex/assets/geometria-observacion.png",
+          "sha256": "f657c72d4a1740e30609948a73700959c96eed19cd042450c2f1ac7012203ffa",
+          "bytes": 239090
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-latex/assets/icon.svg",
+          "sha256": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee",
+          "bytes": 1210
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-latex/assets/iluminacion-oclusion.png",
+          "sha256": "77d047c09df9acf802844e638f3b93c3ba94373d000a8d906b0cee68a5d2f164",
+          "bytes": 119493
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-latex/references/estilo.md",
+          "sha256": "1eac7a1c8dd1941bb940d551af6cab1cfd8e8f3605108dc1deecba904775b44c",
+          "bytes": 4844
+        }
+      ]
+    },
+    {
+      "name": "documentos-tecnicos-word",
+      "archive_name": "documentos-tecnicos-word.zip",
+      "archive_sha256": "e9d88e07e0573078a2a48047f9ecb4c28b894e81659dd5240bd64434b8c46f46",
+      "installed_path": ".agents/skills/documentos-tecnicos-word",
+      "files": [
+        {
+          "path": ".agents/skills/documentos-tecnicos-word/SKILL.md",
+          "sha256": "45ed2d3fe05f3838fe8291f8ed49c8c562e889eadda6b2ba0cf703869be487bd",
+          "bytes": 1887
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-word/agents/openai.yaml",
+          "sha256": "ebed58360c8ebe0cc578748f3c873d32655a3e56adb37f10bb93eef25b9fd73f",
+          "bytes": 396
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-word/assets/Thales_Alenia_Space_Logo.png",
+          "sha256": "a0e9c8e01c664c747027c945189e023dfaf7bc487a87f11f301aa5c84de8d650",
+          "bytes": 75593
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-word/assets/angulo-fase.png",
+          "sha256": "c09ab67bf80264147870a17cc7592ca6098293109830b32f14ed18ff41dce96a",
+          "bytes": 130695
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-word/assets/articulo-referencia.docx",
+          "sha256": "592c4670626dfd984b1faf0212a3e2073072625c86e90a4465a52b0a95e55213",
+          "bytes": 111998
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-word/assets/campo-vision.png",
+          "sha256": "e1d5496682b1abb1728a25d54e8989c4d2b0a467c5d16ecedf6ebaa4130e590f",
+          "bytes": 210210
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-word/assets/geometria-observacion.png",
+          "sha256": "f657c72d4a1740e30609948a73700959c96eed19cd042450c2f1ac7012203ffa",
+          "bytes": 239090
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-word/assets/icon.svg",
+          "sha256": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee",
+          "bytes": 1210
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-word/assets/iluminacion-oclusion.png",
+          "sha256": "77d047c09df9acf802844e638f3b93c3ba94373d000a8d906b0cee68a5d2f164",
+          "bytes": 119493
+        },
+        {
+          "path": ".agents/skills/documentos-tecnicos-word/references/estilo.md",
+          "sha256": "1eac7a1c8dd1941bb940d551af6cab1cfd8e8f3605108dc1deecba904775b44c",
+          "bytes": 4844
+        }
+      ]
+    }
+  ]
+}

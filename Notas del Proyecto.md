@@ -1611,3 +1611,22 @@ Reproducción: `.venv/bin/python -m scripts.plot_day_encounters --plots-only --a
 Los nombres PNG contienen `sso450km_24h_apparent_magnitude_vs_`; el manifiesto
 fotométrico añade `apparent_magnitude_figures` y su convención. El CSV de
 cruces y las poblaciones no se modifican.
+
+
+## Incorporación de skills de documentación LaTeX y Word
+
+Se incorporan, por petición del usuario, los paquetes ZIP
+`documentos-tecnicos-latex.zip` y `documentos-tecnicos-word.zip` como skills
+locales en `.agents/skills/`. Se conservan sin modificaciones todos los
+archivos de cada paquete: SKILL.md, metadatos de interfaz, guía de estilo,
+plantilla TEX o DOCX, logo y cuatro esquemas de referencia, además del icono.
+`docs/skills-provenance.json` registra los SHA-256 de los ZIP originales
+y de cada archivo extraído. Se verifica la igualdad de bytes con las entradas
+de ambos archivos comprimidos.
+
+AGENTS.md registra cuándo aplicar cada skill en encargos de documentos.
+Se reserva `docs/reports/<nombre>/` para fuentes, documentos compilados y
+recursos vectoriales de informes, respetando que outputs/ solo contiene PNG.
+Las convenciones físicas, fuentes y trazabilidad de TRACE se mantienen al
+redactar documentos. Incorporar los paquetes no constituye la generación
+o validación de un informe nuevo, ni cambia los cálculos del proyecto.

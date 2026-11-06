@@ -357,3 +357,25 @@ sin umbral de SNR ni sombreado:
 Conservan los mismos cruces válidos, instantes representativos, colores por
 tamaño y símbolos de revisita. Sus nombres contienen
 `trace_nominal_sso450km_24h_apparent_magnitude_vs_`.
+
+
+## Skills de documentación técnica
+
+Las dos skills adjuntas están incorporadas en `.agents/skills/`, con sus
+instrucciones, guías de estilo, plantillas, logo y esquemas de referencia:
+
+| Skill | Uso | Instrucciones |
+|---|---|---|
+| `documentos-tecnicos-latex` | Informes LaTeX, TeX, PDF y Overleaf | [SKILL.md](.agents/skills/documentos-tecnicos-latex/SKILL.md) |
+| `documentos-tecnicos-word` | Informes Word/DOCX con ecuaciones y tablas editables | [SKILL.md](.agents/skills/documentos-tecnicos-word/SKILL.md) |
+
+Puedes pedir, por ejemplo: «Usa $documentos-tecnicos-latex para redactar el
+informe de validación óptica de TRACE» o «Usa $documentos-tecnicos-word para
+preparar ese informe en Word». `AGENTS.md` enlaza las skills locales para
+los encargos del formato correspondiente.
+
+Los documentos y sus fuentes se organizarán en `docs/reports/<nombre>/`;
+`outputs/` conserva únicamente las imágenes PNG. La generación de cada
+formato requiere sus herramientas de edición, compilación o renderizado,
+según el procedimiento de su skill. Los SHA-256 de los ZIP recibidos y de
+todos los archivos incorporados están en [skills-provenance.json](docs/skills-provenance.json).

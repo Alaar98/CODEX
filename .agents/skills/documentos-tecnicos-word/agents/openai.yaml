@@ -1,0 +1,14 @@
+interface:
+  display_name: Documentos técnicos en Word
+  short_description: Artículos e informes de ingeniería en Word
+  default_prompt: Usa $documentos-tecnicos-word para redactar un informe técnico con
+    ecuaciones, tablas y figuras.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

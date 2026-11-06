@@ -1,0 +1,14 @@
+interface:
+  display_name: Documentos técnicos en LaTeX
+  short_description: Artículos e informes de ingeniería en LaTeX
+  default_prompt: Usa $documentos-tecnicos-latex para redactar un informe técnico
+    con ecuaciones, tablas y figuras.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

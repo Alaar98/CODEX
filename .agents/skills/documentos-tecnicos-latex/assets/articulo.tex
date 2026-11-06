@@ -1,0 +1,55 @@
+\documentclass[a4paper,11pt,onecolumn]{article}
+\usepackage[spanish,provide=*]{babel}
+\usepackage[a4paper,margin=28mm,includeheadfoot,headheight=17mm]{geometry}
+\usepackage{graphicx,amsmath,booktabs}
+\usepackage[table]{xcolor}
+\usepackage{fancyhdr,lastpage}
+\usepackage[font=small]{caption}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{CabeceraTabla}{HTML}{9CC4EE}
+\definecolor{ColumnaParametros}{HTML}{E6F0F9}
+\numberwithin{equation}{section}
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[width=35mm]{Thales_Alenia_Space_Logo.png}}
+\fancyfoot[C]{\small \pagename~\thepage\ de \pageref{LastPage}}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancypagestyle{plain}{}
+% Al cambiar el idioma, adaptar también la paginación del pie.
+
+\title{Título del documento técnico}
+\author{}
+\date{}
+
+\begin{document}
+\renewcommand{\tablename}{Tabla} % Adaptar al idioma del documento.
+\maketitle
+\thispagestyle{fancy}
+\begin{abstract}
+Describir el objetivo, el método y los resultados principales.
+\end{abstract}
+
+\section{Introducción}
+\section{Metodología}
+\section{Resultados}
+
+% El título se sitúa encima de la tabla.
+\begin{table}[htbp]
+  \centering
+  \caption{Parámetros del análisis.}
+  \label{tab:parametros}
+  \begin{tabular}{lrr}
+    \toprule
+    \rowcolor{CabeceraTabla}
+    \textbf{Parámetro} & \textbf{Valor} & \textbf{Unidad} \\
+    \midrule
+    \cellcolor{ColumnaParametros}\textbf{Longitud} & 1,0 & m \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Conclusiones}
+\end{document}
